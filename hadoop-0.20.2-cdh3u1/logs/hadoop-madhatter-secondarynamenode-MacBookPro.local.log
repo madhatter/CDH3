@@ -39,3 +39,7 @@ STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Ta
 2011-08-16 20:35:25,146 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 9319 saved in 0 seconds.
 2011-08-16 20:35:25,196 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Posted URL localhost:50070putimage=1&port=50090&machine=192.168.0.100&token=-19:829856726:0:1313519724000:1313519420001
 2011-08-16 20:35:25,298 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 9319
+2011-08-16 20:50:39,512 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at MacBookPro.local/192.168.0.100
+************************************************************/

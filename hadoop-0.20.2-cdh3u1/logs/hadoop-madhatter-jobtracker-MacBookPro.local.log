@@ -152,3 +152,7 @@ The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe
 2011-08-16 20:30:56,887 INFO org.apache.hadoop.mapred.JobTracker: Starting RUNNING
 2011-08-16 20:30:57,537 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/192.168.0.100
 2011-08-16 20:30:57,538 INFO org.apache.hadoop.mapred.JobTracker: Adding tracker tracker_192.168.0.100:localhost/127.0.0.1:52362 to host 192.168.0.100
+2011-08-16 20:50:38,758 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at MacBookPro.local/192.168.0.100
+************************************************************/

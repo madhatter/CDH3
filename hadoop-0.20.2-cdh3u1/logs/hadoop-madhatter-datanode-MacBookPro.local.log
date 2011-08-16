@@ -37,3 +37,7 @@ STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Ta
 2011-08-16 20:30:56,835 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_7888945775388219236_1078 terminating
 2011-08-16 20:30:59,527 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Scheduling block blk_-7243555305594010372_1077 file /Users/madhatter/CDH3/hadoop-cache/dfs/data/current/blk_-7243555305594010372 for deletion
 2011-08-16 20:30:59,528 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Deleted block blk_-7243555305594010372_1077 at file /Users/madhatter/CDH3/hadoop-cache/dfs/data/current/blk_-7243555305594010372
+2011-08-16 20:50:39,361 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at MacBookPro.local/192.168.0.100
+************************************************************/

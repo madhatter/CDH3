@@ -127,3 +127,7 @@ The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe
 2011-08-16 20:35:24,577 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 6 Total time for transactions(ms): 1Number of transactions batched in Syncs: 0 Number of syncs: 5 SyncTimes(ms): 50 
 2011-08-16 20:35:25,284 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll FSImage from 127.0.0.1
 2011-08-16 20:35:25,284 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 1 SyncTimes(ms): 39 
+2011-08-16 20:50:39,220 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at MacBookPro.local/192.168.0.100
+************************************************************/
