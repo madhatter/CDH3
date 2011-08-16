@@ -24,8 +24,28 @@
 <configuration>
     <property>
 	    <name>hbase.rootdir</name>
-            <value>hdfs://localhost:9000/hbase</value>
+            <value>hdfs://localhost:8020/hbase</value>
 	    <description>The directory shared by region servers.
 	    </description>
+      </property>
+      <property>
+	  <name>hbase.master</name>
+	  <value>localhost:60000</value>
+	  <description>The host and port that the HBase master runs at.
+	  </description>
+      </property>
+      <property>
+           <name>dfs.replication</name>
+           <value>1</value>
+           <description>The replication count for HLog and HFile storage. Should not be greater than HDFS datanode count.
+           </description>
+      </property>
+      <property>
+	  <name>hbase.zookeeper.quorum</name>
+	  <value>localhost</value>
+	  <description>The host and port that the HBase master runs at.
+	      A value of 'local' runs the master and a regionserver in
+	      a single process.
+	  </description>
       </property>
 </configuration>

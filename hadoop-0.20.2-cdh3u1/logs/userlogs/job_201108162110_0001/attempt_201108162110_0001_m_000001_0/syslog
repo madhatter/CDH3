@@ -1,0 +1,12 @@
+2011-08-16 21:11:31,233 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2011-08-16 21:11:31,791 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=MAP, sessionId=
+2011-08-16 21:11:32,153 WARN org.apache.hadoop.io.compress.snappy.LoadSnappy: Snappy native library not loaded
+2011-08-16 21:11:32,159 INFO org.apache.hadoop.mapred.MapTask: numReduceTasks: 1
+2011-08-16 21:11:32,166 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2011-08-16 21:11:32,562 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2011-08-16 21:11:32,563 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2011-08-16 21:11:32,597 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2011-08-16 21:11:32,726 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2011-08-16 21:11:32,803 INFO org.apache.hadoop.mapred.Task: Task:attempt_201108162110_0001_m_000001_0 is done. And is in the process of commiting
+2011-08-16 21:11:32,840 INFO org.apache.hadoop.mapred.Task: Task 'attempt_201108162110_0001_m_000001_0' done.
+2011-08-16 21:11:32,882 INFO org.apache.hadoop.mapred.TaskLogsTruncater: Initializing logs' truncater with mapRetainSize=-1 and reduceRetainSize=-1

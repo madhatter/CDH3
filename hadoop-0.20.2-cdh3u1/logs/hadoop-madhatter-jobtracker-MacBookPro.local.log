@@ -156,3 +156,351 @@ The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe
 /************************************************************
 SHUTDOWN_MSG: Shutting down JobTracker at MacBookPro.local/192.168.0.100
 ************************************************************/
+2011-08-16 21:10:19,304 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = MacBookPro.local/192.168.0.100
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-16 21:10:19,694 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2011-08-16 21:10:19,695 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2011-08-16 21:10:19,696 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2011-08-16 21:10:19,696 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2011-08-16 21:10:19,698 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2011-08-16 21:10:19,811 INFO org.apache.hadoop.mapred.JobTracker: Starting jobtracker with owner as madhatter
+2011-08-16 21:10:19,859 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 9001
+2011-08-16 21:10:19,862 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=JobTracker, port=9001
+2011-08-16 21:10:19,866 INFO org.apache.hadoop.ipc.metrics.RpcDetailedMetrics: Initializing RPC Metrics with hostName=JobTracker, port=9001
+2011-08-16 21:10:19,964 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2011-08-16 21:10:20,024 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2011-08-16 21:10:20,076 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50030
+2011-08-16 21:10:20,079 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50030 webServer.getConnectors()[0].getLocalPort() returned 50030
+2011-08-16 21:10:20,079 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50030
+2011-08-16 21:10:20,079 INFO org.mortbay.log: jetty-6.1.26
+2011-08-16 21:10:20,642 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50030
+2011-08-16 21:10:20,643 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2011-08-16 21:10:20,643 INFO org.apache.hadoop.mapred.JobTracker: JobTracker up at: 9001
+2011-08-16 21:10:20,644 INFO org.apache.hadoop.mapred.JobTracker: JobTracker webserver: 50030
+2011-08-16 21:10:20,863 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2011-08-16 21:10:20,868 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://localhost/Users/madhatter/CDH3/hadoop-cache/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
+The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe mode will be turned off automatically in 26 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setPermission(FSNamesystem.java:798)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.setPermission(NameNode.java:621)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:557)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1434)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1430)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1127)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1428)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1107)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:226)
+	at $Proxy4.setPermission(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.setPermission(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.setPermission(DFSClient.java:855)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.setPermission(DistributedFileSystem.java:560)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2279)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2046)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:295)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:287)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:4770)
+2011-08-16 21:10:30,878 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2011-08-16 21:10:30,880 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://localhost/Users/madhatter/CDH3/hadoop-cache/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
+The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe mode will be turned off automatically in 16 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setPermission(FSNamesystem.java:798)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.setPermission(NameNode.java:621)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:557)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1434)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1430)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1127)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1428)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1107)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:226)
+	at $Proxy4.setPermission(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.setPermission(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.setPermission(DFSClient.java:855)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.setPermission(DistributedFileSystem.java:560)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2279)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2046)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:295)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:287)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:4770)
+2011-08-16 21:10:40,888 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2011-08-16 21:10:40,890 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://localhost/Users/madhatter/CDH3/hadoop-cache/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
+The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe mode will be turned off automatically in 6 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setPermission(FSNamesystem.java:798)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.setPermission(NameNode.java:621)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:557)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1434)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1430)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1127)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1428)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1107)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:226)
+	at $Proxy4.setPermission(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.setPermission(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.setPermission(DFSClient.java:855)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.setPermission(DistributedFileSystem.java:560)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2279)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2046)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:295)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:287)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:4770)
+2011-08-16 21:10:50,898 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2011-08-16 21:10:51,204 INFO org.apache.hadoop.mapred.CompletedJobStatusStore: Completed job store is inactive
+2011-08-16 21:10:51,306 INFO org.apache.hadoop.mapred.JobTracker: Refreshing hosts information
+2011-08-16 21:10:51,343 INFO org.apache.hadoop.util.HostsFileReader: Setting the includes file to 
+2011-08-16 21:10:51,343 INFO org.apache.hadoop.util.HostsFileReader: Setting the excludes file to 
+2011-08-16 21:10:51,343 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2011-08-16 21:10:51,343 INFO org.apache.hadoop.mapred.JobTracker: Decommissioning 0 nodes
+2011-08-16 21:10:51,344 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2011-08-16 21:10:51,345 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 9001: starting
+2011-08-16 21:10:51,346 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 9001: starting
+2011-08-16 21:10:51,346 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 9001: starting
+2011-08-16 21:10:51,346 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 9001: starting
+2011-08-16 21:10:51,346 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 9001: starting
+2011-08-16 21:10:51,346 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 9001: starting
+2011-08-16 21:10:51,347 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 9001: starting
+2011-08-16 21:10:51,347 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 9001: starting
+2011-08-16 21:10:51,347 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 9001: starting
+2011-08-16 21:10:51,347 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 9001: starting
+2011-08-16 21:10:51,347 INFO org.apache.hadoop.mapred.JobTracker: Starting RUNNING
+2011-08-16 21:10:51,347 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 9001: starting
+2011-08-16 21:10:52,029 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/192.168.0.100
+2011-08-16 21:10:52,030 INFO org.apache.hadoop.mapred.JobTracker: Adding tracker tracker_192.168.0.100:localhost/127.0.0.1:52901 to host 192.168.0.100
+2011-08-16 21:11:25,864 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2011-08-16 21:11:26,007 INFO org.apache.hadoop.mapred.JobTracker: Job job_201108162110_0001 added successfully for user 'madhatter' to queue 'default'
+2011-08-16 21:11:26,008 INFO org.apache.hadoop.mapred.AuditLogger: USER=madhatter	IP=127.0.0.1	OPERATION=SUBMIT_JOB	TARGET=job_201108162110_0001	RESULT=SUCCESS
+2011-08-16 21:11:26,014 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201108162110_0001
+2011-08-16 21:11:26,014 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201108162110_0001
+2011-08-16 21:11:26,845 INFO org.apache.hadoop.mapred.JobInProgress: jobToken generated and stored with users keys in /Users/madhatter/CDH3/hadoop-cache/mapred/system/job_201108162110_0001/jobToken
+2011-08-16 21:11:26,859 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201108162110_0001 = 529. Number of splits = 2
+2011-08-16 21:11:26,859 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201108162110_0001_m_000000 has split on node:/default-rack/192.168.0.100
+2011-08-16 21:11:26,859 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201108162110_0001_m_000001 has split on node:/default-rack/192.168.0.100
+2011-08-16 21:11:26,859 INFO org.apache.hadoop.mapred.JobInProgress: job_201108162110_0001 LOCALITY_WAIT_FACTOR=1.0
+2011-08-16 21:11:26,860 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201108162110_0001 initialized successfully with 2 map tasks and 1 reduce tasks.
+2011-08-16 21:11:26,961 INFO org.apache.hadoop.mapred.JobTracker: Adding task (JOB_SETUP) 'attempt_201108162110_0001_m_000003_0' to tip task_201108162110_0001_m_000003, for tracker 'tracker_192.168.0.100:localhost/127.0.0.1:52901'
+2011-08-16 21:11:29,793 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201108162110_0001_m_000003_0' has completed task_201108162110_0001_m_000003 successfully.
+2011-08-16 21:11:29,797 INFO org.apache.hadoop.mapred.JobTracker: Adding task (MAP) 'attempt_201108162110_0001_m_000000_0' to tip task_201108162110_0001_m_000000, for tracker 'tracker_192.168.0.100:localhost/127.0.0.1:52901'
+2011-08-16 21:11:29,797 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201108162110_0001_m_000000
+2011-08-16 21:11:29,798 INFO org.apache.hadoop.mapred.JobTracker: Adding task (MAP) 'attempt_201108162110_0001_m_000001_0' to tip task_201108162110_0001_m_000001, for tracker 'tracker_192.168.0.100:localhost/127.0.0.1:52901'
+2011-08-16 21:11:29,798 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201108162110_0001_m_000001
+2011-08-16 21:11:32,911 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201108162110_0001_m_000001_0' has completed task_201108162110_0001_m_000001 successfully.
+2011-08-16 21:11:32,923 INFO org.apache.hadoop.mapred.JobTracker: Adding task (REDUCE) 'attempt_201108162110_0001_r_000000_0' to tip task_201108162110_0001_r_000000, for tracker 'tracker_192.168.0.100:localhost/127.0.0.1:52901'
+2011-08-16 21:11:33,240 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201108162110_0001_m_000000_0' has completed task_201108162110_0001_m_000000 successfully.
+2011-08-16 21:11:41,780 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201108162110_0001_r_000000_0' has completed task_201108162110_0001_r_000000 successfully.
+2011-08-16 21:11:41,785 INFO org.apache.hadoop.mapred.JobTracker: Adding task (JOB_CLEANUP) 'attempt_201108162110_0001_m_000002_0' to tip task_201108162110_0001_m_000002, for tracker 'tracker_192.168.0.100:localhost/127.0.0.1:52901'
+2011-08-16 21:11:43,367 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201108162110_0001_m_000002_0' has completed task_201108162110_0001_m_000002 successfully.
+2011-08-16 21:11:43,369 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201108162110_0001 has completed successfully.
+2011-08-16 21:11:43,373 INFO org.apache.hadoop.mapred.JobInProgress$JobSummary: jobId=job_201108162110_0001,submitTime=1313521885832,launchTime=1313521886859,firstMapTaskLaunchTime=1313521889797,firstReduceTaskLaunchTime=1313521892919,firstJobSetupTaskLaunchTime=1313521886896,firstJobCleanupTaskLaunchTime=1313521901785,finishTime=1313521903369,numMaps=2,numSlotsPerMap=1,numReduces=1,numSlotsPerReduce=1,user=madhatter,queue=default,status=SUCCEEDED,mapSlotSeconds=9,reduceSlotsSeconds=8,clusterMapCapacity=2,clusterReduceCapacity=2
+2011-08-16 21:11:43,426 INFO org.apache.hadoop.mapred.JobHistory: Moving file:/Users/madhatter/CDH3/hadoop/logs/history/localhost_1313521819869_job_201108162110_0001_madhatter_Max+temperature to file:/Users/madhatter/CDH3/hadoop/logs/history/done
+2011-08-16 21:11:43,465 INFO org.apache.hadoop.mapred.JobTracker: Removing task 'attempt_201108162110_0001_m_000000_0'
+2011-08-16 21:11:43,472 INFO org.apache.hadoop.mapred.JobTracker: Removing task 'attempt_201108162110_0001_m_000001_0'
+2011-08-16 21:11:43,472 INFO org.apache.hadoop.mapred.JobTracker: Removing task 'attempt_201108162110_0001_m_000002_0'
+2011-08-16 21:11:43,473 INFO org.apache.hadoop.mapred.JobTracker: Removing task 'attempt_201108162110_0001_m_000003_0'
+2011-08-16 21:11:43,473 INFO org.apache.hadoop.mapred.JobTracker: Removing task 'attempt_201108162110_0001_r_000000_0'
+2011-08-16 21:11:43,524 INFO org.apache.hadoop.mapred.JobHistory: Moving file:/Users/madhatter/CDH3/hadoop/logs/history/localhost_1313521819869_job_201108162110_0001_conf.xml to file:/Users/madhatter/CDH3/hadoop/logs/history/done
+2011-08-16 22:12:16,780 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at MacBookPro.local/192.168.0.100
+************************************************************/
+2011-08-16 22:12:26,163 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = MacBookPro.local/192.168.0.100
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-16 22:12:26,584 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2011-08-16 22:12:26,586 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2011-08-16 22:12:26,586 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2011-08-16 22:12:26,587 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2011-08-16 22:12:26,589 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2011-08-16 22:12:26,703 INFO org.apache.hadoop.mapred.JobTracker: Starting jobtracker with owner as madhatter
+2011-08-16 22:12:26,736 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 9001
+2011-08-16 22:12:26,740 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=JobTracker, port=9001
+2011-08-16 22:12:26,743 INFO org.apache.hadoop.ipc.metrics.RpcDetailedMetrics: Initializing RPC Metrics with hostName=JobTracker, port=9001
+2011-08-16 22:12:26,802 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2011-08-16 22:12:26,882 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2011-08-16 22:12:26,913 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50030
+2011-08-16 22:12:26,916 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50030 webServer.getConnectors()[0].getLocalPort() returned 50030
+2011-08-16 22:12:26,916 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50030
+2011-08-16 22:12:26,916 INFO org.mortbay.log: jetty-6.1.26
+2011-08-16 22:12:27,520 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50030
+2011-08-16 22:12:27,521 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2011-08-16 22:12:27,522 INFO org.apache.hadoop.mapred.JobTracker: JobTracker up at: 9001
+2011-08-16 22:12:27,522 INFO org.apache.hadoop.mapred.JobTracker: JobTracker webserver: 50030
+2011-08-16 22:12:27,778 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2011-08-16 22:12:27,782 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://localhost/Users/madhatter/CDH3/hadoop-cache/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
+The reported blocks 42 has reached the threshold 0,9990 of total blocks 42. Safe mode will be turned off automatically in 26 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setPermission(FSNamesystem.java:798)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.setPermission(NameNode.java:621)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:557)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1434)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1430)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1127)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1428)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1107)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:226)
+	at $Proxy4.setPermission(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.setPermission(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.setPermission(DFSClient.java:855)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.setPermission(DistributedFileSystem.java:560)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2279)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2046)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:295)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:287)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:4770)
+2011-08-16 22:12:37,793 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2011-08-16 22:12:37,794 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://localhost/Users/madhatter/CDH3/hadoop-cache/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
+The reported blocks 42 has reached the threshold 0,9990 of total blocks 42. Safe mode will be turned off automatically in 16 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setPermission(FSNamesystem.java:798)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.setPermission(NameNode.java:621)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:557)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1434)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1430)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1127)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1428)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1107)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:226)
+	at $Proxy4.setPermission(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.setPermission(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.setPermission(DFSClient.java:855)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.setPermission(DistributedFileSystem.java:560)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2279)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2046)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:295)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:287)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:4770)
+2011-08-16 22:12:47,803 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2011-08-16 22:12:47,804 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://localhost/Users/madhatter/CDH3/hadoop-cache/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
+The reported blocks 42 has reached the threshold 0,9990 of total blocks 42. Safe mode will be turned off automatically in 6 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setPermission(FSNamesystem.java:798)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.setPermission(NameNode.java:621)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:557)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1434)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1430)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1127)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1428)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1107)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:226)
+	at $Proxy4.setPermission(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.setPermission(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.setPermission(DFSClient.java:855)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.setPermission(DistributedFileSystem.java:560)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2279)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2046)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:295)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:287)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:4770)
+2011-08-16 22:12:57,813 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2011-08-16 22:12:57,918 INFO org.apache.hadoop.mapred.CompletedJobStatusStore: Completed job store is inactive
+2011-08-16 22:12:58,023 INFO org.apache.hadoop.mapred.JobTracker: Refreshing hosts information
+2011-08-16 22:12:58,065 INFO org.apache.hadoop.util.HostsFileReader: Setting the includes file to 
+2011-08-16 22:12:58,065 INFO org.apache.hadoop.util.HostsFileReader: Setting the excludes file to 
+2011-08-16 22:12:58,065 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2011-08-16 22:12:58,065 INFO org.apache.hadoop.mapred.JobTracker: Decommissioning 0 nodes
+2011-08-16 22:12:58,066 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2011-08-16 22:12:58,067 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 9001: starting
+2011-08-16 22:12:58,071 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 9001: starting
+2011-08-16 22:12:58,074 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 9001: starting
+2011-08-16 22:12:58,074 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 9001: starting
+2011-08-16 22:12:58,074 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 9001: starting
+2011-08-16 22:12:58,075 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 9001: starting
+2011-08-16 22:12:58,139 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 9001: starting
+2011-08-16 22:12:58,139 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 9001: starting
+2011-08-16 22:12:58,140 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 9001: starting
+2011-08-16 22:12:58,140 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 9001: starting
+2011-08-16 22:12:58,148 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 9001: starting
+2011-08-16 22:12:58,150 INFO org.apache.hadoop.mapred.JobTracker: Starting RUNNING
+2011-08-16 22:12:58,699 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/192.168.0.100
+2011-08-16 22:12:58,700 INFO org.apache.hadoop.mapred.JobTracker: Adding tracker tracker_192.168.0.100:localhost/127.0.0.1:58160 to host 192.168.0.100
+2011-08-16 22:21:36,377 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at MacBookPro.local/192.168.0.100
+************************************************************/
