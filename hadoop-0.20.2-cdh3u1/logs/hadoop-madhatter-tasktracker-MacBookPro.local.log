@@ -1,0 +1,44 @@
+2011-08-16 20:30:26,330 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = MacBookPro.local/192.168.0.100
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-16 20:30:26,981 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2011-08-16 20:30:27,047 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2011-08-16 20:30:27,070 INFO org.apache.hadoop.mapred.TaskLogsTruncater: Initializing logs' truncater with mapRetainSize=-1 and reduceRetainSize=-1
+2011-08-16 20:30:27,074 INFO org.apache.hadoop.mapred.TaskTracker: Starting tasktracker with owner as madhatter
+2011-08-16 20:30:27,138 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2011-08-16 20:30:27,239 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=TaskTracker, sessionId=
+2011-08-16 20:30:27,264 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 52362
+2011-08-16 20:30:27,266 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=52362
+2011-08-16 20:30:27,312 INFO org.apache.hadoop.ipc.metrics.RpcDetailedMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=52362
+2011-08-16 20:30:27,314 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2011-08-16 20:30:27,314 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 52362: starting
+2011-08-16 20:30:27,315 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 52362: starting
+2011-08-16 20:30:27,315 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 52362: starting
+2011-08-16 20:30:27,315 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 52362: starting
+2011-08-16 20:30:27,315 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 52362: starting
+2011-08-16 20:30:27,316 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: localhost/127.0.0.1:52362
+2011-08-16 20:30:27,316 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_192.168.0.100:localhost/127.0.0.1:52362
+2011-08-16 20:30:56,897 INFO org.apache.hadoop.mapred.TaskTracker:  Using MemoryCalculatorPlugin : null
+2011-08-16 20:30:56,921 WARN org.apache.hadoop.util.ProcessTree: setsid is not available on this machine. So not using it.
+2011-08-16 20:30:56,921 INFO org.apache.hadoop.util.ProcessTree: setsid exited with exit code 0
+2011-08-16 20:30:56,923 INFO org.apache.hadoop.util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+2011-08-16 20:30:56,923 INFO org.apache.hadoop.mapred.TaskTracker: ProcessTree implementation is missing on this system. TaskMemoryManager is disabled.
+2011-08-16 20:30:56,934 INFO org.apache.hadoop.mapred.TaskTracker: Starting thread: Map-events fetcher for all reduce tasks on tracker_192.168.0.100:localhost/127.0.0.1:52362
+2011-08-16 20:30:56,947 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
+2011-08-16 20:30:56,954 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
+2011-08-16 20:30:56,978 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
+2011-08-16 20:30:56,978 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
+2011-08-16 20:30:56,978 INFO org.mortbay.log: jetty-6.1.26
+2011-08-16 20:30:57,429 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
+2011-08-16 20:30:57,429 INFO org.apache.hadoop.mapred.TaskTracker: FILE_CACHE_SIZE for mapOutputServlet set to : 2000
+2011-08-16 20:30:57,442 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201108121808_0003 for user-log deletion with retainTimeStamp:1313605856923
+2011-08-16 20:30:57,442 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201108121808_0005 for user-log deletion with retainTimeStamp:1313605856923
+2011-08-16 20:30:57,442 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201108122319_0002 for user-log deletion with retainTimeStamp:1313605856923
+2011-08-16 20:30:57,442 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201108150820_0001 for user-log deletion with retainTimeStamp:1313605856923
+2011-08-16 20:30:57,442 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201108150837_0001 for user-log deletion with retainTimeStamp:1313605856923
+2011-08-16 20:30:57,442 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201108150837_0003 for user-log deletion with retainTimeStamp:1313605856923

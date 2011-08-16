@@ -1,0 +1,246 @@
+2011-08-12 18:08:42,707 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = nothing/172.20.10.2
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-12 18:08:43,099 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2011-08-12 18:08:43,101 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2011-08-12 18:08:43,101 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2011-08-12 18:08:43,101 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2011-08-12 18:08:43,103 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2011-08-12 18:08:43,213 INFO org.apache.hadoop.mapred.JobTracker: Starting jobtracker with owner as madhatter
+2011-08-12 18:08:43,259 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 9001
+2011-08-12 18:08:43,262 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=JobTracker, port=9001
+2011-08-12 18:08:43,265 INFO org.apache.hadoop.ipc.metrics.RpcDetailedMetrics: Initializing RPC Metrics with hostName=JobTracker, port=9001
+2011-08-12 18:08:47,973 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2011-08-12 18:08:48,190 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2011-08-12 18:08:48,279 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50030
+2011-08-12 18:08:48,281 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50030 webServer.getConnectors()[0].getLocalPort() returned 50030
+2011-08-12 18:08:48,281 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50030
+2011-08-12 18:08:48,281 INFO org.mortbay.log: jetty-6.1.26
+2011-08-12 18:08:49,127 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50030
+2011-08-12 18:08:49,158 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2011-08-12 18:08:49,158 INFO org.apache.hadoop.mapred.JobTracker: JobTracker up at: 9001
+2011-08-12 18:08:49,158 INFO org.apache.hadoop.mapred.JobTracker: JobTracker webserver: 50030
+2011-08-12 18:08:49,537 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2011-08-12 18:08:49,625 INFO org.apache.hadoop.mapred.CompletedJobStatusStore: Completed job store is inactive
+2011-08-12 18:08:49,890 WARN org.apache.hadoop.hdfs.DFSClient: DataStreamer Exception: org.apache.hadoop.ipc.RemoteException: java.io.IOException: File /Users/madhatter/CDH3/hadoop-cache/mapred/system/jobtracker.info could only be replicated to 0 nodes, instead of 1
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:1484)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlock(NameNode.java:653)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:557)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1434)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1430)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1127)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1428)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1107)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:226)
+	at $Proxy4.addBlock(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.addBlock(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.locateFollowingBlock(DFSClient.java:3178)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.nextBlockOutputStream(DFSClient.java:3047)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.access$1900(DFSClient.java:2305)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream$DataStreamer.run(DFSClient.java:2500)
+
+2011-08-12 18:08:49,891 WARN org.apache.hadoop.hdfs.DFSClient: Error Recovery for block null bad datanode[0] nodes == null
+2011-08-12 18:08:49,891 WARN org.apache.hadoop.hdfs.DFSClient: Could not get block locations. Source file "/Users/madhatter/CDH3/hadoop-cache/mapred/system/jobtracker.info" - Aborting...
+2011-08-12 18:08:49,910 WARN org.apache.hadoop.mapred.JobTracker: Writing to file hdfs://localhost/Users/madhatter/CDH3/hadoop-cache/mapred/system/jobtracker.info failed!
+2011-08-12 18:08:49,910 WARN org.apache.hadoop.mapred.JobTracker: FileSystem is not ready yet!
+2011-08-12 18:08:49,926 WARN org.apache.hadoop.mapred.JobTracker: Failed to initialize recovery manager. 
+org.apache.hadoop.ipc.RemoteException: java.io.IOException: File /Users/madhatter/CDH3/hadoop-cache/mapred/system/jobtracker.info could only be replicated to 0 nodes, instead of 1
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:1484)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlock(NameNode.java:653)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:557)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1434)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1430)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1127)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1428)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1107)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:226)
+	at $Proxy4.addBlock(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.addBlock(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.locateFollowingBlock(DFSClient.java:3178)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.nextBlockOutputStream(DFSClient.java:3047)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.access$1900(DFSClient.java:2305)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream$DataStreamer.run(DFSClient.java:2500)
+2011-08-12 18:08:59,926 WARN org.apache.hadoop.mapred.JobTracker: Retrying...
+2011-08-12 18:09:00,069 INFO org.apache.hadoop.mapred.JobTracker: Refreshing hosts information
+2011-08-12 18:09:00,097 INFO org.apache.hadoop.util.HostsFileReader: Setting the includes file to 
+2011-08-12 18:09:00,097 INFO org.apache.hadoop.util.HostsFileReader: Setting the excludes file to 
+2011-08-12 18:09:00,097 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2011-08-12 18:09:00,097 INFO org.apache.hadoop.mapred.JobTracker: Decommissioning 0 nodes
+2011-08-12 18:09:00,098 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2011-08-12 18:09:00,099 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 9001: starting
+2011-08-12 18:09:00,104 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 9001: starting
+2011-08-12 18:09:00,106 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 9001: starting
+2011-08-12 18:09:00,106 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 9001: starting
+2011-08-12 18:09:00,106 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 9001: starting
+2011-08-12 18:09:00,107 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 9001: starting
+2011-08-12 18:09:00,107 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 9001: starting
+2011-08-12 18:09:00,107 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 9001: starting
+2011-08-12 18:09:00,107 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 9001: starting
+2011-08-12 18:09:00,107 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 9001: starting
+2011-08-12 18:09:00,108 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 9001: starting
+2011-08-12 18:09:00,108 INFO org.apache.hadoop.mapred.JobTracker: Starting RUNNING
+2011-08-12 18:09:00,745 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/nothing
+2011-08-12 18:09:00,746 INFO org.apache.hadoop.mapred.JobTracker: Adding tracker tracker_nothing:localhost/127.0.0.1:49442 to host nothing
+2011-08-12 22:31:26,011 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2011-08-12 22:31:26,122 INFO org.apache.hadoop.mapred.JobTracker: Job job_201108121808_0003 added successfully for user 'madhatter' to queue 'default'
+2011-08-12 22:31:26,123 INFO org.apache.hadoop.mapred.AuditLogger: USER=madhatter	IP=127.0.0.1	OPERATION=SUBMIT_JOB	TARGET=job_201108121808_0003	RESULT=SUCCESS
+2011-08-12 22:31:26,124 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201108121808_0003
+2011-08-12 22:31:26,124 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201108121808_0003
+2011-08-12 22:31:26,533 INFO org.apache.hadoop.mapred.JobInProgress: jobToken generated and stored with users keys in /Users/madhatter/CDH3/hadoop-cache/mapred/system/job_201108121808_0003/jobToken
+2011-08-12 22:31:26,554 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201108121808_0003 = 529. Number of splits = 2
+2011-08-12 22:31:26,612 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201108121808_0003_m_000000 has split on node:/default-rack/nothing
+2011-08-12 22:31:26,612 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201108121808_0003_m_000001 has split on node:/default-rack/nothing
+2011-08-12 22:31:26,612 INFO org.apache.hadoop.mapred.JobInProgress: job_201108121808_0003 LOCALITY_WAIT_FACTOR=1.0
+2011-08-12 22:31:26,613 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201108121808_0003 initialized successfully with 2 map tasks and 1 reduce tasks.
+2011-08-12 22:31:26,825 INFO org.apache.hadoop.mapred.JobTracker: Adding task (JOB_SETUP) 'attempt_201108121808_0003_m_000003_0' to tip task_201108121808_0003_m_000003, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 22:31:29,646 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201108121808_0003_m_000003_0' has completed task_201108121808_0003_m_000003 successfully.
+2011-08-12 22:31:29,650 INFO org.apache.hadoop.mapred.JobTracker: Adding task (MAP) 'attempt_201108121808_0003_m_000000_0' to tip task_201108121808_0003_m_000000, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 22:31:29,651 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201108121808_0003_m_000000
+2011-08-12 22:31:29,651 INFO org.apache.hadoop.mapred.JobTracker: Adding task (MAP) 'attempt_201108121808_0003_m_000001_0' to tip task_201108121808_0003_m_000001, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 22:31:29,651 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201108121808_0003_m_000001
+2011-08-12 22:31:32,776 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201108121808_0003_m_000001_0' has completed task_201108121808_0003_m_000001 successfully.
+2011-08-12 22:31:32,789 INFO org.apache.hadoop.mapred.JobTracker: Adding task (REDUCE) 'attempt_201108121808_0003_r_000000_0' to tip task_201108121808_0003_r_000000, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 22:31:33,146 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201108121808_0003_m_000000_0' has completed task_201108121808_0003_m_000000 successfully.
+2011-08-12 22:31:49,783 INFO org.apache.hadoop.mapred.JobInProgress: Failed fetch notification #1 for task attempt_201108121808_0003_m_000001_0
+2011-08-12 22:34:26,023 INFO org.apache.hadoop.mapred.JobInProgress: Failed fetch notification #2 for task attempt_201108121808_0003_m_000001_0
+2011-08-12 22:39:26,096 INFO org.apache.hadoop.mapred.JobInProgress: Failed fetch notification #3 for task attempt_201108121808_0003_m_000001_0
+2011-08-12 22:39:26,096 INFO org.apache.hadoop.mapred.JobInProgress: Too many fetch-failures for output of task: attempt_201108121808_0003_m_000001_0 ... killing it
+2011-08-12 22:39:26,096 INFO org.apache.hadoop.mapred.TaskInProgress: Error from attempt_201108121808_0003_m_000001_0: Too many fetch-failures
+2011-08-12 22:39:26,097 INFO org.apache.hadoop.mapred.JobInProgress: Choosing a failed task task_201108121808_0003_m_000001
+2011-08-12 22:39:26,098 INFO org.apache.hadoop.mapred.JobTracker: Adding task (MAP) 'attempt_201108121808_0003_m_000001_1' to tip task_201108121808_0003_m_000001, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 22:39:26,098 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201108121808_0003_m_000001
+2011-08-12 22:39:26,098 INFO org.apache.hadoop.mapred.JobTracker: Removing task 'attempt_201108121808_0003_m_000001_0'
+2011-08-12 22:39:28,827 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201108121808_0003_m_000001_1' has completed task_201108121808_0003_m_000001 successfully.
+2011-08-12 22:42:00,425 INFO org.apache.hadoop.mapred.TaskInProgress: Error from attempt_201108121808_0003_r_000000_0: Shuffle Error: Exceeded MAX_FAILED_UNIQUE_FETCHES; bailing-out.
+2011-08-12 22:42:00,426 INFO org.apache.hadoop.mapred.JobTracker: Removing task 'attempt_201108121808_0003_r_000000_0'
+2011-08-12 22:42:00,427 INFO org.apache.hadoop.mapred.JobTracker: Adding task (TASK_CLEANUP) 'attempt_201108121808_0003_r_000000_0' to tip task_201108121808_0003_r_000000, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 22:42:02,268 INFO org.apache.hadoop.mapred.JobTracker: Adding task (REDUCE) 'attempt_201108121808_0003_r_000000_1' to tip task_201108121808_0003_r_000000, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 22:42:02,268 INFO org.apache.hadoop.mapred.JobTracker: Removing task 'attempt_201108121808_0003_r_000000_0'
+2011-08-12 22:42:19,866 INFO org.apache.hadoop.mapred.JobInProgress: Failed fetch notification #1 for task attempt_201108121808_0003_m_000000_0
+2011-08-12 22:43:43,948 INFO org.apache.hadoop.mapred.JobTracker: Job job_201108121808_0005 added successfully for user 'madhatter' to queue 'default'
+2011-08-12 22:43:43,948 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201108121808_0005
+2011-08-12 22:43:43,948 INFO org.apache.hadoop.mapred.AuditLogger: USER=madhatter	IP=127.0.0.1	OPERATION=SUBMIT_JOB	TARGET=job_201108121808_0005	RESULT=SUCCESS
+2011-08-12 22:43:43,950 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201108121808_0005
+2011-08-12 22:43:44,525 INFO org.apache.hadoop.mapred.JobInProgress: jobToken generated and stored with users keys in /Users/madhatter/CDH3/hadoop-cache/mapred/system/job_201108121808_0005/jobToken
+2011-08-12 22:43:44,530 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201108121808_0005 = 529. Number of splits = 2
+2011-08-12 22:43:44,531 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201108121808_0005_m_000000 has split on node:/default-rack/nothing
+2011-08-12 22:43:44,531 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201108121808_0005_m_000001 has split on node:/default-rack/nothing
+2011-08-12 22:43:44,531 INFO org.apache.hadoop.mapred.JobInProgress: job_201108121808_0005 LOCALITY_WAIT_FACTOR=1.0
+2011-08-12 22:43:44,531 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201108121808_0005 initialized successfully with 2 map tasks and 1 reduce tasks.
+2011-08-12 22:43:44,727 INFO org.apache.hadoop.mapred.JobTracker: Adding task (JOB_SETUP) 'attempt_201108121808_0005_m_000003_0' to tip task_201108121808_0005_m_000003, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 22:43:46,895 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201108121808_0005_m_000003_0' has completed task_201108121808_0005_m_000003 successfully.
+2011-08-12 22:43:46,902 INFO org.apache.hadoop.mapred.JobTracker: Adding task (MAP) 'attempt_201108121808_0005_m_000000_0' to tip task_201108121808_0005_m_000000, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 22:43:46,904 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201108121808_0005_m_000000
+2011-08-12 22:43:46,904 INFO org.apache.hadoop.mapred.JobTracker: Adding task (MAP) 'attempt_201108121808_0005_m_000001_0' to tip task_201108121808_0005_m_000001, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 22:43:46,905 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201108121808_0005_m_000001
+2011-08-12 22:43:50,322 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201108121808_0005_m_000000_0' has completed task_201108121808_0005_m_000000 successfully.
+2011-08-12 22:43:50,324 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201108121808_0005_m_000001_0' has completed task_201108121808_0005_m_000001 successfully.
+2011-08-12 22:43:50,325 INFO org.apache.hadoop.mapred.JobTracker: Adding task (REDUCE) 'attempt_201108121808_0005_r_000000_0' to tip task_201108121808_0005_r_000000, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 22:44:07,004 INFO org.apache.hadoop.mapred.JobInProgress: Failed fetch notification #1 for task attempt_201108121808_0005_m_000000_0
+2011-08-12 22:44:55,887 INFO org.apache.hadoop.mapred.JobInProgress: Failed fetch notification #2 for task attempt_201108121808_0003_m_000000_0
+2011-08-12 22:46:43,242 INFO org.apache.hadoop.mapred.JobInProgress: Failed fetch notification #2 for task attempt_201108121808_0005_m_000000_0
+2011-08-12 22:49:56,115 INFO org.apache.hadoop.mapred.JobInProgress: Failed fetch notification #3 for task attempt_201108121808_0003_m_000000_0
+2011-08-12 22:49:56,116 INFO org.apache.hadoop.mapred.JobInProgress: Too many fetch-failures for output of task: attempt_201108121808_0003_m_000000_0 ... killing it
+2011-08-12 22:49:56,116 INFO org.apache.hadoop.mapred.TaskInProgress: Error from attempt_201108121808_0003_m_000000_0: Too many fetch-failures
+2011-08-12 22:49:56,116 INFO org.apache.hadoop.mapred.JobInProgress: Choosing a failed task task_201108121808_0003_m_000000
+2011-08-12 22:49:56,117 INFO org.apache.hadoop.mapred.JobTracker: Adding task (MAP) 'attempt_201108121808_0003_m_000000_1' to tip task_201108121808_0003_m_000000, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 22:49:56,117 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201108121808_0003_m_000000
+2011-08-12 22:49:56,117 INFO org.apache.hadoop.mapred.JobTracker: Removing task 'attempt_201108121808_0003_m_000000_0'
+2011-08-12 22:49:59,482 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201108121808_0003_m_000000_1' has completed task_201108121808_0003_m_000000 successfully.
+2011-08-12 22:51:43,494 INFO org.apache.hadoop.mapred.JobInProgress: Failed fetch notification #3 for task attempt_201108121808_0005_m_000000_0
+2011-08-12 22:51:43,494 INFO org.apache.hadoop.mapred.JobInProgress: Too many fetch-failures for output of task: attempt_201108121808_0005_m_000000_0 ... killing it
+2011-08-12 22:51:43,494 INFO org.apache.hadoop.mapred.TaskInProgress: Error from attempt_201108121808_0005_m_000000_0: Too many fetch-failures
+2011-08-12 22:51:43,495 INFO org.apache.hadoop.mapred.JobInProgress: Choosing a failed task task_201108121808_0005_m_000000
+2011-08-12 22:51:43,495 INFO org.apache.hadoop.mapred.JobTracker: Adding task (MAP) 'attempt_201108121808_0005_m_000000_1' to tip task_201108121808_0005_m_000000, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 22:51:43,496 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201108121808_0005_m_000000
+2011-08-12 22:51:43,496 INFO org.apache.hadoop.mapred.JobTracker: Removing task 'attempt_201108121808_0005_m_000000_0'
+2011-08-12 22:51:46,241 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201108121808_0005_m_000000_1' has completed task_201108121808_0005_m_000000 successfully.
+2011-08-12 22:52:30,289 INFO org.apache.hadoop.mapred.TaskInProgress: Error from attempt_201108121808_0003_r_000000_1: Shuffle Error: Exceeded MAX_FAILED_UNIQUE_FETCHES; bailing-out.
+2011-08-12 22:52:30,289 INFO org.apache.hadoop.mapred.JobTracker: Removing task 'attempt_201108121808_0003_r_000000_1'
+2011-08-12 22:52:30,289 INFO org.apache.hadoop.mapred.JobTracker: Adding task (TASK_CLEANUP) 'attempt_201108121808_0003_r_000000_1' to tip task_201108121808_0003_r_000000, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 22:52:32,722 INFO org.apache.hadoop.mapred.JobInProgress: TaskTracker at 'nothing' turned 'flaky'
+2011-08-12 22:52:32,723 INFO org.apache.hadoop.mapred.JobTracker: Adding task (REDUCE) 'attempt_201108121808_0003_r_000000_2' to tip task_201108121808_0003_r_000000, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 22:52:32,723 INFO org.apache.hadoop.mapred.JobTracker: Removing task 'attempt_201108121808_0003_r_000000_1'
+2011-08-12 22:52:41,302 INFO org.apache.hadoop.mapred.JobInProgress: Failed fetch notification #1 for task attempt_201108121808_0003_m_000001_1
+2011-08-12 22:54:17,698 INFO org.apache.hadoop.mapred.TaskInProgress: Error from attempt_201108121808_0005_r_000000_0: Shuffle Error: Exceeded MAX_FAILED_UNIQUE_FETCHES; bailing-out.
+2011-08-12 22:54:17,698 INFO org.apache.hadoop.mapred.JobTracker: Removing task 'attempt_201108121808_0005_r_000000_0'
+2011-08-12 22:54:17,698 INFO org.apache.hadoop.mapred.JobTracker: Adding task (TASK_CLEANUP) 'attempt_201108121808_0005_r_000000_0' to tip task_201108121808_0005_r_000000, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 22:54:19,291 INFO org.apache.hadoop.mapred.JobTracker: Adding task (REDUCE) 'attempt_201108121808_0005_r_000000_1' to tip task_201108121808_0005_r_000000, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 22:54:19,291 INFO org.apache.hadoop.mapred.JobTracker: Removing task 'attempt_201108121808_0005_r_000000_0'
+2011-08-12 22:54:36,178 INFO org.apache.hadoop.mapred.JobInProgress: Failed fetch notification #1 for task attempt_201108121808_0005_m_000001_0
+2011-08-12 22:55:26,182 INFO org.apache.hadoop.mapred.JobInProgress: Failed fetch notification #2 for task attempt_201108121808_0003_m_000001_1
+2011-08-12 22:57:12,190 INFO org.apache.hadoop.mapred.JobInProgress: Failed fetch notification #2 for task attempt_201108121808_0005_m_000001_0
+2011-08-12 23:00:26,455 INFO org.apache.hadoop.mapred.JobInProgress: Failed fetch notification #3 for task attempt_201108121808_0003_m_000001_1
+2011-08-12 23:00:26,455 INFO org.apache.hadoop.mapred.JobInProgress: Too many fetch-failures for output of task: attempt_201108121808_0003_m_000001_1 ... killing it
+2011-08-12 23:00:26,456 INFO org.apache.hadoop.mapred.TaskInProgress: Error from attempt_201108121808_0003_m_000001_1: Too many fetch-failures
+2011-08-12 23:00:26,456 INFO org.apache.hadoop.mapred.JobInProgress: Choosing a failed task task_201108121808_0003_m_000001
+2011-08-12 23:00:26,456 INFO org.apache.hadoop.mapred.JobTracker: Adding task (MAP) 'attempt_201108121808_0003_m_000001_2' to tip task_201108121808_0003_m_000001, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 23:00:26,456 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201108121808_0003_m_000001
+2011-08-12 23:00:26,457 INFO org.apache.hadoop.mapred.JobTracker: Removing task 'attempt_201108121808_0003_m_000001_1'
+2011-08-12 23:00:28,725 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201108121808_0003_m_000001_2' has completed task_201108121808_0003_m_000001 successfully.
+2011-08-12 23:02:12,337 INFO org.apache.hadoop.mapred.JobInProgress: Failed fetch notification #3 for task attempt_201108121808_0005_m_000001_0
+2011-08-12 23:02:12,337 INFO org.apache.hadoop.mapred.JobInProgress: Too many fetch-failures for output of task: attempt_201108121808_0005_m_000001_0 ... killing it
+2011-08-12 23:02:12,337 INFO org.apache.hadoop.mapred.TaskInProgress: Error from attempt_201108121808_0005_m_000001_0: Too many fetch-failures
+2011-08-12 23:02:12,338 INFO org.apache.hadoop.mapred.JobInProgress: Choosing a failed task task_201108121808_0005_m_000001
+2011-08-12 23:02:12,338 INFO org.apache.hadoop.mapred.JobTracker: Adding task (MAP) 'attempt_201108121808_0005_m_000001_1' to tip task_201108121808_0005_m_000001, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 23:02:12,338 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201108121808_0005_m_000001
+2011-08-12 23:02:12,338 INFO org.apache.hadoop.mapred.JobTracker: Removing task 'attempt_201108121808_0005_m_000001_0'
+2011-08-12 23:02:14,503 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201108121808_0005_m_000001_1' has completed task_201108121808_0005_m_000001 successfully.
+2011-08-12 23:02:55,769 INFO org.apache.hadoop.mapred.TaskInProgress: Error from attempt_201108121808_0003_r_000000_2: Shuffle Error: Exceeded MAX_FAILED_UNIQUE_FETCHES; bailing-out.
+2011-08-12 23:02:55,769 INFO org.apache.hadoop.mapred.JobTracker: Removing task 'attempt_201108121808_0003_r_000000_2'
+2011-08-12 23:02:55,769 INFO org.apache.hadoop.mapred.JobTracker: Adding task (TASK_CLEANUP) 'attempt_201108121808_0003_r_000000_2' to tip task_201108121808_0003_r_000000, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 23:02:57,311 INFO org.apache.hadoop.mapred.JobTracker: Adding task (REDUCE) 'attempt_201108121808_0003_r_000000_3' to tip task_201108121808_0003_r_000000, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 23:02:57,311 INFO org.apache.hadoop.mapred.JobTracker: Removing task 'attempt_201108121808_0003_r_000000_2'
+2011-08-12 23:03:13,961 INFO org.apache.hadoop.mapred.JobInProgress: Failed fetch notification #1 for task attempt_201108121808_0003_m_000000_1
+2011-08-12 23:04:46,700 INFO org.apache.hadoop.mapred.TaskInProgress: Error from attempt_201108121808_0005_r_000000_1: Shuffle Error: Exceeded MAX_FAILED_UNIQUE_FETCHES; bailing-out.
+2011-08-12 23:04:46,700 INFO org.apache.hadoop.mapred.JobTracker: Removing task 'attempt_201108121808_0005_r_000000_1'
+2011-08-12 23:04:46,700 INFO org.apache.hadoop.mapred.JobTracker: Adding task (TASK_CLEANUP) 'attempt_201108121808_0005_r_000000_1' to tip task_201108121808_0005_r_000000, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 23:04:48,232 INFO org.apache.hadoop.mapred.JobInProgress: TaskTracker at 'nothing' turned 'flaky'
+2011-08-12 23:04:48,232 INFO org.apache.hadoop.mapred.JobTracker: Adding task (REDUCE) 'attempt_201108121808_0005_r_000000_2' to tip task_201108121808_0005_r_000000, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 23:04:48,233 INFO org.apache.hadoop.mapred.JobTracker: Removing task 'attempt_201108121808_0005_r_000000_1'
+2011-08-12 23:05:04,858 INFO org.apache.hadoop.mapred.JobInProgress: Failed fetch notification #1 for task attempt_201108121808_0005_m_000000_1
+2011-08-12 23:05:50,077 INFO org.apache.hadoop.mapred.JobInProgress: Failed fetch notification #2 for task attempt_201108121808_0003_m_000000_1
+2011-08-12 23:07:41,200 INFO org.apache.hadoop.mapred.JobInProgress: Failed fetch notification #2 for task attempt_201108121808_0005_m_000000_1
+2011-08-12 23:10:50,301 INFO org.apache.hadoop.mapred.JobInProgress: Failed fetch notification #3 for task attempt_201108121808_0003_m_000000_1
+2011-08-12 23:10:50,302 INFO org.apache.hadoop.mapred.JobInProgress: Too many fetch-failures for output of task: attempt_201108121808_0003_m_000000_1 ... killing it
+2011-08-12 23:10:50,302 INFO org.apache.hadoop.mapred.TaskInProgress: Error from attempt_201108121808_0003_m_000000_1: Too many fetch-failures
+2011-08-12 23:10:50,302 INFO org.apache.hadoop.mapred.JobInProgress: Choosing a failed task task_201108121808_0003_m_000000
+2011-08-12 23:10:50,302 INFO org.apache.hadoop.mapred.JobTracker: Adding task (MAP) 'attempt_201108121808_0003_m_000000_2' to tip task_201108121808_0003_m_000000, for tracker 'tracker_nothing:localhost/127.0.0.1:49442'
+2011-08-12 23:10:50,303 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201108121808_0003_m_000000
+2011-08-12 23:10:50,303 INFO org.apache.hadoop.mapred.JobTracker: Removing task 'attempt_201108121808_0003_m_000000_1'
+2011-08-12 23:10:52,463 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201108121808_0003_m_000000_2' has completed task_201108121808_0003_m_000000 successfully.
+2011-08-12 23:11:40,234 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at nothing/172.20.10.2
+************************************************************/

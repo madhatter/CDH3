@@ -1,0 +1,362 @@
+From ff1fc02aea01fad5d1484626cef71b76ddd1b389 Mon Sep 17 00:00:00 2001
+From: Patrick Hunt <phunt@cloudera.com>
+Date: Mon, 2 May 2011 10:28:53 -0700
+Subject: [PATCH 15/24] ZOOKEEPER-1030. higher default for maxClientCnxns
+
+The default for maxClientCnxns is 10, which is too low for many
+applications. For example, HBase users often run MR jobs where each
+task needs to use ZooKeeper to talk to HBase. This means that each
+slot on the tasktracker will have at least one ZK connection. With
+today's beefy machines, that's easily 20+ connections per node. I
+would suggest bumping the default to 60, which will still protect
+against runaway nodes (eg a leak in a tight loop) but won't impact MR
+jobs that need to talk to ZK.
+
+Reason: Improvement
+Author: Todd Lipcon
+Ref: CDH-2877
+---
+ docs/zookeeperAdmin.html                           |    2 +-
+ docs/zookeeperAdmin.pdf                            |  220 ++++++++++----------
+ .../documentation/content/xdocs/zookeeperAdmin.xml |    2 +-
+ .../org/apache/zookeeper/server/NIOServerCnxn.java |    2 +-
+ .../zookeeper/server/quorum/QuorumPeerConfig.java  |    2 +-
+ 5 files changed, 114 insertions(+), 114 deletions(-)
+
+diff --git a/docs/zookeeperAdmin.html b/docs/zookeeperAdmin.html
+index 511884e..773d031 100644
+--- a/docs/zookeeperAdmin.html
++++ b/docs/zookeeperAdmin.html
+@@ -1099,7 +1099,7 @@ server.3=zoo3:2888:3888</pre>
+               level) that a single client, identified by IP address, may make
+               to a single member of the ZooKeeper ensemble. This is used to 
+               prevent certain classes of DoS attacks, including file 
+-              descriptor exhaustion. The default is 10. Setting this to 0 
++              descriptor exhaustion. The default is 60. Setting this to 0 
+               entirely removes the limit on concurrent connections.</p>
+ </dd>
+ 
+diff --git a/docs/zookeeperAdmin.pdf b/docs/zookeeperAdmin.pdf
+index 9c31edb..afb082b 100644
+--- a/docs/zookeeperAdmin.pdf
++++ b/docs/zookeeperAdmin.pdf
+@@ -811,10 +811,10 @@ endobj
+ >>
+ endobj
+ 107 0 obj
+-<< /Length 2147 /Filter [ /ASCII85Decode /FlateDecode ]
++<< /Length 2148 /Filter [ /ASCII85Decode /FlateDecode ]
+  >>
+ stream
+-Gau0E968iG&AII3n5anUJbabj-RZ#P8R!P_X,".O!MVgc@hMU/:q#r\]@;I8:kYW>-f_JP+Gn'$^\sIG2kBk/SU?uQc2rGZ9JVsE:)q=D2iP?JhaE#g@]*h`D"@Jah=lBrp-*LZ+7;g\M7_U*_N3l)DVAreHkO&b1Td1^YMPV9$.W9BDu?`=X.0O1B\HV.Q!W)/CWdXoGX3:fC;!Y@]`0W6Ipm/I+#)cZC72E*_:r+8UR/&bZ(0:KgurOd0HRFN[I]G8rA6>da@LP0P'.?Vp/(^+.?SH[aj#$9+o9>\@]e<%DP&blW+C\\edB74!Zfiq:9I\FCLlhF7B.l6"9bH1o5WO`R.pp@%jAPFWU:-I9C155.TNc!LS2kQ7a0C[9_r_%9`f/51RTCQN8*=q`')bY.-6DRT3Kho.d#[9?b);j;VsL"ZWn@$,,7&XbS?.!^,os2D+etUBqC>:okn$d-$tPfmt8=o:$\N),!ifL%asXF/7nh%^Ti6#AD<NJ,WPS\l08pfe"IdOR6e41k%ub03>1Y))2Z8\'`:\JkA@)X$^D*mm/1rJjlq(JZr*&!n*gag0=mHsNiZ[U\N-(k[*ss`L@]ITF*9jj<D>nLF2]GOU6I'U$=6m=c/;R&=]`XRG(p%>gsI5dG!9ugljXeNEUI\i7ckWKE$iT`Db0))_/Nu4#+JmhN71Uc$_rg-;UKbDYSMO^Ej/R[QL.&k@?!"aeSO+)m$&'^&(&^`TW;ZR0a8IH6.'>"r*VjT///c=KhkcoAKqeW6@PN)X1_TIKL?'KFR$N*D:_)?<??q6ojW"&e+IuW$+#Sdl$k^-[k78EqE=>d&?PE_'$Z#gedOuL^a+k%9km-?!_OB/R'(a.imH//%='?LmL"RL+lc=i81j0S$rbDW?>?VWc;0@i-W#^Bf>;e"62R_u6f8@.FB"3,0E2,B1#E*JJeNpT2s->Id^8-B&4_+c1h>4OX<iX-_&_eG%*R?&<qg\."1"]j;En:QT$'e\:b-KpP/RO:`bQqm1>T#r)N]qa-s(#2nN@-_(Mo+.nX+Kf*-9,9G9Cl@3!J\\M*$?X@=hMqEZDmQe?b0!^1>,p9e%UAP0E.pA`Fkld0hRL%YT)OkEqC=%4g-F]56%NbRVf"[,?gbP)q&(XW"YOk.%!aQnIG7clZ3nODS4D,%j@mH]X,u[87?;dcr>UC>nkLbi@N@+g8s:"'Ceaj?#EUPDNP%JhPiHR\!j7Ra]qDpm*bu701jD"po?I)]8m@4b-f4-][[8FK#&Pn;S`G0W7F]]S==T6J9"^$Dg)1%AXO!X4e%u!W;=V5t,.);u_47g,5W]aQ@+VAd/bocBk5p"a0a]eK&uua>K8CLpic2>V[XK.Iso*6OMEJ)n+IuX20mT'F,Pun6?4YIG&>:T>l5_al*3Z1&5G:?5Rn_Sds*i'JDGc\JZm!O'g7Zo6JS!4MY$?K,;k"<s0lbXdIq@L2TP['GCrB/t(+mGr'>[)![^;9f04Br6a8a*0Q-;\LT=Ie$*Fhqk)ponpjUPjp^<30(Q;*?P&Tq"#)g?q+BUKLqPETgN3aE!DW(d:VX.oU+%E:6/irR;M/u42AE\](5g]P^E0FY-.g@A8qU1\(e;nOdWt!9H\$X6Z)`O2Z;u1]oK>8[H!.4Oa9/<+3;.:oESm>hXX#'0Ce?Kg5S*^)ADjM2Li[+7NffB!+tR<#]'a$XK>d1p%&Ro;e6A8u3ql,`f'm8k9Y<2I/EWaRVSJrCGu,]d>,cLgp+#'k7o_d>ffM)[9?^l79?gmF]\oc\)a2Ml)kAY&]b+nG#pIfF_)OFTENpC>`4-aC4W.hrnLi?#/Tguaion2JZR@_U)ED<+\I\'Z(GK\A^g(d]cc:sslu/t3G5shh\L?#3b>-DuT!Qsb8im+V*\]L]B,Y#;K#6Ht.Bf+T[4cn4#$ef&oO?flOcod$G^_P+a$X-F8aO@!4U8MoBKu]3]jjJ/]al]:f)7&PO!`]GO6m/ccV6qCmD#$u`/hLu-,nhiM)Wp3!c(%;-OWM7m+(nu(X+k`F-/b[]CUeN;EkI4r7NBR?keNh1^):?rHB'gg=1MTgnnVFDK3aY4MC;k2q=rl1Z'ePJDB2XUFap<re8qkaup0MF4rRSrO-!RGDkkA%9g)TQLkankPYdjb^RV~>
++Gau0E968iG&AII3n5anUJbabj-RZ#P8R!P_X,".O!MVgc@hMU/:q#r\]@;I8:kYW>-f_JP+Gn'$^\sIG2kBk/SU?uQc2rGZ9JVsE:)q=D2iP?JhaE#g@]*h`D"@Jah=lBrp-*LZ+7;g\M7_U*_N3l)DVAreHkO&b1Td1^YMPV9$.W9BDu?`=X.0O1B\HV.Q!W)/CWdXoGX3:fC;!Y@]`0W6Ipm/I+#)cZC72E*_:r+8UR/&bZ(0:KgurOd0HRFN[I]G8rA6>da@LP0P'.?Vp/(^+.?SH[aj#$9+o9>\@]e<%DP&blW+C\\edB74!Zfiq:9I\FCLlhF7B.l6"9bH1o5WO`R.pp@%jAPFWU:-I9C155.TNc!LS2kQ7a0C[9_r_%9`f/51RTCQN8*=q`')bY.-6DRT3Kho.d#[9?b);j;VsL"ZWn@$,,7&XbS?.!^,os2D+etUBqC>:okn$d-$tPfmt8=o:$\N),!ifL%asXF/7nh%^Ti6#AD<NJ,WPS\l08pfe"IdOR6e41k%ub03>1Y))2Z8\'`:\JkA@)X$^D*mm/1rJjlq(JZr*&!n*gag0=mHsNiZ[U\N-(k[*ss`L@]ITF*9jj<D>nLF2]GOU6I'U$=6m=c/;R&=]`XRG(p%>gsI5dG!9ugljXeNEUI\i7ckWKE$iT`Db0))_/Nu4#+JmhN71Uc$_rg-;UKbDYSMO^Ej/R[QL.&k@?!"aeSO+)m$&'^&(&^`TW;ZR0a8IH6.'>"r*VjT///c=KhkcoAKqeW6@PN)X1_TIKL?'KFR$N*D:_)?<??q6ojW"&e+IuW$+#Sdl$k^-[k78EqE=>d&?PE_'$Z#gedOuL^a+k%9km-?!_OB/R'(a.imH//%='?LmL"RL+lc=i81j0S$rbDW?>?VWc;0@i-W#^Bf>;e"62R_u6f8@.FB"3,0E2,B1#E*JJeNpT2s->Id^8-B&4_+c1h>4OX<iX-_&_eG%*R?&<qg\."1"]j;En:QT$'e\:b-KpP/RO:`bQqm1>T#r)N]qa-s(#2nN@-_(Mo+.nX+Kf*-9,9G9Cl@3!J\\M*$?X@=hMqEZDmQe?b0!^1>,p9e%UAP0E.pA`Fkld0hRL%YT)OkEqC=%4g-F]56%NbRVf"[,?gbP)q&(XW"YOk.%!aQnIG7clZ3nODS4D,%j@mH]X,u[87?;dcr>UC>nkLbi@N@+g8s:"'Ceaj?#EUPDNP%JhPiHR\!j7Ra]qDpm*bu701jD"po?I)]8m@4b-f4-][[8FK#&Pn;S`G0W7F]]S==T6J9"^$Dg)1%AXO!X4e%u!W;=V5t,.);u_47g,5W]aQ@+VAd/bocBk5p"a0a]eK&uua>K8CLpic2>V[XK.Iso*6OMEJ)n+IuX20mT'F,Pun6?4YIG&>:T>l5_al*3Z1&5G:?5Rn_Sds*i'JDGc\JZm!O'g7Zo6JS!4MY$?K,;k"<s0lbXdIq@L2TP['GCrB/t(+mGr'>[)![^;9f04Br6a8a*0Q-;\LT=Ie$*Fhqk)ponpjUPjp^<30(Q;*?P&Tq"#)g?q+BUKLqPETgN3aE!DW(d:VX.oU++)qjs"f+9W>k<AK-M3*"0`$L0p"lXHI@2/#C'4$]Lin.d9':o"@<'bh,q4(KmfN?2C-5Oh<6r/E?i\9,r:<K",_pJQ@qq3&[TN/t`Gt1c"RN3lF%a>0"]S-kVcN;-eB#^d2H(2?m)=-gIg,7\0FO%;U2E%OPL#+;T%H4B(1cM``C"<isl]4aRq6c(h9\bNp5gU*XD+pnd,W.UMUDc]+N/]T(4'j5,SJc%HYn]jR?MJ@O6j7:P$]R\#Hnolug<L))iM:N:L7pfS<#4,oabeD,iQQ4''<$Xg-HK'215D"]egY<)_+o3;uFJn6=n1saii2l3&G!=p$:gG99k*^O6(l]bIE[b;P3!s:14*I9G[ZcG]<6p*[QRH(!DZR#6QfUd_#-o<&uZJI=1rn`DG3pZd0m73B.o>gQWM<?32M=t:M>iJ90pQFP*]u1lT'7i$6Mj&i?:%mk"TaPJ&k./PUce\E7-)mMi&cV,0750Tf:)\^uhYt-F>]"5i=Dh%m8[g\?8"O&_Y++_,Ssf$_G<kTdqGA$nAcG)4GNBkMiAp9Eepc@+]">rTlisTF2G<lPKCf'GcKBZ$~>
+ endstream
+ endobj
+ 108 0 obj
+@@ -1592,51 +1592,51 @@ endobj
+ xref
+ 0 192
+ 0000000000 65535 f 
+-0000061949 00000 n 
+-0000062137 00000 n 
+-0000062230 00000 n 
++0000061950 00000 n 
++0000062138 00000 n 
++0000062231 00000 n 
+ 0000000015 00000 n 
+ 0000000071 00000 n 
+ 0000001395 00000 n 
+ 0000001515 00000 n 
+ 0000001666 00000 n 
+-0000062382 00000 n 
++0000062383 00000 n 
+ 0000001801 00000 n 
+-0000062445 00000 n 
++0000062446 00000 n 
+ 0000001936 00000 n 
+-0000062511 00000 n 
++0000062512 00000 n 
+ 0000002073 00000 n 
+-0000062577 00000 n 
++0000062578 00000 n 
+ 0000002210 00000 n 
+-0000062641 00000 n 
++0000062642 00000 n 
+ 0000002347 00000 n 
+-0000062705 00000 n 
++0000062706 00000 n 
+ 0000002484 00000 n 
+-0000062771 00000 n 
++0000062772 00000 n 
+ 0000002621 00000 n 
+-0000062837 00000 n 
++0000062838 00000 n 
+ 0000002758 00000 n 
+-0000062903 00000 n 
++0000062904 00000 n 
+ 0000002895 00000 n 
+-0000062967 00000 n 
++0000062968 00000 n 
+ 0000003031 00000 n 
+-0000063033 00000 n 
++0000063034 00000 n 
+ 0000003168 00000 n 
+-0000063098 00000 n 
++0000063099 00000 n 
+ 0000003305 00000 n 
+-0000063162 00000 n 
++0000063163 00000 n 
+ 0000003442 00000 n 
+-0000063228 00000 n 
++0000063229 00000 n 
+ 0000003579 00000 n 
+-0000063294 00000 n 
++0000063295 00000 n 
+ 0000003716 00000 n 
+-0000063360 00000 n 
++0000063361 00000 n 
+ 0000003852 00000 n 
+-0000063425 00000 n 
++0000063426 00000 n 
+ 0000003988 00000 n 
+-0000063491 00000 n 
++0000063492 00000 n 
+ 0000004125 00000 n 
+-0000063556 00000 n 
++0000063557 00000 n 
+ 0000004262 00000 n 
+ 0000006621 00000 n 
+ 0000006744 00000 n 
+@@ -1685,7 +1685,7 @@ xref
+ 0000024940 00000 n 
+ 0000025063 00000 n 
+ 0000025104 00000 n 
+-0000063623 00000 n 
++0000063624 00000 n 
+ 0000025243 00000 n 
+ 0000025410 00000 n 
+ 0000025546 00000 n 
+@@ -1699,90 +1699,90 @@ xref
+ 0000029533 00000 n 
+ 0000031889 00000 n 
+ 0000031999 00000 n 
+-0000034240 00000 n 
+-0000034350 00000 n 
+-0000036516 00000 n 
+-0000036642 00000 n 
+-0000036671 00000 n 
+-0000063682 00000 n 
+-0000036812 00000 n 
+-0000039153 00000 n 
+-0000039279 00000 n 
+-0000039316 00000 n 
+-0000039455 00000 n 
+-0000039641 00000 n 
+-0000041930 00000 n 
+-0000042056 00000 n 
+-0000042085 00000 n 
+-0000042269 00000 n 
+-0000044325 00000 n 
+-0000044435 00000 n 
+-0000046340 00000 n 
+-0000046450 00000 n 
+-0000048825 00000 n 
+-0000048935 00000 n 
+-0000051441 00000 n 
+-0000051567 00000 n 
+-0000051596 00000 n 
+-0000051731 00000 n 
+-0000052531 00000 n 
+-0000052657 00000 n 
+-0000052686 00000 n 
+-0000063742 00000 n 
+-0000052876 00000 n 
+-0000053072 00000 n 
+-0000063796 00000 n 
+-0000053332 00000 n 
+-0000063863 00000 n 
+-0000053561 00000 n 
+-0000053778 00000 n 
+-0000054073 00000 n 
+-0000054372 00000 n 
+-0000054594 00000 n 
+-0000063930 00000 n 
+-0000054930 00000 n 
+-0000063995 00000 n 
+-0000055200 00000 n 
+-0000055476 00000 n 
+-0000055668 00000 n 
+-0000056111 00000 n 
+-0000056309 00000 n 
+-0000064062 00000 n 
+-0000056537 00000 n 
+-0000064129 00000 n 
+-0000056830 00000 n 
+-0000057090 00000 n 
+-0000057276 00000 n 
+-0000057456 00000 n 
+-0000057618 00000 n 
+-0000057828 00000 n 
+-0000064196 00000 n 
+-0000058138 00000 n 
+-0000064262 00000 n 
+-0000058384 00000 n 
+-0000064330 00000 n 
+-0000058651 00000 n 
+-0000064396 00000 n 
+-0000058876 00000 n 
+-0000064463 00000 n 
+-0000059236 00000 n 
+-0000059440 00000 n 
+-0000059805 00000 n 
+-0000064531 00000 n 
+-0000060090 00000 n 
+-0000064597 00000 n 
+-0000060317 00000 n 
+-0000064665 00000 n 
+-0000060553 00000 n 
+-0000060763 00000 n 
+-0000060976 00000 n 
+-0000061169 00000 n 
+-0000061278 00000 n 
+-0000061389 00000 n 
+-0000061503 00000 n 
+-0000061620 00000 n 
+-0000061727 00000 n 
+-0000061839 00000 n 
++0000034241 00000 n 
++0000034351 00000 n 
++0000036517 00000 n 
++0000036643 00000 n 
++0000036672 00000 n 
++0000063683 00000 n 
++0000036813 00000 n 
++0000039154 00000 n 
++0000039280 00000 n 
++0000039317 00000 n 
++0000039456 00000 n 
++0000039642 00000 n 
++0000041931 00000 n 
++0000042057 00000 n 
++0000042086 00000 n 
++0000042270 00000 n 
++0000044326 00000 n 
++0000044436 00000 n 
++0000046341 00000 n 
++0000046451 00000 n 
++0000048826 00000 n 
++0000048936 00000 n 
++0000051442 00000 n 
++0000051568 00000 n 
++0000051597 00000 n 
++0000051732 00000 n 
++0000052532 00000 n 
++0000052658 00000 n 
++0000052687 00000 n 
++0000063743 00000 n 
++0000052877 00000 n 
++0000053073 00000 n 
++0000063797 00000 n 
++0000053333 00000 n 
++0000063864 00000 n 
++0000053562 00000 n 
++0000053779 00000 n 
++0000054074 00000 n 
++0000054373 00000 n 
++0000054595 00000 n 
++0000063931 00000 n 
++0000054931 00000 n 
++0000063996 00000 n 
++0000055201 00000 n 
++0000055477 00000 n 
++0000055669 00000 n 
++0000056112 00000 n 
++0000056310 00000 n 
++0000064063 00000 n 
++0000056538 00000 n 
++0000064130 00000 n 
++0000056831 00000 n 
++0000057091 00000 n 
++0000057277 00000 n 
++0000057457 00000 n 
++0000057619 00000 n 
++0000057829 00000 n 
++0000064197 00000 n 
++0000058139 00000 n 
++0000064263 00000 n 
++0000058385 00000 n 
++0000064331 00000 n 
++0000058652 00000 n 
++0000064397 00000 n 
++0000058877 00000 n 
++0000064464 00000 n 
++0000059237 00000 n 
++0000059441 00000 n 
++0000059806 00000 n 
++0000064532 00000 n 
++0000060091 00000 n 
++0000064598 00000 n 
++0000060318 00000 n 
++0000064666 00000 n 
++0000060554 00000 n 
++0000060764 00000 n 
++0000060977 00000 n 
++0000061170 00000 n 
++0000061279 00000 n 
++0000061390 00000 n 
++0000061504 00000 n 
++0000061621 00000 n 
++0000061728 00000 n 
++0000061840 00000 n 
+ trailer
+ <<
+ /Size 192
+@@ -1790,5 +1790,5 @@ trailer
+ /Info 4 0 R
+ >>
+ startxref
+-64733
++64734
+ %%EOF
+diff --git a/src/docs/src/documentation/content/xdocs/zookeeperAdmin.xml b/src/docs/src/documentation/content/xdocs/zookeeperAdmin.xml
+index 8077c16..98958f3 100644
+--- a/src/docs/src/documentation/content/xdocs/zookeeperAdmin.xml
++++ b/src/docs/src/documentation/content/xdocs/zookeeperAdmin.xml
+@@ -731,7 +731,7 @@ server.3=zoo3:2888:3888</programlisting>
+               level) that a single client, identified by IP address, may make
+               to a single member of the ZooKeeper ensemble. This is used to 
+               prevent certain classes of DoS attacks, including file 
+-              descriptor exhaustion. The default is 10. Setting this to 0 
++              descriptor exhaustion. The default is 60. Setting this to 0 
+               entirely removes the limit on concurrent connections.</para>
+             </listitem>
+            </varlistentry>
+diff --git a/src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java b/src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java
+index f31a229..12a68a2 100644
+--- a/src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java
++++ b/src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java
+@@ -112,7 +112,7 @@ public class NIOServerCnxn implements Watcher, ServerCnxn {
+ 
+         int outstandingLimit = 1;
+ 
+-        int maxClientCnxns = 10;
++        int maxClientCnxns = 60;
+ 
+         /**
+          * Construct a new server connection factory which will accept an unlimited number
+diff --git a/src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java b/src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java
+index 018c99d..284f7bd 100644
+--- a/src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java
++++ b/src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java
+@@ -46,7 +46,7 @@ public class QuorumPeerConfig {
+     protected String dataDir;
+     protected String dataLogDir;
+     protected int tickTime = ZooKeeperServer.DEFAULT_TICK_TIME;
+-    protected int maxClientCnxns = 10;
++    protected int maxClientCnxns = 60;
+     /** defaults to -1 if not set explicitly */
+     protected int minSessionTimeout = -1;
+     /** defaults to -1 if not set explicitly */
+-- 
+1.7.0.4
+

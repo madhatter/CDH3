@@ -1,0 +1,390 @@
+2011-08-09 21:14:23,600 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = MacBookPro.local/192.168.0.100
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-09 21:14:23,934 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=SecondaryNameNode, sessionId=null
+2011-08-09 21:14:25,123 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:14:26,123 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:14:27,124 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:14:28,125 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:14:29,125 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:14:30,126 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:14:31,127 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:14:32,128 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:14:33,128 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:14:34,129 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:14:34,131 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:14:36,132 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:14:37,133 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:14:38,134 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:14:39,135 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:14:40,135 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:14:41,136 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:14:42,137 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:14:43,138 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:14:44,139 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:14:44,223 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at MacBookPro.local/192.168.0.100
+************************************************************/
+2011-08-09 21:14:53,364 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = MacBookPro.local/192.168.0.100
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-09 21:14:53,680 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=SecondaryNameNode, sessionId=null
+2011-08-09 21:14:54,790 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:14:55,796 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:14:56,796 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:14:57,797 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:14:58,798 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:14:59,799 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:15:00,799 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:15:01,800 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:15:02,801 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:15:03,802 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:15:03,804 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:15:05,805 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:15:06,806 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:15:07,806 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:15:08,807 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:15:09,808 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:15:10,808 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:15:11,809 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:15:12,810 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:15:13,811 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:15:14,811 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:15:14,812 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:15:16,813 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:15:17,814 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:15:18,814 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:15:19,815 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:15:20,816 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:15:21,817 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:15:22,818 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:15:23,818 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:15:24,819 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:15:25,820 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:15:25,820 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:15:27,821 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:15:28,822 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:15:29,823 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:15:30,824 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:15:31,824 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:15:32,825 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:15:33,826 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:15:34,827 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:15:35,828 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:15:36,830 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:15:36,830 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:15:38,831 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:15:39,832 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:15:40,833 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:15:41,833 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:15:42,834 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:15:43,835 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:15:44,835 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:15:45,836 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:15:46,837 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:15:47,838 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:15:47,838 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:15:49,839 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:15:50,840 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:15:51,841 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:15:52,842 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:15:53,842 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:15:54,843 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:15:55,844 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:15:56,844 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:15:57,845 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:15:58,846 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:15:58,846 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:16:00,847 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:16:01,848 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:16:02,850 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:16:03,850 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:16:04,851 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:16:05,852 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:16:06,852 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:16:07,853 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:16:08,853 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:16:09,854 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:16:09,855 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:16:11,856 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:16:12,856 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:16:13,857 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:16:14,858 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:16:15,858 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:16:16,859 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:16:17,859 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:16:18,860 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:16:19,861 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:16:20,861 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:16:20,862 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:16:22,863 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:16:23,864 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:16:24,865 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:16:25,866 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:16:26,866 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:16:27,867 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:16:28,867 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:16:29,868 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:16:30,869 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:16:31,869 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:16:31,870 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:16:33,871 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:16:34,872 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:16:35,872 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:16:36,873 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:16:37,874 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:16:38,874 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:16:39,875 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:16:40,876 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:16:41,876 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:16:42,877 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:16:42,877 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:16:44,879 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:16:45,879 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:16:46,880 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:16:47,881 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:16:48,881 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:16:49,882 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:16:50,882 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:16:51,884 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:16:52,884 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:16:53,885 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:16:53,886 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:16:55,887 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:16:56,887 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:16:57,888 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:16:58,889 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:16:59,889 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:17:00,890 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:17:01,890 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:17:02,891 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:17:03,892 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:17:04,892 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:17:04,893 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:17:06,894 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:17:07,895 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:17:08,895 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:17:09,896 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:17:10,897 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:17:11,897 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:17:12,898 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:17:13,899 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:17:14,899 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:17:15,900 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:17:15,900 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:17:17,901 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:17:18,902 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:17:19,903 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:17:21,023 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:17:22,024 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:17:23,025 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:17:24,026 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:17:25,027 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:17:26,028 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:17:27,028 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:17:27,029 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:17:29,030 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:17:30,031 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:17:31,032 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:17:32,032 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:17:33,033 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:17:34,034 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:17:35,034 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:17:36,035 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:17:37,036 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:17:38,036 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:17:38,037 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:17:40,040 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:17:41,040 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:17:42,041 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:17:43,042 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:17:44,042 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:17:45,043 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:17:46,044 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:17:47,045 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:17:48,046 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:17:49,046 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:17:49,047 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:17:51,048 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:17:52,049 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:17:53,050 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:17:54,050 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:17:55,051 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:17:56,052 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:17:57,052 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:17:58,053 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:17:59,054 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:18:00,054 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:18:00,055 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:18:02,056 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:18:03,057 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:18:04,058 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:18:05,058 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:18:06,059 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:18:07,060 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:18:08,060 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:18:09,061 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:18:10,062 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:18:11,063 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:18:11,063 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:18:13,064 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:18:14,065 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:18:15,066 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:18:16,066 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:18:17,067 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:18:18,068 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:18:19,068 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:18:20,069 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:18:21,070 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:18:22,071 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:18:22,072 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:18:24,073 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:18:25,074 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:18:26,074 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:18:27,075 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:18:28,076 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:18:29,076 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:18:30,077 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:18:31,078 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:18:32,079 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:18:33,079 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:18:33,080 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:18:35,082 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:18:36,082 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:18:37,083 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:18:38,084 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:18:39,085 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:18:40,085 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:18:41,086 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:18:42,087 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:18:43,087 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:18:44,088 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:18:44,089 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:18:46,090 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:18:47,091 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:18:48,092 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:18:49,092 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:18:50,093 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:18:51,094 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:18:52,095 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:18:53,096 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:18:54,096 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:18:55,097 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:18:55,098 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:18:57,099 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:18:58,100 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:18:59,100 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:19:00,101 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:19:01,102 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:19:02,102 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:19:03,103 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:19:04,104 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:19:05,104 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:19:06,105 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:19:06,106 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:19:08,107 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:19:09,107 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:19:10,108 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:19:11,109 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:19:12,141 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:19:13,142 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:19:14,143 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:19:15,143 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:19:16,144 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:19:17,145 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:19:17,145 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:19:19,146 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:19:20,147 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:19:21,148 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:19:22,149 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:19:23,150 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:19:24,150 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:19:25,151 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:19:26,152 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:19:27,152 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:19:28,153 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:19:28,154 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:19:30,155 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-09 21:19:31,156 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-09 21:19:32,156 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-09 21:19:33,157 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-09 21:19:34,158 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-09 21:19:35,158 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-09 21:19:36,159 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-09 21:19:37,160 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-09 21:19:38,161 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-09 21:19:39,161 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-09 21:19:39,162 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-09 21:19:40,399 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Starting web server as: madhatter
+2011-08-09 21:19:40,539 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2011-08-09 21:19:40,609 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2011-08-09 21:19:40,618 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50090
+2011-08-09 21:19:40,621 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50090 webServer.getConnectors()[0].getLocalPort() returned 50090
+2011-08-09 21:19:40,621 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50090
+2011-08-09 21:19:40,621 INFO org.mortbay.log: jetty-6.1.26
+2011-08-09 21:19:41,417 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50090
+2011-08-09 21:19:41,417 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2011-08-09 21:19:41,417 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary Web-server up at: 0.0.0.0:50090
+2011-08-09 21:19:41,417 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary image servlet up at: 0.0.0.0:50090
+2011-08-09 21:19:41,417 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2011-08-09 21:19:41,417 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :67108864 bytes (65536 KB)
+2011-08-09 21:21:21,766 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at MacBookPro.local/192.168.0.100
+************************************************************/
+2011-08-09 21:24:34,054 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = MacBookPro.local/192.168.0.100
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-09 21:24:34,460 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=SecondaryNameNode, sessionId=null
+2011-08-09 21:24:34,775 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Starting web server as: madhatter
+2011-08-09 21:24:34,874 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2011-08-09 21:24:34,936 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2011-08-09 21:24:34,940 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50090
+2011-08-09 21:24:34,943 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50090 webServer.getConnectors()[0].getLocalPort() returned 50090
+2011-08-09 21:24:34,943 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50090
+2011-08-09 21:24:34,943 INFO org.mortbay.log: jetty-6.1.26
+2011-08-09 21:24:35,478 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50090
+2011-08-09 21:24:35,478 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2011-08-09 21:24:35,478 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary Web-server up at: 0.0.0.0:50090
+2011-08-09 21:24:35,479 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary image servlet up at: 0.0.0.0:50090
+2011-08-09 21:24:35,479 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2011-08-09 21:24:35,479 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :67108864 bytes (65536 KB)
+2011-08-09 21:29:35,848 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file fsimage size 115 bytes.
+2011-08-09 21:29:35,850 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file edits size 1080 bytes.
+2011-08-09 21:29:35,852 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2011-08-09 21:29:35,852 INFO org.apache.hadoop.hdfs.util.GSet: 2% max memory = 19.9175 MB
+2011-08-09 21:29:35,852 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2011-08-09 21:29:35,852 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2011-08-09 21:29:35,890 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=madhatter
+2011-08-09 21:29:35,890 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2011-08-09 21:29:35,890 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2011-08-09 21:29:35,893 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=1000
+2011-08-09 21:29:35,893 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2011-08-09 21:29:36,129 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 1
+2011-08-09 21:29:36,130 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2011-08-09 21:29:36,136 INFO org.apache.hadoop.hdfs.server.common.Storage: Edits file /Users/madhatter/CDH3/hadoop-cache/madhatter/dfs/namesecondary/current/edits of size 1080 edits # 12 loaded in 0 seconds.
+2011-08-09 21:29:36,136 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2011-08-09 21:29:36,153 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 995 saved in 0 seconds.
+2011-08-09 21:29:36,167 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 995 saved in 0 seconds.
+2011-08-09 21:29:36,206 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Posted URL localhost:50070putimage=1&port=50090&machine=192.168.0.100&token=-19:983664971:0:1312918175000:1312917871038
+2011-08-09 21:29:36,293 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 995
+2011-08-09 21:30:33,348 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at MacBookPro.local/192.168.0.100
+************************************************************/

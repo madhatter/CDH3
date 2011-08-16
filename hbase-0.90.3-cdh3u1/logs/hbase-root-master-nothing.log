@@ -1,0 +1,1022 @@
+Di 16 Aug 2011 19:21:47 CEST Starting master on nothing
+ulimit -n 2560
+2011-08-16 19:21:48,144 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:zookeeper.version=3.3.3-cdh3u1--1, built on 07/18/2011 15:17 GMT
+2011-08-16 19:21:48,145 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:host.name=nothing
+2011-08-16 19:21:48,145 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.version=1.6.0_26
+2011-08-16 19:21:48,145 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.vendor=Apple Inc.
+2011-08-16 19:21:48,145 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.home=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+2011-08-16 19:21:48,145 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.class.path=/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../conf:/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/lib/tools.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/..:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../hbase-0.90.3-cdh3u1-tests.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../hbase-0.90.3-cdh3u1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/activation-1.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/asm-3.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/avro-1.3.3.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/commons-cli-1.2.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/commons-codec-1.4.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/commons-el-1.0.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/commons-httpclient-3.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/commons-lang-2.5.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/commons-logging-1.1.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/commons-net-1.4.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/core-3.1.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/guava-r06.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/hadoop-core-0.20.2-cdh3u1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jackson-core-asl-1.5.2.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jackson-jaxrs-1.5.5.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jackson-mapper-asl-1.5.2.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jackson-xc-1.5.5.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jasper-compiler-5.5.23.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jasper-runtime-5.5.23.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jaxb-api-2.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jaxb-impl-2.1.12.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jersey-core-1.4.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jersey-json-1.4.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jersey-server-1.4.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jettison-1.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jetty-6.1.26.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jetty-util-6.1.26.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jruby-complete-1.6.0.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jsp-2.1-6.1.14.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jsp-api-2.1-6.1.14.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jsp-api-2.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jsr311-api-1.1.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/log4j-1.2.16.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/protobuf-java-2.3.0.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/servlet-api-2.5-6.1.14.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/servlet-api-2.5.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/slf4j-api-1.5.8.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/slf4j-log4j12-1.5.8.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/stax-api-1.0.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/thrift-0.2.0.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/xmlenc-0.52.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/zookeeper-3.3.3-cdh3u1.jar
+2011-08-16 19:21:48,146 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.library.path=/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/native/Mac_OS_X-x86_64-64
+2011-08-16 19:21:48,146 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.io.tmpdir=/var/folders/zz/zzzivhrRnAmviuee+++++++++++/-Tmp-/
+2011-08-16 19:21:48,146 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.compiler=<NA>
+2011-08-16 19:21:48,146 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:os.name=Mac OS X
+2011-08-16 19:21:48,146 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:os.arch=x86_64
+2011-08-16 19:21:48,146 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:os.version=10.6.8
+2011-08-16 19:21:48,146 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:user.name=root
+2011-08-16 19:21:48,146 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:user.home=/Users/madhatter
+2011-08-16 19:21:48,146 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:user.dir=/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1
+2011-08-16 19:21:48,176 INFO org.apache.zookeeper.server.ZooKeeperServer: Created server with tickTime 2000 minSessionTimeout 4000 maxSessionTimeout 40000 datadir /tmp/hbase-root/zookeeper/zookeeper/version-2 snapdir /tmp/hbase-root/zookeeper/zookeeper/version-2
+2011-08-16 19:21:48,201 INFO org.apache.zookeeper.server.NIOServerCnxn: binding to port 0.0.0.0/0.0.0.0:2181
+2011-08-16 19:21:48,202 INFO org.apache.hadoop.hbase.zookeeper.MiniZooKeeperCluster: Failed binding ZK Server to client port: 2181
+2011-08-16 19:21:48,202 INFO org.apache.zookeeper.server.NIOServerCnxn: binding to port 0.0.0.0/0.0.0.0:2182
+2011-08-16 19:21:48,208 INFO org.apache.zookeeper.server.persistence.FileTxnSnapLog: Snapshotting: 0
+2011-08-16 19:21:48,342 INFO org.apache.zookeeper.server.NIOServerCnxn: Accepted socket connection from /127.0.0.1:51803
+2011-08-16 19:21:48,345 INFO org.apache.zookeeper.server.NIOServerCnxn: Processing stat command from /127.0.0.1:51803
+2011-08-16 19:21:48,347 INFO org.apache.zookeeper.server.NIOServerCnxn: Stat command output
+2011-08-16 19:21:48,348 INFO org.apache.zookeeper.server.NIOServerCnxn: Closed socket connection for client /127.0.0.1:51803 (no session established for client)
+2011-08-16 19:21:48,349 INFO org.apache.hadoop.hbase.zookeeper.MiniZooKeeperCluster: Started MiniZK Server on client port: 2182
+2011-08-16 19:21:48,427 ERROR org.apache.hadoop.hbase.master.HMasterCommandLine: Failed to start master
+java.io.IOException: Couldnt start ZK at requested address of 2181, instead got: 2182. Aborting. Why? Because clients (eg shell) wont be able to find this ZK quorum
+	at org.apache.hadoop.hbase.master.HMasterCommandLine.startMaster(HMasterCommandLine.java:131)
+	at org.apache.hadoop.hbase.master.HMasterCommandLine.run(HMasterCommandLine.java:102)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at org.apache.hadoop.hbase.util.ServerCommandLine.doMain(ServerCommandLine.java:76)
+	at org.apache.hadoop.hbase.master.HMaster.main(HMaster.java:1074)
+Di 16 Aug 2011 19:34:33 CEST Starting master on nothing
+ulimit -n 2560
+2011-08-16 19:34:34,670 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:zookeeper.version=3.3.3-cdh3u1--1, built on 07/18/2011 15:17 GMT
+2011-08-16 19:34:34,671 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:host.name=nothing
+2011-08-16 19:34:34,671 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.version=1.6.0_26
+2011-08-16 19:34:34,671 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.vendor=Apple Inc.
+2011-08-16 19:34:34,671 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.home=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+2011-08-16 19:34:34,671 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.class.path=/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../conf:/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/lib/tools.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/..:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../hbase-0.90.3-cdh3u1-tests.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../hbase-0.90.3-cdh3u1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/activation-1.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/asm-3.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/avro-1.3.3.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/commons-cli-1.2.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/commons-codec-1.4.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/commons-el-1.0.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/commons-httpclient-3.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/commons-lang-2.5.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/commons-logging-1.1.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/commons-net-1.4.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/core-3.1.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/guava-r06.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/hadoop-core-0.20.2-cdh3u1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jackson-core-asl-1.5.2.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jackson-jaxrs-1.5.5.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jackson-mapper-asl-1.5.2.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jackson-xc-1.5.5.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jasper-compiler-5.5.23.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jasper-runtime-5.5.23.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jaxb-api-2.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jaxb-impl-2.1.12.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jersey-core-1.4.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jersey-json-1.4.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jersey-server-1.4.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jettison-1.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jetty-6.1.26.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jetty-util-6.1.26.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jruby-complete-1.6.0.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jsp-2.1-6.1.14.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jsp-api-2.1-6.1.14.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jsp-api-2.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jsr311-api-1.1.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/log4j-1.2.16.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/protobuf-java-2.3.0.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/servlet-api-2.5-6.1.14.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/servlet-api-2.5.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/slf4j-api-1.5.8.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/slf4j-log4j12-1.5.8.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/stax-api-1.0.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/thrift-0.2.0.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/xmlenc-0.52.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/zookeeper-3.3.3-cdh3u1.jar
+2011-08-16 19:34:34,672 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.library.path=/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/native/Mac_OS_X-x86_64-64
+2011-08-16 19:34:34,672 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.io.tmpdir=/var/folders/zz/zzzivhrRnAmviuee+++++++++++/-Tmp-/
+2011-08-16 19:34:34,672 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.compiler=<NA>
+2011-08-16 19:34:34,672 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:os.name=Mac OS X
+2011-08-16 19:34:34,672 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:os.arch=x86_64
+2011-08-16 19:34:34,672 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:os.version=10.6.8
+2011-08-16 19:34:34,672 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:user.name=root
+2011-08-16 19:34:34,672 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:user.home=/Users/madhatter
+2011-08-16 19:34:34,672 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:user.dir=/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin
+2011-08-16 19:34:34,692 INFO org.apache.zookeeper.server.ZooKeeperServer: Created server with tickTime 2000 minSessionTimeout 4000 maxSessionTimeout 40000 datadir /tmp/hbase-root/zookeeper/zookeeper/version-2 snapdir /tmp/hbase-root/zookeeper/zookeeper/version-2
+2011-08-16 19:34:34,718 INFO org.apache.zookeeper.server.NIOServerCnxn: binding to port 0.0.0.0/0.0.0.0:2181
+2011-08-16 19:34:34,725 INFO org.apache.zookeeper.server.persistence.FileTxnSnapLog: Snapshotting: 0
+2011-08-16 19:34:34,842 INFO org.apache.zookeeper.server.NIOServerCnxn: Accepted socket connection from /127.0.0.1:51894
+2011-08-16 19:34:34,845 INFO org.apache.zookeeper.server.NIOServerCnxn: Processing stat command from /127.0.0.1:51894
+2011-08-16 19:34:34,847 INFO org.apache.zookeeper.server.NIOServerCnxn: Stat command output
+2011-08-16 19:34:34,847 INFO org.apache.zookeeper.server.NIOServerCnxn: Closed socket connection for client /127.0.0.1:51894 (no session established for client)
+2011-08-16 19:34:34,848 INFO org.apache.hadoop.hbase.zookeeper.MiniZooKeeperCluster: Started MiniZK Server on client port: 2181
+2011-08-16 19:34:34,968 INFO org.apache.hadoop.hbase.ipc.HBaseRpcMetrics: Initializing RPC Metrics with hostName=HMasterCommandLine$LocalHMaster, port=51895
+2011-08-16 19:34:35,316 INFO org.apache.hadoop.ipc.HBaseServer: IPC Server Responder: starting
+2011-08-16 19:34:35,316 INFO org.apache.hadoop.ipc.HBaseServer: IPC Server listener on 51895: starting
+2011-08-16 19:34:35,319 INFO org.apache.hadoop.ipc.HBaseServer: IPC Server handler 0 on 51895: starting
+2011-08-16 19:34:35,319 INFO org.apache.hadoop.ipc.HBaseServer: IPC Server handler 1 on 51895: starting
+2011-08-16 19:34:35,319 INFO org.apache.hadoop.ipc.HBaseServer: IPC Server handler 2 on 51895: starting
+2011-08-16 19:34:35,320 INFO org.apache.hadoop.ipc.HBaseServer: IPC Server handler 4 on 51895: starting
+2011-08-16 19:34:35,320 INFO org.apache.hadoop.ipc.HBaseServer: IPC Server handler 5 on 51895: starting
+2011-08-16 19:34:35,321 INFO org.apache.hadoop.ipc.HBaseServer: IPC Server handler 6 on 51895: starting
+2011-08-16 19:34:35,321 INFO org.apache.hadoop.ipc.HBaseServer: IPC Server handler 7 on 51895: starting
+2011-08-16 19:34:35,321 INFO org.apache.hadoop.ipc.HBaseServer: IPC Server handler 8 on 51895: starting
+2011-08-16 19:34:35,322 INFO org.apache.hadoop.ipc.HBaseServer: IPC Server handler 9 on 51895: starting
+2011-08-16 19:34:35,323 INFO org.apache.hadoop.ipc.HBaseServer: IPC Server handler 3 on 51895: starting
+2011-08-16 19:34:35,355 INFO org.apache.zookeeper.ZooKeeper: Client environment:zookeeper.version=3.3.3-cdh3u1--1, built on 07/18/2011 15:17 GMT
+2011-08-16 19:34:35,356 INFO org.apache.zookeeper.ZooKeeper: Client environment:host.name=nothing
+2011-08-16 19:34:35,356 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.version=1.6.0_26
+2011-08-16 19:34:35,356 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.vendor=Apple Inc.
+2011-08-16 19:34:35,356 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.home=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+2011-08-16 19:34:35,356 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.class.path=/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../conf:/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/lib/tools.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/..:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../hbase-0.90.3-cdh3u1-tests.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../hbase-0.90.3-cdh3u1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/activation-1.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/asm-3.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/avro-1.3.3.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/commons-cli-1.2.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/commons-codec-1.4.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/commons-el-1.0.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/commons-httpclient-3.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/commons-lang-2.5.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/commons-logging-1.1.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/commons-net-1.4.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/core-3.1.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/guava-r06.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/hadoop-core-0.20.2-cdh3u1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jackson-core-asl-1.5.2.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jackson-jaxrs-1.5.5.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jackson-mapper-asl-1.5.2.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jackson-xc-1.5.5.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jasper-compiler-5.5.23.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jasper-runtime-5.5.23.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jaxb-api-2.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jaxb-impl-2.1.12.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jersey-core-1.4.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jersey-json-1.4.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jersey-server-1.4.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jettison-1.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jetty-6.1.26.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jetty-util-6.1.26.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jruby-complete-1.6.0.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jsp-2.1-6.1.14.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jsp-api-2.1-6.1.14.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jsp-api-2.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/jsr311-api-1.1.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/log4j-1.2.16.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/protobuf-java-2.3.0.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/servlet-api-2.5-6.1.14.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/servlet-api-2.5.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/slf4j-api-1.5.8.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/slf4j-log4j12-1.5.8.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/stax-api-1.0.1.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/thrift-0.2.0.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/xmlenc-0.52.jar:/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/zookeeper-3.3.3-cdh3u1.jar
+2011-08-16 19:34:35,357 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.library.path=/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin/../lib/native/Mac_OS_X-x86_64-64
+2011-08-16 19:34:35,357 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.io.tmpdir=/var/folders/zz/zzzivhrRnAmviuee+++++++++++/-Tmp-/
+2011-08-16 19:34:35,357 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
+2011-08-16 19:34:35,357 INFO org.apache.zookeeper.ZooKeeper: Client environment:os.name=Mac OS X
+2011-08-16 19:34:35,357 INFO org.apache.zookeeper.ZooKeeper: Client environment:os.arch=x86_64
+2011-08-16 19:34:35,357 INFO org.apache.zookeeper.ZooKeeper: Client environment:os.version=10.6.8
+2011-08-16 19:34:35,357 INFO org.apache.zookeeper.ZooKeeper: Client environment:user.name=root
+2011-08-16 19:34:35,357 INFO org.apache.zookeeper.ZooKeeper: Client environment:user.home=/Users/madhatter
+2011-08-16 19:34:35,357 INFO org.apache.zookeeper.ZooKeeper: Client environment:user.dir=/Users/madhatter/CDH3/hbase-0.90.3-cdh3u1/bin
+2011-08-16 19:34:35,359 INFO org.apache.zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=180000 watcher=master:51895
+2011-08-16 19:34:35,372 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:34:35,374 INFO org.apache.zookeeper.ClientCnxn: Socket connection established to localhost/127.0.0.1:2181, initiating session
+2011-08-16 19:34:35,376 INFO org.apache.zookeeper.server.NIOServerCnxn: Accepted socket connection from /127.0.0.1:51896
+2011-08-16 19:34:35,379 INFO org.apache.zookeeper.server.NIOServerCnxn: Client attempting to establish new session at /127.0.0.1:51896
+2011-08-16 19:34:35,381 INFO org.apache.zookeeper.server.persistence.FileTxnLog: Creating new log file: log.1
+2011-08-16 19:34:35,409 INFO org.apache.zookeeper.server.NIOServerCnxn: Established session 0x131d3a8b6f40000 with negotiated timeout 40000 for client /127.0.0.1:51896
+2011-08-16 19:34:35,409 INFO org.apache.zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x131d3a8b6f40000, negotiated timeout = 40000
+2011-08-16 19:34:35,431 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=Master, sessionId=nothing:51895
+2011-08-16 19:34:35,438 INFO org.apache.hadoop.hbase.metrics: MetricsString added: revision
+2011-08-16 19:34:35,438 INFO org.apache.hadoop.hbase.metrics: MetricsString added: hdfsUser
+2011-08-16 19:34:35,438 INFO org.apache.hadoop.hbase.metrics: MetricsString added: hdfsDate
+2011-08-16 19:34:35,438 INFO org.apache.hadoop.hbase.metrics: MetricsString added: hdfsUrl
+2011-08-16 19:34:35,438 INFO org.apache.hadoop.hbase.metrics: MetricsString added: date
+2011-08-16 19:34:35,438 INFO org.apache.hadoop.hbase.metrics: MetricsString added: hdfsRevision
+2011-08-16 19:34:35,438 INFO org.apache.hadoop.hbase.metrics: MetricsString added: user
+2011-08-16 19:34:35,438 INFO org.apache.hadoop.hbase.metrics: MetricsString added: hdfsVersion
+2011-08-16 19:34:35,438 INFO org.apache.hadoop.hbase.metrics: MetricsString added: url
+2011-08-16 19:34:35,438 INFO org.apache.hadoop.hbase.metrics: MetricsString added: version
+2011-08-16 19:34:35,438 INFO org.apache.hadoop.hbase.metrics: new MBeanInfo
+2011-08-16 19:34:35,439 INFO org.apache.hadoop.hbase.metrics: new MBeanInfo
+2011-08-16 19:34:35,439 INFO org.apache.hadoop.hbase.master.metrics.MasterMetrics: Initialized
+2011-08-16 19:34:35,600 INFO org.apache.zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=180000 watcher=hconnection
+2011-08-16 19:34:35,601 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:34:35,601 INFO org.apache.zookeeper.ClientCnxn: Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2011-08-16 19:34:35,601 INFO org.apache.zookeeper.server.NIOServerCnxn: Accepted socket connection from /0:0:0:0:0:0:0:1%0:51897
+2011-08-16 19:34:35,602 INFO org.apache.zookeeper.server.NIOServerCnxn: Client attempting to establish new session at /0:0:0:0:0:0:0:1%0:51897
+2011-08-16 19:34:35,603 INFO org.apache.zookeeper.server.NIOServerCnxn: Established session 0x131d3a8b6f40001 with negotiated timeout 40000 for client /0:0:0:0:0:0:0:1%0:51897
+2011-08-16 19:34:35,603 INFO org.apache.zookeeper.ClientCnxn: Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x131d3a8b6f40001, negotiated timeout = 40000
+2011-08-16 19:34:35,617 INFO org.apache.hadoop.hbase.ipc.HBaseRpcMetrics: Initializing RPC Metrics with hostName=HRegionServer, port=51898
+2011-08-16 19:34:35,697 INFO org.apache.zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=180000 watcher=regionserver:51898
+2011-08-16 19:34:35,697 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:34:35,698 INFO org.apache.zookeeper.ClientCnxn: Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2011-08-16 19:34:35,698 INFO org.apache.zookeeper.server.NIOServerCnxn: Accepted socket connection from /0:0:0:0:0:0:0:1%0:51899
+2011-08-16 19:34:35,699 INFO org.apache.zookeeper.server.NIOServerCnxn: Client attempting to establish new session at /0:0:0:0:0:0:0:1%0:51899
+2011-08-16 19:34:35,709 INFO org.apache.zookeeper.ClientCnxn: Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x131d3a8b6f40002, negotiated timeout = 40000
+2011-08-16 19:34:35,709 INFO org.apache.hadoop.hbase.master.ActiveMasterManager: Master=nothing:51895
+2011-08-16 19:34:35,709 INFO org.apache.zookeeper.server.NIOServerCnxn: Established session 0x131d3a8b6f40002 with negotiated timeout 40000 for client /0:0:0:0:0:0:0:1%0:51899
+2011-08-16 19:34:37,023 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:9000. Already tried 0 time(s).
+2011-08-16 19:34:38,023 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:9000. Already tried 1 time(s).
+2011-08-16 19:34:39,024 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:9000. Already tried 2 time(s).
+2011-08-16 19:34:40,025 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:9000. Already tried 3 time(s).
+2011-08-16 19:34:41,026 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:9000. Already tried 4 time(s).
+2011-08-16 19:34:42,027 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:9000. Already tried 5 time(s).
+2011-08-16 19:34:43,028 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:9000. Already tried 6 time(s).
+2011-08-16 19:34:44,029 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:9000. Already tried 7 time(s).
+2011-08-16 19:34:45,029 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:9000. Already tried 8 time(s).
+2011-08-16 19:34:46,030 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:9000. Already tried 9 time(s).
+2011-08-16 19:34:46,089 FATAL org.apache.hadoop.hbase.master.HMaster: Unhandled exception. Starting shutdown.
+java.net.ConnectException: Call to localhost/127.0.0.1:9000 failed on connection exception: java.net.ConnectException: Connection refused
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:1134)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1110)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:226)
+	at $Proxy6.getProtocolVersion(Unknown Source)
+	at org.apache.hadoop.ipc.RPC.getProxy(RPC.java:398)
+	at org.apache.hadoop.ipc.RPC.getProxy(RPC.java:384)
+	at org.apache.hadoop.hdfs.DFSClient.createRPCNamenode(DFSClient.java:111)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:213)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:180)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.initialize(DistributedFileSystem.java:89)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:1514)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:67)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:1548)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1530)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:228)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:183)
+	at org.apache.hadoop.hbase.util.FSUtils.getRootDir(FSUtils.java:344)
+	at org.apache.hadoop.hbase.master.MasterFileSystem.<init>(MasterFileSystem.java:81)
+	at org.apache.hadoop.hbase.master.HMaster.finishInitialization(HMaster.java:347)
+	at org.apache.hadoop.hbase.master.HMaster.run(HMaster.java:283)
+	at org.apache.hadoop.hbase.master.HMasterCommandLine$LocalHMaster.run(HMasterCommandLine.java:193)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:408)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:425)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:532)
+	at org.apache.hadoop.ipc.Client$Connection.access$2300(Client.java:210)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1247)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1078)
+	... 20 more
+2011-08-16 19:34:46,091 INFO org.apache.hadoop.hbase.master.HMaster: Aborting
+2011-08-16 19:34:46,091 DEBUG org.apache.hadoop.hbase.master.HMaster: Stopping service threads
+2011-08-16 19:34:46,091 INFO org.apache.hadoop.ipc.HBaseServer: Stopping server on 51895
+2011-08-16 19:34:46,092 INFO org.apache.hadoop.ipc.HBaseServer: IPC Server handler 0 on 51895: exiting
+2011-08-16 19:34:46,092 INFO org.apache.hadoop.ipc.HBaseServer: IPC Server handler 2 on 51895: exiting
+2011-08-16 19:34:46,092 INFO org.apache.hadoop.ipc.HBaseServer: IPC Server handler 1 on 51895: exiting
+2011-08-16 19:34:46,092 INFO org.apache.hadoop.ipc.HBaseServer: IPC Server handler 7 on 51895: exiting
+2011-08-16 19:34:46,092 INFO org.apache.hadoop.ipc.HBaseServer: IPC Server handler 8 on 51895: exiting
+2011-08-16 19:34:46,092 INFO org.apache.hadoop.ipc.HBaseServer: IPC Server handler 6 on 51895: exiting
+2011-08-16 19:34:46,092 INFO org.apache.hadoop.ipc.HBaseServer: IPC Server handler 3 on 51895: exiting
+2011-08-16 19:34:46,092 INFO org.apache.hadoop.ipc.HBaseServer: Stopping IPC Server listener on 51895
+2011-08-16 19:34:46,093 INFO org.apache.hadoop.ipc.HBaseServer: IPC Server handler 4 on 51895: exiting
+2011-08-16 19:34:46,093 INFO org.apache.hadoop.ipc.HBaseServer: IPC Server handler 5 on 51895: exiting
+2011-08-16 19:34:46,093 INFO org.apache.hadoop.ipc.HBaseServer: IPC Server handler 9 on 51895: exiting
+2011-08-16 19:34:46,104 INFO org.apache.hadoop.ipc.HBaseServer: Stopping IPC Server Responder
+2011-08-16 19:34:46,118 INFO org.apache.zookeeper.server.PrepRequestProcessor: Processed session termination for sessionid: 0x131d3a8b6f40000
+2011-08-16 19:34:46,120 INFO org.apache.zookeeper.ZooKeeper: Session: 0x131d3a8b6f40000 closed
+2011-08-16 19:34:46,120 INFO org.apache.hadoop.hbase.master.HMaster: HMaster main thread exiting
+2011-08-16 19:34:46,120 INFO org.apache.zookeeper.ClientCnxn: EventThread shut down
+2011-08-16 19:34:46,120 INFO org.apache.zookeeper.server.NIOServerCnxn: Closed socket connection for client /127.0.0.1:51896 which had sessionid 0x131d3a8b6f40000
+2011-08-16 19:34:46,120 INFO org.apache.zookeeper.server.NIOServerCnxn: Closed socket connection for client /0:0:0:0:0:0:0:1%0:51899 which had sessionid 0x131d3a8b6f40002
+2011-08-16 19:34:46,120 INFO org.apache.zookeeper.ClientCnxn: Unable to read additional data from server sessionid 0x131d3a8b6f40002, likely server has closed socket, closing socket connection and attempting reconnect
+2011-08-16 19:34:46,121 INFO org.apache.zookeeper.server.NIOServerCnxn: Closed socket connection for client /0:0:0:0:0:0:0:1%0:51897 which had sessionid 0x131d3a8b6f40001
+2011-08-16 19:34:46,121 INFO org.apache.zookeeper.server.NIOServerCnxn: NIOServerCnxn factory exited run method
+2011-08-16 19:34:46,121 INFO org.apache.zookeeper.ClientCnxn: Unable to read additional data from server sessionid 0x131d3a8b6f40001, likely server has closed socket, closing socket connection and attempting reconnect
+2011-08-16 19:34:46,121 INFO org.apache.zookeeper.server.PrepRequestProcessor: PrepRequestProcessor exited loop!
+2011-08-16 19:34:46,121 INFO org.apache.zookeeper.server.SyncRequestProcessor: SyncRequestProcessor exited!
+2011-08-16 19:34:46,121 INFO org.apache.zookeeper.server.FinalRequestProcessor: shutdown of request processor complete
+2011-08-16 19:34:46,345 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:34:46,346 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:46,477 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:34:46,477 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:46,831 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:34:46,832 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:47,903 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:34:47,903 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:48,000 INFO org.apache.zookeeper.server.SessionTrackerImpl: SessionTrackerImpl exited loop!
+2011-08-16 19:34:48,289 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:34:48,290 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:48,444 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:34:48,445 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:48,844 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:34:48,845 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:49,422 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:34:49,423 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:49,664 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:34:49,665 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:49,870 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:34:49,871 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:50,624 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:34:50,625 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:51,214 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:34:51,215 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:51,262 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:34:51,262 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:51,437 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:34:51,437 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:51,584 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:34:51,585 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:52,219 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:34:52,219 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:53,266 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:34:53,266 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:53,585 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:34:53,585 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:54,082 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:34:54,082 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:54,329 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:34:54,330 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:55,109 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:34:55,110 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:55,288 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:34:55,289 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:55,556 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:34:55,557 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:56,072 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:34:56,072 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:56,511 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:34:56,511 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:56,726 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:34:56,726 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:56,829 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:34:56,830 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:57,732 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:34:57,733 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:58,028 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:34:58,028 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:58,886 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:34:58,887 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:59,402 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:34:59,403 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:34:59,885 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:34:59,886 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:00,284 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:00,284 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:00,412 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:00,413 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:01,648 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:01,649 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:01,774 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:01,775 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:01,919 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:01,920 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:02,502 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:02,503 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:02,723 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:02,724 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:02,897 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:02,898 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:04,282 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:04,283 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:04,328 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:04,329 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:04,761 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:04,761 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:05,176 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:05,177 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:05,483 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:05,484 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:05,820 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:05,820 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:07,183 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:07,184 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:07,613 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:07,613 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:07,679 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:07,680 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:07,908 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:07,909 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:08,169 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:08,170 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:08,367 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:08,367 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:09,295 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:09,296 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:09,488 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:09,489 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:10,173 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:10,174 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:10,446 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:10,447 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:10,583 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:10,584 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:10,895 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:10,896 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:12,066 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:12,067 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:12,422 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:12,423 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:13,053 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:13,053 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:13,136 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:13,137 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:13,606 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:13,607 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:13,688 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:13,689 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:15,340 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:15,341 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:15,502 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:15,503 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:15,859 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:15,860 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:16,163 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:16,163 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:16,519 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:16,520 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:16,602 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:16,603 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:17,900 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:17,900 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:18,018 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:18,021 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:18,021 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:18,021 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:18,236 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:18,237 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:18,359 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:18,360 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:19,091 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:19,091 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+Di 16 Aug 2011 19:35:19 CEST Stopping hbase (via master)
+2011-08-16 19:35:20,107 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:20,107 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:20,755 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:20,756 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:20,911 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:20,911 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:21,092 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:21,093 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:21,857 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:21,858 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:21,992 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:21,992 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:23,056 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:23,056 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:23,416 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:23,417 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:23,788 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:23,788 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:24,434 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:24,435 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:24,793 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:24,794 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:25,485 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:25,486 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:25,667 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:25,668 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:26,124 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:26,124 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:26,940 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:26,941 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:27,199 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:27,200 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:27,846 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:27,846 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:28,258 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:28,259 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:28,407 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:28,407 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:28,445 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:28,446 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:28,782 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:28,783 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:30,269 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:30,270 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:30,405 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:30,406 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:30,880 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:30,881 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:31,138 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:31,139 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:31,520 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:31,521 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:31,640 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:31,641 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:32,977 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:32,977 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:33,031 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:33,031 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:33,464 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:33,465 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:34,058 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:34,058 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:34,214 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:34,215 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:34,884 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:34,884 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:35,915 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:35,916 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:36,139 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:36,139 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:36,703 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:36,704 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:37,167 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:37,168 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:37,777 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:37,778 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:38,248 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:38,249 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:39,130 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:39,131 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:39,601 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:39,602 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:39,939 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:39,940 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:40,271 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:40,272 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:40,729 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:40,730 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:41,353 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:41,353 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:42,106 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:42,107 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:42,683 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:42,684 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:43,012 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:43,013 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:43,098 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:43,098 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:43,425 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:43,425 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:44,178 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:44,178 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:44,445 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:44,445 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:45,122 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:45,122 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:45,363 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:45,364 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:46,142 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:46,143 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:46,576 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:46,578 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:47,280 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:47,281 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:47,554 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:47,554 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:47,658 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181
+2011-08-16 19:35:47,659 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:48,086 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/fe80:0:0:0:0:0:0:1%1:2181
+2011-08-16 19:35:48,087 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40001 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+2011-08-16 19:35:48,839 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+2011-08-16 19:35:48,840 WARN org.apache.zookeeper.ClientCnxn: Session 0x131d3a8b6f40002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:567)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)

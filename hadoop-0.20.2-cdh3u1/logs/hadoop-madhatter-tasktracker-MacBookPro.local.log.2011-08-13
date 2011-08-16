@@ -1,0 +1,19 @@
+2011-08-13 13:50:03,762 ERROR org.apache.hadoop.mapred.TaskTracker: Caught exception: java.io.IOException: Call to localhost/127.0.0.1:9001 failed on local exception: java.io.EOFException
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:1142)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1110)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:226)
+	at org.apache.hadoop.mapred.$Proxy4.heartbeat(Unknown Source)
+	at org.apache.hadoop.mapred.TaskTracker.transmitHeartBeat(TaskTracker.java:1759)
+	at org.apache.hadoop.mapred.TaskTracker.offerService(TaskTracker.java:1565)
+	at org.apache.hadoop.mapred.TaskTracker.run(TaskTracker.java:2330)
+	at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:3580)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:375)
+	at org.apache.hadoop.ipc.Client$Connection.receiveResponse(Client.java:815)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:724)
+
+2011-08-13 13:50:03,770 INFO org.apache.hadoop.mapred.TaskTracker: Resending 'status' to 'localhost' with reponseId '17745
+2011-08-13 13:50:03,983 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at MacBookPro.local/192.168.0.100
+************************************************************/

@@ -1,0 +1,28 @@
+2011-08-15 08:21:08,175 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2011-08-15 08:21:08,447 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=SHUFFLE, sessionId=
+2011-08-15 08:21:08,664 INFO org.apache.hadoop.mapred.ReduceTask: ShuffleRamManager: MemoryLimit=144965632, MaxSingleShuffleLimit=36241408
+2011-08-15 08:21:08,672 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201108150820_0001_r_000000_0 Thread started: Thread for merging on-disk files
+2011-08-15 08:21:08,672 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201108150820_0001_r_000000_0 Thread waiting: Thread for merging on-disk files
+2011-08-15 08:21:08,672 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201108150820_0001_r_000000_0 Thread started: Thread for merging in memory files
+2011-08-15 08:21:08,673 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201108150820_0001_r_000000_0 Thread started: Thread for polling Map Completion Events
+2011-08-15 08:21:08,674 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201108150820_0001_r_000000_0 Need another 2 map output(s) where 0 is already in progress
+2011-08-15 08:21:08,678 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201108150820_0001_r_000000_0 Scheduled 0 outputs (0 slow hosts and0 dup hosts)
+2011-08-15 08:21:13,679 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201108150820_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2011-08-15 08:21:14,349 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201108150820_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2011-08-15 08:21:14,748 INFO org.apache.hadoop.mapred.ReduceTask: GetMapEventsThread exiting
+2011-08-15 08:21:14,748 INFO org.apache.hadoop.mapred.ReduceTask: getMapsEventsThread joined.
+2011-08-15 08:21:14,748 INFO org.apache.hadoop.mapred.ReduceTask: Closed ram manager
+2011-08-15 08:21:14,751 INFO org.apache.hadoop.mapred.ReduceTask: Interleaved on-disk merge complete: 0 files left.
+2011-08-15 08:21:14,751 INFO org.apache.hadoop.mapred.ReduceTask: In-memory merge complete: 2 files left.
+2011-08-15 08:21:14,758 INFO org.apache.hadoop.mapred.Merger: Merging 2 sorted segments
+2011-08-15 08:21:14,758 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 26 bytes
+2011-08-15 08:21:14,770 INFO org.apache.hadoop.mapred.ReduceTask: Merged 2 segments, 26 bytes to disk to satisfy reduce memory limit
+2011-08-15 08:21:14,770 INFO org.apache.hadoop.mapred.ReduceTask: Merging 1 files, 28 bytes from disk
+2011-08-15 08:21:14,771 INFO org.apache.hadoop.mapred.ReduceTask: Merging 0 segments, 0 bytes from memory into reduce
+2011-08-15 08:21:14,771 INFO org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2011-08-15 08:21:14,774 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 24 bytes
+2011-08-15 08:21:14,848 INFO org.apache.hadoop.mapred.Task: Task:attempt_201108150820_0001_r_000000_0 is done. And is in the process of commiting
+2011-08-15 08:21:15,855 INFO org.apache.hadoop.mapred.Task: Task attempt_201108150820_0001_r_000000_0 is allowed to commit now
+2011-08-15 08:21:15,872 INFO org.apache.hadoop.mapred.FileOutputCommitter: Saved output of task 'attempt_201108150820_0001_r_000000_0' to hdfs://localhost/user/madhatter/test4
+2011-08-15 08:21:15,875 INFO org.apache.hadoop.mapred.Task: Task 'attempt_201108150820_0001_r_000000_0' done.
+2011-08-15 08:21:15,900 INFO org.apache.hadoop.mapred.TaskLogsTruncater: Initializing logs' truncater with mapRetainSize=-1 and reduceRetainSize=-1

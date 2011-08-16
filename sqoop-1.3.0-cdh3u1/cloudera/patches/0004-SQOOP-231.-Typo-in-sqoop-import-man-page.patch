@@ -1,0 +1,70 @@
+From ac54c57848a40eb376ae091a8cd7acb64d9c2fee Mon Sep 17 00:00:00 2001
+From: Arvind Prabhakar <arvind@cloudera.com>
+Date: Thu, 30 Jun 2011 19:35:28 -0700
+Subject: [PATCH 4/7] SQOOP-231. Typo in sqoop-import man page.
+
+The Sqoop man page for sqoop-import and sqoop-import-all-tables incorrectly
+specified the option for Avro datafile format as ----as-avrodatafile. Instead
+it should be --as-avrodatafile. Also included in this change is whitespace
+fix for build.xml and an addition to .gitignore.
+---
+ .gitignore                               |    1 +
+ build.xml                                |    2 +-
+ src/docs/man/import-args.txt             |    2 +-
+ src/docs/man/sqoop-import-all-tables.txt |    2 +-
+ 4 files changed, 4 insertions(+), 3 deletions(-)
+
+diff --git a/.gitignore b/.gitignore
+index 2c05264..bc419c8 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -18,6 +18,7 @@
+ .project
+ .launches
+ .settings
++.ant-targets-build.xml
+ /tags
+ /build.properties
+ /conf/managers.d
+diff --git a/build.xml b/build.xml
+index ebaf5ac..80e58ab 100644
+--- a/build.xml
++++ b/build.xml
+@@ -499,7 +499,7 @@
+     </condition>
+   </target>
+ 
+-  <target name="test-prep-normal" unless="thirdparty_or_manual" 
++  <target name="test-prep-normal" unless="thirdparty_or_manual"
+                                   depends="test-eval-condition">
+     <!-- Set this to run all the "standard" tests -->
+     <property name="test.pattern" value="Test*" />
+diff --git a/src/docs/man/import-args.txt b/src/docs/man/import-args.txt
+index b6055ea..c7e3f30 100644
+--- a/src/docs/man/import-args.txt
++++ b/src/docs/man/import-args.txt
+@@ -23,7 +23,7 @@ Import control options
+ --append::
+   Append data to an existing HDFS dataset
+ 
+-----as-avrodatafile::
++--as-avrodatafile::
+   Imports data to Avro Data Files
+ 
+ --as-sequencefile::
+diff --git a/src/docs/man/sqoop-import-all-tables.txt b/src/docs/man/sqoop-import-all-tables.txt
+index ad3890a..bad66dd 100644
+--- a/src/docs/man/sqoop-import-all-tables.txt
++++ b/src/docs/man/sqoop-import-all-tables.txt
+@@ -27,7 +27,7 @@ include::common-args.txt[]
+ Import control options
+ ~~~~~~~~~~~~~~~~~~~~~~
+ 
+-----as-avrodatafile::
++--as-avrodatafile::
+   Imports data to Avro Data Files
+ 
+ --as-sequencefile::
+-- 
+1.7.0.4
+

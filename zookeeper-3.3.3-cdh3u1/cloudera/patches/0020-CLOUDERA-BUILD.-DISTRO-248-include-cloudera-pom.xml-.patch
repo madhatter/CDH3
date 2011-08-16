@@ -1,0 +1,25 @@
+From ba9d4e326f27ed425117e2febbcf805669a2a914 Mon Sep 17 00:00:00 2001
+From: Andrew Bayer <andrew@cloudera.com>
+Date: Tue, 7 Jun 2011 13:25:17 -0700
+Subject: [PATCH 20/24] CLOUDERA-BUILD. DISTRO-248 - include cloudera-pom.xml and build.properties in tarball.
+
+---
+ build.xml |    2 ++
+ 1 files changed, 2 insertions(+), 0 deletions(-)
+
+diff --git a/build.xml b/build.xml
+index 10fbec8..c592cb9 100644
+--- a/build.xml
++++ b/build.xml
+@@ -610,6 +610,8 @@
+         <fileset dir="cloudera" />
+       </copy>
+ 
++      <copy todir="${dist.dir}/" file="cloudera-pom.xml" />
++      <copy todir="${dist.dir}/" file="build.properties" />
+ 
+       <subant target="package">
+         <!--Pass down the version in case its needed again and the target
+-- 
+1.7.0.4
+

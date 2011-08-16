@@ -1,0 +1,154 @@
+2011-08-10 08:25:33,679 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = nothing/172.20.10.2
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-10 08:25:34,088 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2011-08-10 08:25:34,090 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2011-08-10 08:25:34,091 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2011-08-10 08:25:34,094 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2011-08-10 08:25:34,095 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2011-08-10 08:25:34,202 INFO org.apache.hadoop.mapred.JobTracker: Starting jobtracker with owner as madhatter
+2011-08-10 08:25:34,231 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 9001
+2011-08-10 08:25:34,234 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=JobTracker, port=9001
+2011-08-10 08:25:34,238 INFO org.apache.hadoop.ipc.metrics.RpcDetailedMetrics: Initializing RPC Metrics with hostName=JobTracker, port=9001
+2011-08-10 08:25:34,315 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2011-08-10 08:25:34,445 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2011-08-10 08:25:34,472 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50030
+2011-08-10 08:25:34,474 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50030 webServer.getConnectors()[0].getLocalPort() returned 50030
+2011-08-10 08:25:34,475 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50030
+2011-08-10 08:25:34,475 INFO org.mortbay.log: jetty-6.1.26
+2011-08-10 08:25:35,108 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50030
+2011-08-10 08:25:35,109 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2011-08-10 08:25:35,110 INFO org.apache.hadoop.mapred.JobTracker: JobTracker up at: 9001
+2011-08-10 08:25:35,110 INFO org.apache.hadoop.mapred.JobTracker: JobTracker webserver: 50030
+2011-08-10 08:25:35,450 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2011-08-10 08:25:35,605 INFO org.apache.hadoop.mapred.CompletedJobStatusStore: Completed job store is inactive
+2011-08-10 08:25:35,889 INFO org.apache.hadoop.mapred.JobTracker: Refreshing hosts information
+2011-08-10 08:25:35,968 INFO org.apache.hadoop.util.HostsFileReader: Setting the includes file to 
+2011-08-10 08:25:35,968 INFO org.apache.hadoop.util.HostsFileReader: Setting the excludes file to 
+2011-08-10 08:25:35,968 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2011-08-10 08:25:35,968 INFO org.apache.hadoop.mapred.JobTracker: Decommissioning 0 nodes
+2011-08-10 08:25:35,969 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2011-08-10 08:25:35,975 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 9001: starting
+2011-08-10 08:25:35,977 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 9001: starting
+2011-08-10 08:25:35,988 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 9001: starting
+2011-08-10 08:25:35,989 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 9001: starting
+2011-08-10 08:25:35,989 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 9001: starting
+2011-08-10 08:25:36,020 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 9001: starting
+2011-08-10 08:25:36,021 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 9001: starting
+2011-08-10 08:25:36,021 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 9001: starting
+2011-08-10 08:25:36,021 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 9001: starting
+2011-08-10 08:25:36,021 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 9001: starting
+2011-08-10 08:25:36,022 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 9001: starting
+2011-08-10 08:25:36,022 INFO org.apache.hadoop.mapred.JobTracker: Starting RUNNING
+2011-08-10 08:25:37,195 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/nothing
+2011-08-10 08:25:37,196 INFO org.apache.hadoop.mapred.JobTracker: Adding tracker tracker_nothing:localhost/127.0.0.1:52748 to host nothing
+2011-08-10 08:27:41,127 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at nothing/172.20.10.2
+************************************************************/
+2011-08-10 08:29:03,991 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = nothing/172.20.10.2
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-10 08:29:04,388 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2011-08-10 08:29:04,389 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2011-08-10 08:29:04,390 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2011-08-10 08:29:04,390 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2011-08-10 08:29:04,391 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2011-08-10 08:29:04,489 INFO org.apache.hadoop.mapred.JobTracker: Starting jobtracker with owner as madhatter
+2011-08-10 08:29:04,522 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 9001
+2011-08-10 08:29:04,526 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=JobTracker, port=9001
+2011-08-10 08:29:04,530 INFO org.apache.hadoop.ipc.metrics.RpcDetailedMetrics: Initializing RPC Metrics with hostName=JobTracker, port=9001
+2011-08-10 08:29:04,594 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2011-08-10 08:29:04,653 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2011-08-10 08:29:04,681 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50030
+2011-08-10 08:29:04,683 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50030 webServer.getConnectors()[0].getLocalPort() returned 50030
+2011-08-10 08:29:04,683 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50030
+2011-08-10 08:29:04,683 INFO org.mortbay.log: jetty-6.1.26
+2011-08-10 08:29:05,335 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50030
+2011-08-10 08:29:05,336 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2011-08-10 08:29:05,337 INFO org.apache.hadoop.mapred.JobTracker: JobTracker up at: 9001
+2011-08-10 08:29:05,337 INFO org.apache.hadoop.mapred.JobTracker: JobTracker webserver: 50030
+2011-08-10 08:29:06,592 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-10 08:29:07,592 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-10 08:29:08,593 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-10 08:29:09,594 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-10 08:29:10,594 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-10 08:29:11,595 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-10 08:29:12,596 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-10 08:29:13,596 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-10 08:29:14,597 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-10 08:29:15,598 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-10 08:29:15,601 FATAL org.apache.hadoop.mapred.JobTracker: java.lang.NullPointerException
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2293)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2046)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:295)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:287)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:4770)
+
+2011-08-10 08:29:15,602 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at nothing/172.20.10.2
+************************************************************/
+2011-08-10 08:31:09,137 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = nothing/172.20.10.2
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-10 08:31:09,663 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2011-08-10 08:31:09,664 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2011-08-10 08:31:09,665 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2011-08-10 08:31:09,665 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2011-08-10 08:31:09,666 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2011-08-10 08:31:09,778 INFO org.apache.hadoop.mapred.JobTracker: Starting jobtracker with owner as madhatter
+2011-08-10 08:31:09,805 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 9001
+2011-08-10 08:31:09,809 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=JobTracker, port=9001
+2011-08-10 08:31:09,813 INFO org.apache.hadoop.ipc.metrics.RpcDetailedMetrics: Initializing RPC Metrics with hostName=JobTracker, port=9001
+2011-08-10 08:31:09,902 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2011-08-10 08:31:09,979 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2011-08-10 08:31:10,018 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50030
+2011-08-10 08:31:10,020 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50030 webServer.getConnectors()[0].getLocalPort() returned 50030
+2011-08-10 08:31:10,020 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50030
+2011-08-10 08:31:10,020 INFO org.mortbay.log: jetty-6.1.26
+2011-08-10 08:31:10,589 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50030
+2011-08-10 08:31:10,591 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2011-08-10 08:31:10,591 INFO org.apache.hadoop.mapred.JobTracker: JobTracker up at: 9001
+2011-08-10 08:31:10,591 INFO org.apache.hadoop.mapred.JobTracker: JobTracker webserver: 50030
+2011-08-10 08:31:10,845 INFO org.apache.hadoop.mapred.JobTracker: Creating the system directory
+2011-08-10 08:31:10,944 INFO org.apache.hadoop.mapred.CompletedJobStatusStore: Completed job store is inactive
+2011-08-10 08:31:11,172 INFO org.apache.hadoop.mapred.JobTracker: Refreshing hosts information
+2011-08-10 08:31:11,219 INFO org.apache.hadoop.util.HostsFileReader: Setting the includes file to 
+2011-08-10 08:31:11,219 INFO org.apache.hadoop.util.HostsFileReader: Setting the excludes file to 
+2011-08-10 08:31:11,219 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2011-08-10 08:31:11,219 INFO org.apache.hadoop.mapred.JobTracker: Decommissioning 0 nodes
+2011-08-10 08:31:11,220 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2011-08-10 08:31:11,221 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 9001: starting
+2011-08-10 08:31:11,222 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 9001: starting
+2011-08-10 08:31:11,222 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 9001: starting
+2011-08-10 08:31:11,222 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 9001: starting
+2011-08-10 08:31:11,222 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 9001: starting
+2011-08-10 08:31:11,226 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 9001: starting
+2011-08-10 08:31:11,227 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 9001: starting
+2011-08-10 08:31:11,227 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 9001: starting
+2011-08-10 08:31:11,227 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 9001: starting
+2011-08-10 08:31:11,227 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 9001: starting
+2011-08-10 08:31:11,228 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 9001: starting
+2011-08-10 08:31:11,228 INFO org.apache.hadoop.mapred.JobTracker: Starting RUNNING
+2011-08-10 08:31:12,713 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/nothing
+2011-08-10 08:31:12,714 INFO org.apache.hadoop.mapred.JobTracker: Adding tracker tracker_nothing:localhost/127.0.0.1:52963 to host nothing
+2011-08-10 08:31:31,142 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at nothing/172.20.10.2
+************************************************************/

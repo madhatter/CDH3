@@ -1,0 +1,487 @@
+From 28be09b69cbcd99af2c23a6eca29721b608f5578 Mon Sep 17 00:00:00 2001
+From: Arvind Prabhakar <arvind@cloudera.com>
+Date: Tue, 5 Jul 2011 16:02:08 -0700
+Subject: [PATCH 5/7] SQOOP-172. Allow passing of connection parameters.
+
+This change introduces a new option that can be used to pass custom
+connection parameters while creating JDBC connections. If no connection
+parameters are specified, the system defaults to the old behavior.
+---
+ src/docs/man/common-args.txt                       |    4 +-
+ src/docs/user/common-args.txt                      |    2 +
+ src/docs/user/connecting.txt                       |    9 ++-
+ src/java/com/cloudera/sqoop/SqoopOptions.java      |   84 +++++++++++++++++++-
+ .../com/cloudera/sqoop/manager/OracleManager.java  |   31 ++++++-
+ .../com/cloudera/sqoop/manager/SqlManager.java     |   32 ++++++-
+ .../com/cloudera/sqoop/tool/BaseSqoopTool.java     |   46 ++++++++++-
+ src/test/com/cloudera/sqoop/TestSqoopOptions.java  |   26 ++++++
+ .../manager/SQLServerManagerImportManualTest.java  |    8 +--
+ 9 files changed, 219 insertions(+), 23 deletions(-)
+
+diff --git a/src/docs/man/common-args.txt b/src/docs/man/common-args.txt
+index 086e224..716f1c5 100644
+--- a/src/docs/man/common-args.txt
++++ b/src/docs/man/common-args.txt
+@@ -29,6 +29,9 @@ Database connection and common options
+ --driver (class-name)::
+   Manually specify JDBC driver class to use
+ 
++--connection-param-file (filename)::
++  Optional properties file that provides connection parameters
++
+ --hadoop-home (dir)::
+   Override $HADOOP_HOME
+ 
+@@ -47,4 +50,3 @@ Database connection and common options
+ 
+ --verbose::
+   Print more information while working
+-
+diff --git a/src/docs/user/common-args.txt b/src/docs/user/common-args.txt
+index f5a4cf7..6946914 100644
+--- a/src/docs/user/common-args.txt
++++ b/src/docs/user/common-args.txt
+@@ -32,5 +32,7 @@ Argument                                  Description
+ +\--password <password>+                  Set authentication password
+ +\--username <username>+                  Set authentication username
+ +\--verbose+                              Print more information while working
+++\--connection-param-file <filename>+     Optional properties file that\
++                                          provides connection parameters
+ -------------------------------------------------------------------------------
+ 
+diff --git a/src/docs/user/connecting.txt b/src/docs/user/connecting.txt
+index 3e887f3..945759f 100644
+--- a/src/docs/user/connecting.txt
++++ b/src/docs/user/connecting.txt
+@@ -84,4 +84,11 @@ $ sqoop import --driver com.microsoft.jdbc.sqlserver.SQLServerDriver \
+     --connect <connect-string> ...
+ ----
+ 
+-
++When connecting to a database using JDBC, you can optionally specify extra
++JDBC parameters via a property file using the option
+++\--connection-param-file+. The contents of this file are parsed as standard
++Java properties and passed into the driver while creating a connection.
++
++NOTE: The parameters specified via the optional property file are only
++applicable to JDBC connections. Any fastpath connectors that use connections
++other than JDBC will ignore these parameters.
+diff --git a/src/java/com/cloudera/sqoop/SqoopOptions.java b/src/java/com/cloudera/sqoop/SqoopOptions.java
+index ac3e488..d760d39 100644
+--- a/src/java/com/cloudera/sqoop/SqoopOptions.java
++++ b/src/java/com/cloudera/sqoop/SqoopOptions.java
+@@ -23,6 +23,7 @@ import java.io.File;
+ import java.lang.reflect.Field;
+ import java.util.ArrayList;
+ import java.util.Arrays;
++import java.util.Iterator;
+ import java.util.Map;
+ import java.util.Properties;
+ 
+@@ -32,7 +33,6 @@ import org.apache.hadoop.conf.Configuration;
+ 
+ import com.cloudera.sqoop.lib.DelimiterSet;
+ import com.cloudera.sqoop.lib.LargeObjectLoader;
+-
+ import com.cloudera.sqoop.tool.SqoopTool;
+ import com.cloudera.sqoop.util.RandomHash;
+ import com.cloudera.sqoop.util.StoredAsProperty;
+@@ -113,6 +113,7 @@ public class SqoopOptions implements Cloneable {
+   @StoredAsProperty("db.username") private String username;
+   @StoredAsProperty("db.export.staging.table") private String stagingTableName;
+   @StoredAsProperty("db.clear.staging.table") private boolean clearStagingTable;
++  private Properties connectionParams; //Properties stored as db.connect.params
+ 
+ 
+   // May not be serialized, based on configuration.
+@@ -419,6 +420,69 @@ public class SqoopOptions implements Cloneable {
+     }
+   }
+ 
++  /**
++   * This method encodes the property key values found in the provided
++   * properties instance <tt>values</tt> into another properties instance
++   * <tt>props</tt>. The specified <tt>prefix</tt> is used as a namespace
++   * qualifier for keys when inserting. This allows easy introspection of the
++   * property key values in <tt>props</tt> instance to later separate out all
++   * the properties that belong to the <tt>values</tt> instance.
++   * @param props the container properties instance
++   * @param prefix the prefix for qualifying contained property keys.
++   * @param values the contained properties instance, all of whose elements will
++   *               be added to the container properties instance.
++   *
++   * @see #getPropertiesAsNetstedProperties(Properties, String)
++   */
++  private void setPropertiesAsNestedProperties(Properties props,
++          String prefix, Properties values) {
++    String nestedPropertyPrefix = prefix + ".";
++    if (null == values || values.size() == 0) {
++      Iterator<String> it = props.stringPropertyNames().iterator();
++      while (it.hasNext()) {
++        String name = it.next();
++        if (name.startsWith(nestedPropertyPrefix)) {
++          props.remove(name);
++        }
++      }
++    } else {
++      Iterator<String> it = values.stringPropertyNames().iterator();
++      while (it.hasNext()) {
++        String name = it.next();
++        putProperty(props,
++                nestedPropertyPrefix + name, values.getProperty(name));
++      }
++    }
++  }
++
++  /**
++   * This method decodes the property key values found in the provided
++   * properties instance <tt>props</tt> that have keys beginning with the
++   * given prefix. Matching elements from this properties instance are modified
++   * so that their prefix is dropped.
++   * @param props the properties container
++   * @param prefix the prefix qualifying properties that need to be removed
++   * @return a new properties instance that contains all matching elements from
++   * the container properties.
++   */
++  private Properties getPropertiesAsNetstedProperties(
++          Properties props, String prefix) {
++    Properties nestedProps = new Properties();
++    String nestedPropertyPrefix = prefix + ".";
++    int index = nestedPropertyPrefix.length();
++    if (props != null && props.size() > 0) {
++      Iterator<String> it = props.stringPropertyNames().iterator();
++      while (it.hasNext()) {
++        String name = it.next();
++        if (name.startsWith(nestedPropertyPrefix)){
++          String shortName = name.substring(index);
++          nestedProps.put(shortName, props.get(name));
++        }
++      }
++    }
++    return nestedProps;
++  }
++
+   @SuppressWarnings("unchecked")
+   /**
+    * Given a set of properties, load this into the current SqoopOptions
+@@ -496,6 +560,9 @@ public class SqoopOptions implements Cloneable {
+     this.extraArgs = getArgArrayProperty(props, "tool.arguments",
+         this.extraArgs);
+ 
++    this.connectionParams =
++        getPropertiesAsNetstedProperties(props, "db.connect.params");
++
+     // Delimiters were previously memoized; don't let the tool override
+     // them with defaults.
+     this.areDelimsManuallySet = true;
+@@ -565,6 +632,9 @@ public class SqoopOptions implements Cloneable {
+         this.outputDelimiters);
+     setArgArrayProperties(props, "tool.arguments", this.extraArgs);
+ 
++    setPropertiesAsNestedProperties(props,
++            "db.connect.params", this.connectionParams);
++
+     return props;
+   }
+ 
+@@ -596,6 +666,10 @@ public class SqoopOptions implements Cloneable {
+         other.extraArgs = Arrays.copyOf(extraArgs, extraArgs.length);
+       }
+ 
++      if (null != connectionParams) {
++        other.setConnectionParams(this.connectionParams);
++      }
++
+       return other;
+     } catch (CloneNotSupportedException cnse) {
+       // Shouldn't happen.
+@@ -1755,5 +1829,13 @@ public class SqoopOptions implements Cloneable {
+     return inNullNonStringValue;
+   }
+ 
++  public void setConnectionParams(Properties params) {
++    connectionParams = new Properties();
++    connectionParams.putAll(params);
++  }
++
++  public Properties getConnectionParams() {
++    return connectionParams;
++  }
+ }
+ 
+diff --git a/src/java/com/cloudera/sqoop/manager/OracleManager.java b/src/java/com/cloudera/sqoop/manager/OracleManager.java
+index 438cce1..6a55312 100644
+--- a/src/java/com/cloudera/sqoop/manager/OracleManager.java
++++ b/src/java/com/cloudera/sqoop/manager/OracleManager.java
+@@ -31,6 +31,7 @@ import java.util.ArrayList;
+ import java.util.HashMap;
+ import java.util.List;
+ import java.util.Map;
++import java.util.Properties;
+ 
+ import org.apache.commons.logging.Log;
+ import org.apache.commons.logging.LogFactory;
+@@ -268,12 +269,32 @@ public class OracleManager extends GenericJdbcManager {
+     if (null == connection) {
+       // Couldn't pull one from the cache. Get a new one.
+       LOG.debug("Creating a new connection for "
+-          + connectStr + "/" + username);
+-      if (null == username) {
+-        connection = DriverManager.getConnection(connectStr);
++              + connectStr + ", using username: " + username);
++      Properties connectionParams = options.getConnectionParams();
++      if (connectionParams != null && connectionParams.size() > 0) {
++        LOG.debug("User specified connection params. "
++                  + "Using properties specific API for making connection.");
++
++        Properties props = new Properties();
++        if (username != null) {
++          props.put("user", username);
++        }
++
++        if (password != null) {
++          props.put("password", password);
++        }
++
++        props.putAll(connectionParams);
++        connection = DriverManager.getConnection(connectStr, props);
+       } else {
+-        connection = DriverManager.getConnection(connectStr, username,
+-            password);
++        LOG.debug("No connection paramenters specified. "
++                + "Using regular API for making connection.");
++        if (username == null) {
++          connection = DriverManager.getConnection(connectStr);
++        } else {
++          connection = DriverManager.getConnection(
++                              connectStr, username, password);
++        }
+       }
+     }
+ 
+diff --git a/src/java/com/cloudera/sqoop/manager/SqlManager.java b/src/java/com/cloudera/sqoop/manager/SqlManager.java
+index ed3c92f..5146f6d 100644
+--- a/src/java/com/cloudera/sqoop/manager/SqlManager.java
++++ b/src/java/com/cloudera/sqoop/manager/SqlManager.java
+@@ -48,6 +48,7 @@ import java.sql.Types;
+ import java.util.ArrayList;
+ import java.util.HashMap;
+ import java.util.Map;
++import java.util.Properties;
+ 
+ import org.apache.commons.logging.Log;
+ import org.apache.commons.logging.LogFactory;
+@@ -191,7 +192,7 @@ public abstract class SqlManager extends ConnManager {
+     try {
+       results = execute(stmt);
+     } catch (SQLException sqlE) {
+-      LOG.error("Error executing statement: " + sqlE.toString());
++      LOG.error("Error executing statement: " + sqlE.toString(), sqlE);
+       release();
+       return null;
+     }
+@@ -637,11 +638,32 @@ public abstract class SqlManager extends ConnManager {
+ 
+     String username = options.getUsername();
+     String password = options.getPassword();
+-    if (null == username) {
+-      connection = DriverManager.getConnection(options.getConnectString());
++    String connectString = options.getConnectString();
++    Properties connectionParams = options.getConnectionParams();
++    if (connectionParams != null && connectionParams.size() > 0) {
++      LOG.debug("User specified connection params. "
++              + "Using properties specific API for making connection.");
++
++      Properties props = new Properties();
++      if (username != null) {
++        props.put("user", username);
++      }
++
++      if (password != null) {
++        props.put("password", password);
++      }
++
++      props.putAll(connectionParams);
++      connection = DriverManager.getConnection(connectString, props);
+     } else {
+-      connection = DriverManager.getConnection(options.getConnectString(),
+-          username, password);
++      LOG.debug("No connection paramenters specified. "
++              + "Using regular API for making connection.");
++      if (username == null) {
++        connection = DriverManager.getConnection(connectString);
++      } else {
++        connection = DriverManager.getConnection(
++                        connectString, username, password);
++      }
+     }
+ 
+     // We only use this for metadata queries. Loosest semantics are okay.
+diff --git a/src/java/com/cloudera/sqoop/tool/BaseSqoopTool.java b/src/java/com/cloudera/sqoop/tool/BaseSqoopTool.java
+index a69f9aa..8f629f1 100644
+--- a/src/java/com/cloudera/sqoop/tool/BaseSqoopTool.java
++++ b/src/java/com/cloudera/sqoop/tool/BaseSqoopTool.java
+@@ -18,8 +18,13 @@
+ 
+ package com.cloudera.sqoop.tool;
+ 
++import java.io.File;
++import java.io.FileInputStream;
++import java.io.IOException;
++import java.io.InputStream;
+ import java.sql.SQLException;
+ import java.util.Arrays;
++import java.util.Properties;
+ 
+ import org.apache.commons.cli.CommandLine;
+ import org.apache.commons.cli.Option;
+@@ -63,6 +68,7 @@ public abstract class BaseSqoopTool extends SqoopTool {
+   public static final String CONNECT_STRING_ARG = "connect";
+   public static final String CONN_MANAGER_CLASS_NAME =
+       "connection-manager";
++  public static final String CONNECT_PARAM_FILE = "connection-param-file";
+   public static final String DRIVER_ARG = "driver";
+   public static final String USERNAME_ARG = "username";
+   public static final String PASSWORD_ARG = "password";
+@@ -341,9 +347,13 @@ public abstract class BaseSqoopTool extends SqoopTool {
+         .withLongOpt(CONNECT_STRING_ARG)
+         .create());
+     commonOpts.addOption(OptionBuilder.withArgName("class-name")
+-            .hasArg().withDescription("Specify connection manager class name")
+-            .withLongOpt(CONN_MANAGER_CLASS_NAME)
+-            .create());
++        .hasArg().withDescription("Specify connection manager class name")
++        .withLongOpt(CONN_MANAGER_CLASS_NAME)
++        .create());
++    commonOpts.addOption(OptionBuilder.withArgName("properties-file")
++        .hasArg().withDescription("Specify connection parameters file")
++        .withLongOpt(CONNECT_PARAM_FILE)
++        .create());
+     commonOpts.addOption(OptionBuilder.withArgName("class-name")
+         .hasArg().withDescription("Manually specify JDBC driver class to use")
+         .withLongOpt(DRIVER_ARG)
+@@ -616,6 +626,36 @@ public abstract class BaseSqoopTool extends SqoopTool {
+         out.setConnManagerClassName(in.getOptionValue(CONN_MANAGER_CLASS_NAME));
+     }
+ 
++    if (in.hasOption(CONNECT_PARAM_FILE)) {
++      File paramFile = new File(in.getOptionValue(CONNECT_PARAM_FILE));
++      if (!paramFile.exists()) {
++        throw new InvalidOptionsException(
++                "Specified connection parameter file not found: " + paramFile);
++      }
++      InputStream inStream = null;
++      Properties connectionParams = new Properties();
++      try {
++        inStream = new FileInputStream(
++                      new File(in.getOptionValue(CONNECT_PARAM_FILE)));
++        connectionParams.load(inStream);
++      } catch (IOException ex) {
++        LOG.warn("Failed to load connection parameter file", ex);
++        throw new InvalidOptionsException(
++                "Error while loading connection parameter file: "
++                + ex.getMessage());
++      } finally {
++        if (inStream != null) {
++          try {
++            inStream.close();
++          } catch (IOException ex) {
++            LOG.warn("Failed to close input stream", ex);
++          }
++        }
++      }
++      LOG.debug("Loaded connection parameters: " + connectionParams);
++      out.setConnectionParams(connectionParams);
++    }
++
+     if (in.hasOption(NULL_STRING)) {
+         out.setNullStringValue(in.getOptionValue(NULL_STRING));
+     }
+diff --git a/src/test/com/cloudera/sqoop/TestSqoopOptions.java b/src/test/com/cloudera/sqoop/TestSqoopOptions.java
+index 376b452..068c140 100644
+--- a/src/test/com/cloudera/sqoop/TestSqoopOptions.java
++++ b/src/test/com/cloudera/sqoop/TestSqoopOptions.java
+@@ -263,6 +263,14 @@ public class TestSqoopOptions extends TestCase {
+     out.setHiveImport(true);
+     out.setFetchSize(null);
+ 
++    Properties connParams = new Properties();
++    connParams.put("conn.timeout", "3000");
++    connParams.put("conn.buffer_size", "256");
++    connParams.put("conn.dummy", "dummy");
++    connParams.put("conn.foo", "bar");
++
++    out.setConnectionParams(connParams);
++
+     Properties outProps = out.writeProperties();
+ 
+     SqoopOptions in = new SqoopOptions();
+@@ -271,6 +279,11 @@ public class TestSqoopOptions extends TestCase {
+     Properties inProps = in.writeProperties();
+ 
+     assertEquals("properties don't match", outProps, inProps);
++
++    assertEquals("connection params don't match",
++            connParams, out.getConnectionParams());
++    assertEquals("connection params don't match",
++            connParams, in.getConnectionParams());
+   }
+ 
+   public void testPropertySerialization2() {
+@@ -290,6 +303,15 @@ public class TestSqoopOptions extends TestCase {
+     out.setHiveImport(true);
+     out.setFetchSize(42);
+ 
++    Properties connParams = new Properties();
++    connParams.setProperty("a", "value-a");
++    connParams.setProperty("b", "value-b");
++    connParams.setProperty("a.b", "value-a.b");
++    connParams.setProperty("a.b.c", "value-a.b.c");
++    connParams.setProperty("aaaaaaaaaa.bbbbbbb.cccccccc", "value-abc");
++
++    out.setConnectionParams(connParams);
++
+     Properties outProps = out.writeProperties();
+ 
+     SqoopOptions in = new SqoopOptions();
+@@ -298,6 +320,10 @@ public class TestSqoopOptions extends TestCase {
+     Properties inProps = in.writeProperties();
+ 
+     assertEquals("properties don't match", outProps, inProps);
++    assertEquals("connection params don't match",
++            connParams, out.getConnectionParams());
++    assertEquals("connection params don't match",
++            connParams, in.getConnectionParams());
+   }
+ 
+ }
+diff --git a/src/test/com/cloudera/sqoop/manager/SQLServerManagerImportManualTest.java b/src/test/com/cloudera/sqoop/manager/SQLServerManagerImportManualTest.java
+index ff3c700..afb6a63 100644
+--- a/src/test/com/cloudera/sqoop/manager/SQLServerManagerImportManualTest.java
++++ b/src/test/com/cloudera/sqoop/manager/SQLServerManagerImportManualTest.java
+@@ -26,13 +26,7 @@ import java.io.InputStreamReader;
+ import java.sql.Connection;
+ import java.sql.SQLException;
+ import java.sql.Statement;
+-import java.text.DateFormat;
+-import java.text.ParseException;
+-import java.text.SimpleDateFormat;
+ import java.util.ArrayList;
+-import java.util.Calendar;
+-import java.util.Date;
+-import java.util.TimeZone;
+ 
+ import org.apache.commons.logging.Log;
+ import org.apache.commons.logging.LogFactory;
+@@ -176,7 +170,7 @@ public class SQLServerManagerImportManualTest extends ImportJobTestCase {
+     String [] expectedResults = {
+       "1,Aaron,1000000.0,engineering",
+       "2,Bob,400.0,sales",
+-      "3,Fred,15.0,marketing"
++      "3,Fred,15.0,marketing",
+     };
+ 
+     runSQLServerTest(expectedResults);
+-- 
+1.7.0.4
+

@@ -1,0 +1,159 @@
+2011-08-10 08:25:30,383 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = nothing/172.20.10.2
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-10 08:25:30,884 INFO org.apache.hadoop.security.UserGroupInformation: JAAS Configuration already set up for Hadoop, not re-installing.
+2011-08-10 08:25:31,146 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Registered FSDatasetStatusMBean
+2011-08-10 08:25:31,222 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened info server at 50010
+2011-08-10 08:25:31,224 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Balancing bandwith is 1048576 bytes/s
+2011-08-10 08:25:31,305 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2011-08-10 08:25:31,364 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2011-08-10 08:25:31,388 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50075
+2011-08-10 08:25:31,388 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50075 webServer.getConnectors()[0].getLocalPort() returned 50075
+2011-08-10 08:25:31,388 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50075
+2011-08-10 08:25:31,388 INFO org.mortbay.log: jetty-6.1.26
+2011-08-10 08:25:31,897 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50075
+2011-08-10 08:25:31,901 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=DataNode, sessionId=null
+2011-08-10 08:25:32,262 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 50020
+2011-08-10 08:25:32,264 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=DataNode, port=50020
+2011-08-10 08:25:32,265 INFO org.apache.hadoop.ipc.metrics.RpcDetailedMetrics: Initializing RPC Metrics with hostName=DataNode, port=50020
+2011-08-10 08:25:32,267 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dnRegistration = DatanodeRegistration(nothing:50010, storageID=DS-257746229-192.168.0.100-50010-1312917581970, infoPort=50075, ipcPort=50020)
+2011-08-10 08:25:32,286 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(127.0.0.1:50010, storageID=DS-257746229-192.168.0.100-50010-1312917581970, infoPort=50075, ipcPort=50020)In DataNode.run, data = FSDataset{dirpath='/Users/madhatter/CDH3/hadoop-cache/madhatter/dfs/data/current'}
+2011-08-10 08:25:32,289 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2011-08-10 08:25:32,290 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 50020: starting
+2011-08-10 08:25:32,291 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 50020: starting
+2011-08-10 08:25:32,291 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 50020: starting
+2011-08-10 08:25:32,291 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: using BLOCKREPORT_INTERVAL of 3600000msec Initial delay: 0msec
+2011-08-10 08:25:32,292 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 50020: starting
+2011-08-10 08:25:32,299 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 1 blocks got processed in 6 msecs
+2011-08-10 08:25:32,300 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting Periodic block scanner.
+2011-08-10 08:25:35,810 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_15571224085505229_1002 src: /127.0.0.1:52745 dest: /127.0.0.1:50010
+2011-08-10 08:25:35,846 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /127.0.0.1:52745, dest: /127.0.0.1:50010, bytes: 4, op: HDFS_WRITE, cliID: DFSClient_-1935482695, offset: 0, srvID: DS-257746229-192.168.0.100-50010-1312917581970, blockid: blk_15571224085505229_1002, duration: 2691000
+2011-08-10 08:25:35,848 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_15571224085505229_1002 terminating
+2011-08-10 08:25:38,297 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Scheduling block blk_4611026343218451507_1001 file /Users/madhatter/CDH3/hadoop-cache/madhatter/dfs/data/current/blk_4611026343218451507 for deletion
+2011-08-10 08:25:38,298 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Deleted block blk_4611026343218451507_1001 at file /Users/madhatter/CDH3/hadoop-cache/madhatter/dfs/data/current/blk_4611026343218451507
+2011-08-10 08:27:41,915 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at nothing/172.20.10.2
+************************************************************/
+2011-08-10 08:29:01,174 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = nothing/172.20.10.2
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-10 08:29:01,508 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2011-08-10 08:29:01,590 INFO org.apache.hadoop.security.UserGroupInformation: JAAS Configuration already set up for Hadoop, not re-installing.
+2011-08-10 08:29:02,693 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-10 08:29:03,713 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-10 08:29:04,714 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-10 08:29:05,714 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-10 08:29:06,715 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-10 08:29:07,715 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-10 08:29:08,716 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-10 08:29:09,717 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-10 08:29:10,718 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-10 08:29:11,718 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-10 08:29:11,720 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-10 08:29:13,721 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-10 08:29:14,722 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-10 08:29:15,722 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-10 08:29:16,723 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-10 08:29:17,724 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-10 08:29:18,724 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-10 08:29:19,725 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-10 08:29:20,726 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-10 08:29:21,726 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-10 08:29:22,727 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-10 08:29:22,728 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-10 08:29:24,729 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-10 08:29:25,730 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-10 08:29:26,730 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-10 08:29:27,731 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-10 08:29:28,732 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-10 08:29:29,732 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-10 08:29:30,733 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-10 08:29:31,734 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-10 08:29:32,734 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-10 08:29:33,735 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-10 08:29:33,736 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-10 08:29:35,737 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-10 08:29:36,738 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-10 08:29:37,738 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-10 08:29:38,739 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-10 08:29:39,740 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-10 08:29:40,741 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-10 08:29:41,741 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-10 08:29:42,742 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-10 08:29:43,743 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-10 08:29:44,743 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-10 08:29:44,744 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-10 08:29:46,745 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-10 08:29:47,746 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-10 08:29:48,747 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-10 08:29:49,747 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-10 08:29:50,748 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 4 time(s).
+2011-08-10 08:29:51,749 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 5 time(s).
+2011-08-10 08:29:52,750 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 6 time(s).
+2011-08-10 08:29:53,751 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 7 time(s).
+2011-08-10 08:29:54,751 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 8 time(s).
+2011-08-10 08:29:55,752 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 9 time(s).
+2011-08-10 08:29:55,753 INFO org.apache.hadoop.ipc.RPC: Server at localhost/127.0.0.1:8020 not available yet, Zzzzz...
+2011-08-10 08:29:57,754 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 0 time(s).
+2011-08-10 08:29:58,755 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 1 time(s).
+2011-08-10 08:29:59,755 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 2 time(s).
+2011-08-10 08:30:00,756 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:8020. Already tried 3 time(s).
+2011-08-10 08:30:01,571 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at nothing/172.20.10.2
+************************************************************/
+2011-08-10 08:31:05,624 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = nothing/172.20.10.2
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-10 08:31:06,071 INFO org.apache.hadoop.security.UserGroupInformation: JAAS Configuration already set up for Hadoop, not re-installing.
+2011-08-10 08:31:06,172 INFO org.apache.hadoop.hdfs.server.common.Storage: Storage directory /Users/madhatter/CDH3/hadoop-cache/dfs/data is not formatted.
+2011-08-10 08:31:06,173 INFO org.apache.hadoop.hdfs.server.common.Storage: Formatting ...
+2011-08-10 08:31:06,247 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Registered FSDatasetStatusMBean
+2011-08-10 08:31:06,261 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened info server at 50010
+2011-08-10 08:31:06,263 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Balancing bandwith is 1048576 bytes/s
+2011-08-10 08:31:06,322 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2011-08-10 08:31:06,381 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2011-08-10 08:31:06,394 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50075
+2011-08-10 08:31:06,394 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50075 webServer.getConnectors()[0].getLocalPort() returned 50075
+2011-08-10 08:31:06,394 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50075
+2011-08-10 08:31:06,394 INFO org.mortbay.log: jetty-6.1.26
+2011-08-10 08:31:06,943 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50075
+2011-08-10 08:31:06,946 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=DataNode, sessionId=null
+2011-08-10 08:31:07,314 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 50020
+2011-08-10 08:31:07,315 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=DataNode, port=50020
+2011-08-10 08:31:07,317 INFO org.apache.hadoop.ipc.metrics.RpcDetailedMetrics: Initializing RPC Metrics with hostName=DataNode, port=50020
+2011-08-10 08:31:07,321 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dnRegistration = DatanodeRegistration(nothing:50010, storageID=, infoPort=50075, ipcPort=50020)
+2011-08-10 08:31:07,358 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: New storage id DS-1179262424-172.20.10.2-50010-1312957867331 is assigned to data-node 127.0.0.1:50010
+2011-08-10 08:31:07,359 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(127.0.0.1:50010, storageID=DS-1179262424-172.20.10.2-50010-1312957867331, infoPort=50075, ipcPort=50020)In DataNode.run, data = FSDataset{dirpath='/Users/madhatter/CDH3/hadoop-cache/dfs/data/current'}
+2011-08-10 08:31:07,360 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2011-08-10 08:31:07,361 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 50020: starting
+2011-08-10 08:31:07,362 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 50020: starting
+2011-08-10 08:31:07,362 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 50020: starting
+2011-08-10 08:31:07,362 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: using BLOCKREPORT_INTERVAL of 3600000msec Initial delay: 0msec
+2011-08-10 08:31:07,363 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 50020: starting
+2011-08-10 08:31:07,368 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 0 blocks got processed in 4 msecs
+2011-08-10 08:31:07,369 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting Periodic block scanner.
+2011-08-10 08:31:11,142 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-5396185410863926075_1001 src: /127.0.0.1:52960 dest: /127.0.0.1:50010
+2011-08-10 08:31:11,160 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /127.0.0.1:52960, dest: /127.0.0.1:50010, bytes: 4, op: HDFS_WRITE, cliID: DFSClient_-172964830, offset: 0, srvID: DS-1179262424-172.20.10.2-50010-1312957867331, blockid: blk_-5396185410863926075_1001, duration: 6552000
+2011-08-10 08:31:11,163 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_-5396185410863926075_1001 terminating
+2011-08-10 08:31:22,369 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 1 blocks got processed in 3 msecs
+2011-08-10 08:31:31,490 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at nothing/172.20.10.2
+************************************************************/

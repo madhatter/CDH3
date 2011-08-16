@@ -1,0 +1,93 @@
+From 86f1d433bb248ffb08da0b57207317bfd2f5e22a Mon Sep 17 00:00:00 2001
+From: Roman Shaposhnik <rvs@cloudera.com>
+Date: Tue, 24 May 2011 18:06:26 -0700
+Subject: [PATCH 16/24] ZOOKEEPER-1061. Zookeeper stop fails if start called twice
+
+The zkServer.sh script doesn't check properly to see if a previously started
+server is still running. If you call start twice, the second invocation
+will over-write the PID file with a process that then fails due to port
+occupancy.
+
+This means that stop will subsequently fail.
+
+Here is a reference that describes how init scripts should normally work:
+
+http://refspecs.freestandards.org/LSB_3.1.0/LSB-Core-generic/LSB-Core-generic/iniscrptact.html
+
+Reason: Improvement
+Author: Ted Dunning (ted.dunning@gmail.com)
+Ref: DISTRO-211
+---
+ bin/zkServer.sh |   40 ++++++++++++++++++++++++++++++----------
+ 1 files changed, 30 insertions(+), 10 deletions(-)
+
+diff --git a/bin/zkServer.sh b/bin/zkServer.sh
+index a415297..d3d0fb0 100755
+--- a/bin/zkServer.sh
++++ b/bin/zkServer.sh
+@@ -84,23 +84,41 @@ _ZOO_DAEMON_OUT="$ZOO_LOG_DIR/zookeeper.out"
+ 
+ case $1 in
+ start)
+-    echo  "Starting zookeeper ... "
++    echo  -n "Starting zookeeper ... "
++    if [ -f $ZOOPIDFILE ]; then
++      if kill -0 `cat $ZOOPIDFILE` > /dev/null 2>&1; then
++         echo $command already running as process `cat $ZOOPIDFILE`. 
++         exit 0
++      fi
++    fi
+     nohup $JAVA "-Dzookeeper.log.dir=${ZOO_LOG_DIR}" "-Dzookeeper.root.logger=${ZOO_LOG4J_PROP}" \
+     -cp "$CLASSPATH" $JVMFLAGS $ZOOMAIN "$ZOOCFG" > "$_ZOO_DAEMON_OUT" 2>&1 < /dev/null &
+-    /bin/echo -n $! > "$ZOOPIDFILE"
+-    sleep 1
+-    echo STARTED
++    if [ $? -eq 0 ]
++    then
++      if /bin/echo -n $! > "$ZOOPIDFILE"
++      then
++        sleep 1
++        echo STARTED
++      else
++        echo FAILED TO WRITE PID
++        exit 1
++      fi
++    else
++      echo SERVER DID NOT START
++      exit 1
++    fi
+     ;;
+ stop)
+-    echo "Stopping zookeeper ... "
++    echo -n "Stopping zookeeper ... "
+     if [ ! -f "$ZOOPIDFILE" ]
+     then
+-    echo "error: could not find file $ZOOPIDFILE"
+-    exit 1
++      echo "error: could not find file $ZOOPIDFILE"
++      exit 1
+     else
+-    $KILL -9 $(cat "$ZOOPIDFILE")
+-    rm "$ZOOPIDFILE"
+-    echo STOPPED
++      $KILL -9 $(cat "$ZOOPIDFILE")
++      rm "$ZOOPIDFILE"
++      echo STOPPED
++      exit 0
+     fi
+     ;;
+ upgrade)
+@@ -122,8 +140,10 @@ status)
+     if [ "x$STAT" = "x" ]
+     then
+         echo "Error contacting service. It is probably not running."
++        exit 1
+     else
+         echo $STAT
++        exit 0
+     fi
+     ;;
+ *)
+-- 
+1.7.0.4
+

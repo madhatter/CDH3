@@ -1,0 +1,85 @@
+From 5d612b211dc1eb04b19e0fa613b24766943bd4a2 Mon Sep 17 00:00:00 2001
+From: Andrew Bayer <andrew@cloudera.com>
+Date: Wed, 6 Jul 2011 00:56:06 -0700
+Subject: [PATCH 6/7] CLOUDERA-BUILD. Updating versions for cdh3u1 release.
+
+---
+ cloudera-pom.xml                                  |    4 ++--
+ cloudera/maven-packaging/pom.xml                  |    4 ++--
+ cloudera/maven-packaging/sqoop/pom.xml            |    4 ++--
+ cloudera/maven-packaging/templates/build.template |    2 +-
+ 4 files changed, 7 insertions(+), 7 deletions(-)
+
+diff --git a/cloudera-pom.xml b/cloudera-pom.xml
+index e2cb518..93a997c 100644
+--- a/cloudera-pom.xml
++++ b/cloudera-pom.xml
+@@ -21,13 +21,13 @@
+   <parent>
+     <groupId>com.cloudera.cdh</groupId>
+     <artifactId>sqoop-root</artifactId>
+-    <version>3.0-u1-SNAPSHOT</version>
++    <version>3.0-u1</version>
+     <relativePath>cloudera/maven-packaging/pom.xml</relativePath>
+   </parent>
+   
+   <groupId>com.cloudera.cdh</groupId>
+   <artifactId>sqoop-ant</artifactId>
+-  <version>3.0-u1-SNAPSHOT</version>
++  <version>3.0-u1</version>
+   <packaging>pom</packaging>
+   
+   <scm>
+diff --git a/cloudera/maven-packaging/pom.xml b/cloudera/maven-packaging/pom.xml
+index b2aaaac..8eb3605 100644
+--- a/cloudera/maven-packaging/pom.xml
++++ b/cloudera/maven-packaging/pom.xml
+@@ -21,12 +21,12 @@
+   <parent>
+     <groupId>com.cloudera.cdh</groupId>
+     <artifactId>cdh-root</artifactId>
+-    <version>3.0-u1-SNAPSHOT</version>
++    <version>3.0-u1</version>
+   </parent>
+   
+   <groupId>com.cloudera.cdh</groupId>
+   <artifactId>sqoop-root</artifactId>
+-  <version>3.0-u1-SNAPSHOT</version>
++  <version>3.0-u1</version>
+   <packaging>pom</packaging>
+   
+   <name>CDH Sqoop root</name>
+diff --git a/cloudera/maven-packaging/sqoop/pom.xml b/cloudera/maven-packaging/sqoop/pom.xml
+index cea7df1..095095a 100644
+--- a/cloudera/maven-packaging/sqoop/pom.xml
++++ b/cloudera/maven-packaging/sqoop/pom.xml
+@@ -23,12 +23,12 @@
+   <parent>
+     <groupId>com.cloudera.cdh</groupId>
+     <artifactId>sqoop-root</artifactId>
+-    <version>3.0-u1-SNAPSHOT</version>
++    <version>3.0-u1</version>
+   </parent>
+   
+   <groupId>com.cloudera.sqoop</groupId>
+   <artifactId>sqoop</artifactId>
+-  <version>1.3.0-cdh3u1-SNAPSHOT</version>
++  <version>1.3.0-cdh3u1</version>
+   <packaging>pom</packaging>
+   
+   <name>sqoop</name>
+diff --git a/cloudera/maven-packaging/templates/build.template b/cloudera/maven-packaging/templates/build.template
+index 4758032..cd648cb 100644
+--- a/cloudera/maven-packaging/templates/build.template
++++ b/cloudera/maven-packaging/templates/build.template
+@@ -1,6 +1,6 @@
+ version=com.cloudera.sqoop:sqoop.version
+ sqoop.version=com.cloudera.sqoop:sqoop.version
+-reactor.repo=https://repository.cloudera.com/content/repositories/snapshots
++reactor.repo=https://repository.cloudera.com/content/groups/cdh-releases-rcs
+ hadoop-core.cloudera.version=org.apache.hadoop:hadoop-core.version
+ 
+ hbase.version=org.apache.hbase:hbase.version
+-- 
+1.7.0.4
+

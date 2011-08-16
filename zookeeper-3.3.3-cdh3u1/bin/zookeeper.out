@@ -1,0 +1,27 @@
+2011-08-16 19:33:32,762 - INFO  [main:QuorumPeerConfig@90] - Reading configuration from: ./../conf/zoo.cfg
+2011-08-16 19:33:32,768 - ERROR [main:QuorumPeerConfig@259] - Invalid configuration, only one server specified (ignoring)
+2011-08-16 19:33:32,768 - WARN  [main:QuorumPeerMain@105] - Either no config or no quorum defined in config, running  in standalone mode
+2011-08-16 19:33:32,782 - INFO  [main:QuorumPeerConfig@90] - Reading configuration from: ./../conf/zoo.cfg
+2011-08-16 19:33:32,783 - ERROR [main:QuorumPeerConfig@259] - Invalid configuration, only one server specified (ignoring)
+2011-08-16 19:33:32,783 - INFO  [main:ZooKeeperServerMain@94] - Starting server
+2011-08-16 19:33:32,790 - INFO  [main:Environment@97] - Server environment:zookeeper.version=3.3.3-cdh3u1--1, built on 07/18/2011 15:17 GMT
+2011-08-16 19:33:32,791 - INFO  [main:Environment@97] - Server environment:host.name=nothing
+2011-08-16 19:33:32,791 - INFO  [main:Environment@97] - Server environment:java.version=1.6.0_26
+2011-08-16 19:33:32,792 - INFO  [main:Environment@97] - Server environment:java.vendor=Apple Inc.
+2011-08-16 19:33:32,792 - INFO  [main:Environment@97] - Server environment:java.home=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+2011-08-16 19:33:32,793 - INFO  [main:Environment@97] - Server environment:java.class.path=./../build/classes:./../build/lib/*.jar:./../zookeeper-3.3.3-cdh3u1.jar:./../lib/log4j-1.2.15.jar:./../lib/jline-0.9.94.jar:./../src/java/lib/*.jar:./../conf:
+2011-08-16 19:33:32,793 - INFO  [main:Environment@97] - Server environment:java.library.path=.:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+2011-08-16 19:33:32,793 - INFO  [main:Environment@97] - Server environment:java.io.tmpdir=/var/folders/zz/zzzivhrRnAmviuee+++++++++++/-Tmp-/
+2011-08-16 19:33:32,794 - INFO  [main:Environment@97] - Server environment:java.compiler=<NA>
+2011-08-16 19:33:32,794 - INFO  [main:Environment@97] - Server environment:os.name=Mac OS X
+2011-08-16 19:33:32,795 - INFO  [main:Environment@97] - Server environment:os.arch=x86_64
+2011-08-16 19:33:32,795 - INFO  [main:Environment@97] - Server environment:os.version=10.6.8
+2011-08-16 19:33:32,795 - INFO  [main:Environment@97] - Server environment:user.name=root
+2011-08-16 19:33:32,796 - INFO  [main:Environment@97] - Server environment:user.home=/Users/madhatter
+2011-08-16 19:33:32,796 - INFO  [main:Environment@97] - Server environment:user.dir=/Users/madhatter/CDH3/zookeeper-3.3.3-cdh3u1/bin
+2011-08-16 19:33:32,802 - INFO  [main:ZooKeeperServer@663] - tickTime set to 2000
+2011-08-16 19:33:32,802 - INFO  [main:ZooKeeperServer@672] - minSessionTimeout set to -1
+2011-08-16 19:33:32,803 - INFO  [main:ZooKeeperServer@681] - maxSessionTimeout set to -1
+2011-08-16 19:33:32,829 - INFO  [main:NIOServerCnxn$Factory@143] - binding to port 0.0.0.0/0.0.0.0:2181
+2011-08-16 19:33:32,844 - INFO  [main:FileSnap@82] - Reading snapshot /var/zookeeper/version-2/snapshot.0
+2011-08-16 19:33:32,850 - INFO  [main:FileTxnSnapLog@208] - Snapshotting: 0

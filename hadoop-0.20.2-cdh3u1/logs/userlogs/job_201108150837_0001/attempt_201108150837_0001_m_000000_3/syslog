@@ -1,0 +1,92 @@
+2011-08-15 08:39:51,848 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2011-08-15 08:39:52,080 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager: Creating symlink: /Users/madhatter/CDH3/hadoop-cache/mapred/local/taskTracker/madhatter/jobcache/job_201108150837_0001/jars/.job.jar.crc <- /Users/madhatter/CDH3/hadoop-cache/mapred/local/taskTracker/madhatter/jobcache/job_201108150837_0001/attempt_201108150837_0001_m_000000_3/work/.job.jar.crc
+2011-08-15 08:39:52,102 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager: Creating symlink: /Users/madhatter/CDH3/hadoop-cache/mapred/local/taskTracker/madhatter/jobcache/job_201108150837_0001/jars/job.jar <- /Users/madhatter/CDH3/hadoop-cache/mapred/local/taskTracker/madhatter/jobcache/job_201108150837_0001/attempt_201108150837_0001_m_000000_3/work/job.jar
+2011-08-15 08:39:52,299 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=MAP, sessionId=
+2011-08-15 08:39:52,613 WARN org.apache.hadoop.io.compress.snappy.LoadSnappy: Snappy native library not loaded
+2011-08-15 08:39:52,622 INFO org.apache.hadoop.mapred.MapTask: numReduceTasks: 1
+2011-08-15 08:39:52,630 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2011-08-15 08:39:52,821 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2011-08-15 08:39:52,822 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2011-08-15 08:39:52,938 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2011-08-15 08:39:52,940 INFO org.apache.hadoop.streaming.PipeMapRed: PipeMapRed exec [max_temperature_map.rb]
+2011-08-15 08:39:53,056 ERROR org.apache.hadoop.streaming.PipeMapRed: configuration exception
+java.io.IOException: Cannot run program "max_temperature_map.rb": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:460)
+	at org.apache.hadoop.streaming.PipeMapRed.configure(PipeMapRed.java:214)
+	at org.apache.hadoop.streaming.PipeMapper.configure(PipeMapper.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:88)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:64)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:117)
+	at org.apache.hadoop.mapred.MapRunner.configure(MapRunner.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:88)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:64)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:117)
+	at org.apache.hadoop.mapred.MapTask.runOldMapper(MapTask.java:387)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:325)
+	at org.apache.hadoop.mapred.Child$4.run(Child.java:270)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1127)
+	at org.apache.hadoop.mapred.Child.main(Child.java:264)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:53)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:91)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:453)
+	... 24 more
+2011-08-15 08:39:53,158 INFO org.apache.hadoop.mapred.TaskLogsTruncater: Initializing logs' truncater with mapRetainSize=-1 and reduceRetainSize=-1
+2011-08-15 08:39:53,250 WARN org.apache.hadoop.mapred.Child: Error running child
+java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:93)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:64)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:117)
+	at org.apache.hadoop.mapred.MapTask.runOldMapper(MapTask.java:387)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:325)
+	at org.apache.hadoop.mapred.Child$4.run(Child.java:270)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1127)
+	at org.apache.hadoop.mapred.Child.main(Child.java:264)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:88)
+	... 9 more
+Caused by: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:93)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:64)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:117)
+	at org.apache.hadoop.mapred.MapRunner.configure(MapRunner.java:34)
+	... 14 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:88)
+	... 17 more
+Caused by: java.lang.RuntimeException: configuration exception
+	at org.apache.hadoop.streaming.PipeMapRed.configure(PipeMapRed.java:228)
+	at org.apache.hadoop.streaming.PipeMapper.configure(PipeMapper.java:66)
+	... 22 more
+Caused by: java.io.IOException: Cannot run program "max_temperature_map.rb": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:460)
+	at org.apache.hadoop.streaming.PipeMapRed.configure(PipeMapRed.java:214)
+	... 23 more
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:53)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:91)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:453)
+	... 24 more
+2011-08-15 08:39:53,257 INFO org.apache.hadoop.mapred.Task: Runnning cleanup for the task

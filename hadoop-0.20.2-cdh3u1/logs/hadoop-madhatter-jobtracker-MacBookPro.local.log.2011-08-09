@@ -1,0 +1,143 @@
+2011-08-09 21:07:01,748 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = MacBookPro.local/192.168.0.100
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-09 21:07:02,163 FATAL org.apache.hadoop.mapred.JobTracker: java.lang.RuntimeException: Not a host:port pair: local
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:140)
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:124)
+	at org.apache.hadoop.mapred.JobTracker.getAddress(JobTracker.java:2430)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2053)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2046)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:295)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:287)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:4770)
+
+2011-08-09 21:07:02,164 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at MacBookPro.local/192.168.0.100
+************************************************************/
+2011-08-09 21:14:24,966 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = MacBookPro.local/192.168.0.100
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-09 21:14:25,281 FATAL org.apache.hadoop.mapred.JobTracker: java.lang.RuntimeException: Not a host:port pair: local
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:140)
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:124)
+	at org.apache.hadoop.mapred.JobTracker.getAddress(JobTracker.java:2430)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2053)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2046)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:295)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:287)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:4770)
+
+2011-08-09 21:14:25,282 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at MacBookPro.local/192.168.0.100
+************************************************************/
+2011-08-09 21:14:54,717 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = MacBookPro.local/192.168.0.100
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-09 21:14:55,027 FATAL org.apache.hadoop.mapred.JobTracker: java.lang.RuntimeException: Not a host:port pair: local
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:140)
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:124)
+	at org.apache.hadoop.mapred.JobTracker.getAddress(JobTracker.java:2430)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2053)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2046)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:295)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:287)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:4770)
+
+2011-08-09 21:14:55,028 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at MacBookPro.local/192.168.0.100
+************************************************************/
+2011-08-09 21:19:41,660 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = MacBookPro.local/192.168.0.100
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-09 21:19:42,249 FATAL org.apache.hadoop.mapred.JobTracker: java.lang.RuntimeException: Not a host:port pair: local
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:140)
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:124)
+	at org.apache.hadoop.mapred.JobTracker.getAddress(JobTracker.java:2430)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2053)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2046)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:295)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:287)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:4770)
+
+2011-08-09 21:19:42,250 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at MacBookPro.local/192.168.0.100
+************************************************************/
+2011-08-09 21:24:35,643 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = MacBookPro.local/192.168.0.100
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-09 21:24:36,087 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2011-08-09 21:24:36,088 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2011-08-09 21:24:36,089 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2011-08-09 21:24:36,089 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2011-08-09 21:24:36,091 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2011-08-09 21:24:36,243 INFO org.apache.hadoop.mapred.JobTracker: Starting jobtracker with owner as madhatter
+2011-08-09 21:24:36,318 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 9001
+2011-08-09 21:24:36,322 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=JobTracker, port=9001
+2011-08-09 21:24:36,325 INFO org.apache.hadoop.ipc.metrics.RpcDetailedMetrics: Initializing RPC Metrics with hostName=JobTracker, port=9001
+2011-08-09 21:24:36,409 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2011-08-09 21:24:36,468 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2011-08-09 21:24:36,493 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2011-08-09 21:24:36,522 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50030
+2011-08-09 21:24:36,525 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50030 webServer.getConnectors()[0].getLocalPort() returned 50030
+2011-08-09 21:24:36,525 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50030
+2011-08-09 21:24:36,525 INFO org.mortbay.log: jetty-6.1.26
+2011-08-09 21:24:37,250 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50030
+2011-08-09 21:24:37,251 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2011-08-09 21:24:37,252 INFO org.apache.hadoop.mapred.JobTracker: JobTracker up at: 9001
+2011-08-09 21:24:37,252 INFO org.apache.hadoop.mapred.JobTracker: JobTracker webserver: 50030
+2011-08-09 21:24:37,658 INFO org.apache.hadoop.mapred.JobTracker: Creating the system directory
+2011-08-09 21:24:37,736 INFO org.apache.hadoop.mapred.JobHistory: Creating DONE folder at file:/Users/madhatter/CDH3/hadoop/logs/history/done
+2011-08-09 21:24:37,769 INFO org.apache.hadoop.mapred.CompletedJobStatusStore: Completed job store is inactive
+2011-08-09 21:24:38,158 INFO org.apache.hadoop.mapred.JobTracker: Refreshing hosts information
+2011-08-09 21:24:38,234 INFO org.apache.hadoop.util.HostsFileReader: Setting the includes file to 
+2011-08-09 21:24:38,235 INFO org.apache.hadoop.util.HostsFileReader: Setting the excludes file to 
+2011-08-09 21:24:38,235 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2011-08-09 21:24:38,235 INFO org.apache.hadoop.mapred.JobTracker: Decommissioning 0 nodes
+2011-08-09 21:24:38,243 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2011-08-09 21:24:38,243 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 9001: starting
+2011-08-09 21:24:38,251 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 9001: starting
+2011-08-09 21:24:38,260 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 9001: starting
+2011-08-09 21:24:38,260 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 9001: starting
+2011-08-09 21:24:38,277 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 9001: starting
+2011-08-09 21:24:38,299 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 9001: starting
+2011-08-09 21:24:38,300 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 9001: starting
+2011-08-09 21:24:38,300 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 9001: starting
+2011-08-09 21:24:38,300 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 9001: starting
+2011-08-09 21:24:38,301 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 9001: starting
+2011-08-09 21:24:38,301 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 9001: starting
+2011-08-09 21:24:38,301 INFO org.apache.hadoop.mapred.JobTracker: Starting RUNNING
+2011-08-09 21:24:39,373 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/192.168.0.100
+2011-08-09 21:24:39,375 INFO org.apache.hadoop.mapred.JobTracker: Adding tracker tracker_192.168.0.100:localhost/127.0.0.1:51758 to host 192.168.0.100
+2011-08-09 21:30:32,451 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at MacBookPro.local/192.168.0.100
+************************************************************/

@@ -1,0 +1,114 @@
+2011-08-09 21:14:26,225 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = MacBookPro.local/192.168.0.100
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-09 21:14:26,734 ERROR org.apache.hadoop.mapred.TaskTracker: Can not start task tracker because java.lang.RuntimeException: Not a host:port pair: local
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:140)
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:124)
+	at org.apache.hadoop.mapred.JobTracker.getAddress(JobTracker.java:2430)
+	at org.apache.hadoop.mapred.TaskTracker.<init>(TaskTracker.java:1402)
+	at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:3578)
+
+2011-08-09 21:14:26,741 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at MacBookPro.local/192.168.0.100
+************************************************************/
+2011-08-09 21:14:56,001 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = MacBookPro.local/192.168.0.100
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-09 21:14:56,485 ERROR org.apache.hadoop.mapred.TaskTracker: Can not start task tracker because java.lang.RuntimeException: Not a host:port pair: local
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:140)
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:124)
+	at org.apache.hadoop.mapred.JobTracker.getAddress(JobTracker.java:2430)
+	at org.apache.hadoop.mapred.TaskTracker.<init>(TaskTracker.java:1402)
+	at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:3578)
+
+2011-08-09 21:14:56,486 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at MacBookPro.local/192.168.0.100
+************************************************************/
+2011-08-09 21:19:42,595 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = MacBookPro.local/192.168.0.100
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-09 21:19:43,087 ERROR org.apache.hadoop.mapred.TaskTracker: Can not start task tracker because java.lang.RuntimeException: Not a host:port pair: local
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:140)
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:124)
+	at org.apache.hadoop.mapred.JobTracker.getAddress(JobTracker.java:2430)
+	at org.apache.hadoop.mapred.TaskTracker.<init>(TaskTracker.java:1402)
+	at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:3578)
+
+2011-08-09 21:19:43,092 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at MacBookPro.local/192.168.0.100
+************************************************************/
+2011-08-09 21:24:37,211 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = MacBookPro.local/192.168.0.100
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-09 21:24:38,368 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2011-08-09 21:24:38,423 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2011-08-09 21:24:38,446 INFO org.apache.hadoop.mapred.TaskLogsTruncater: Initializing logs' truncater with mapRetainSize=-1 and reduceRetainSize=-1
+2011-08-09 21:24:38,451 INFO org.apache.hadoop.mapred.TaskTracker: Starting tasktracker with owner as madhatter
+2011-08-09 21:24:38,517 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2011-08-09 21:24:38,601 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=TaskTracker, sessionId=
+2011-08-09 21:24:38,626 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 51758
+2011-08-09 21:24:38,628 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=51758
+2011-08-09 21:24:38,673 INFO org.apache.hadoop.ipc.metrics.RpcDetailedMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=51758
+2011-08-09 21:24:38,675 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2011-08-09 21:24:38,675 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 51758: starting
+2011-08-09 21:24:38,676 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 51758: starting
+2011-08-09 21:24:38,676 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 51758: starting
+2011-08-09 21:24:38,676 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 51758: starting
+2011-08-09 21:24:38,676 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 51758: starting
+2011-08-09 21:24:38,676 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: localhost/127.0.0.1:51758
+2011-08-09 21:24:38,676 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_192.168.0.100:localhost/127.0.0.1:51758
+2011-08-09 21:24:38,736 INFO org.apache.hadoop.mapred.TaskTracker: Starting thread: Map-events fetcher for all reduce tasks on tracker_192.168.0.100:localhost/127.0.0.1:51758
+2011-08-09 21:24:38,737 INFO org.apache.hadoop.mapred.TaskTracker:  Using MemoryCalculatorPlugin : null
+2011-08-09 21:24:38,805 WARN org.apache.hadoop.util.ProcessTree: setsid is not available on this machine. So not using it.
+2011-08-09 21:24:38,805 INFO org.apache.hadoop.util.ProcessTree: setsid exited with exit code 0
+2011-08-09 21:24:38,821 INFO org.apache.hadoop.util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+2011-08-09 21:24:38,821 INFO org.apache.hadoop.mapred.TaskTracker: ProcessTree implementation is missing on this system. TaskMemoryManager is disabled.
+2011-08-09 21:24:38,823 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
+2011-08-09 21:24:38,830 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
+2011-08-09 21:24:38,831 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
+2011-08-09 21:24:38,831 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
+2011-08-09 21:24:38,831 INFO org.mortbay.log: jetty-6.1.26
+2011-08-09 21:24:39,276 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
+2011-08-09 21:24:39,276 INFO org.apache.hadoop.mapred.TaskTracker: FILE_CACHE_SIZE for mapOutputServlet set to : 2000
+2011-08-09 21:30:32,816 ERROR org.apache.hadoop.mapred.TaskTracker: Caught exception: java.io.IOException: Call to localhost/127.0.0.1:9001 failed on local exception: java.io.EOFException
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:1142)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1110)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:226)
+	at org.apache.hadoop.mapred.$Proxy4.heartbeat(Unknown Source)
+	at org.apache.hadoop.mapred.TaskTracker.transmitHeartBeat(TaskTracker.java:1759)
+	at org.apache.hadoop.mapred.TaskTracker.offerService(TaskTracker.java:1565)
+	at org.apache.hadoop.mapred.TaskTracker.run(TaskTracker.java:2330)
+	at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:3580)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:375)
+	at org.apache.hadoop.ipc.Client$Connection.receiveResponse(Client.java:815)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:724)
+
+2011-08-09 21:30:32,817 INFO org.apache.hadoop.mapred.TaskTracker: Resending 'status' to 'localhost' with reponseId '1168
+2011-08-09 21:30:32,988 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at MacBookPro.local/192.168.0.100
+************************************************************/

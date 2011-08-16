@@ -1,0 +1,25 @@
+From bb2e587ba35b93c165cdbed0bf36e40a6f8eee0d Mon Sep 17 00:00:00 2001
+From: Roman Shaposhnik <rvs@cloudera.com>
+Date: Fri, 3 Jun 2011 11:14:53 -0700
+Subject: [PATCH 17/24] DISTRO-115. Zookeeper is storing its data in the wrong directory
+
+---
+ conf/zoo.cfg |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/conf/zoo.cfg b/conf/zoo.cfg
+index 2b8755d..7eb4297 100644
+--- a/conf/zoo.cfg
++++ b/conf/zoo.cfg
+@@ -7,7 +7,7 @@ initLimit=10
+ # sending a request and getting an acknowledgement
+ syncLimit=5
+ # the directory where the snapshot is stored.
+-dataDir=/var/zookeeper
++dataDir=/var/lib/zookeeper
+ # the port at which the clients will connect
+ clientPort=2181
+ server.0=localhost:2888:3888
+-- 
+1.7.0.4
+

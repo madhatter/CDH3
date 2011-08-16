@@ -1,0 +1,6 @@
+2011-08-12 23:04:47,692 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2011-08-12 23:04:47,991 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=CLEANUP, sessionId=
+2011-08-12 23:04:48,185 INFO org.apache.hadoop.mapred.Task: Runnning cleanup for the task
+2011-08-12 23:04:48,188 INFO org.apache.hadoop.mapred.Task: Task:attempt_201108121808_0005_r_000000_1 is done. And is in the process of commiting
+2011-08-12 23:04:48,196 INFO org.apache.hadoop.mapred.Task: Task 'attempt_201108121808_0005_r_000000_1' done.
+2011-08-12 23:04:48,276 INFO org.apache.hadoop.mapred.TaskLogsTruncater: Initializing logs' truncater with mapRetainSize=-1 and reduceRetainSize=-1

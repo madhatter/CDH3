@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <property file="/var/lib/jenkins/workspace/CDH3u1-Full-RC/build/cdh3/sqoop/1.3.0-cdh3u1/source/cdh.build.properties"/>
+  <exec dir="/var/lib/jenkins/workspace/CDH3u1-Full-RC/build/cdh3/sqoop/1.3.0-cdh3u1/source" executable="ant" failonerror="true">
+    <arg value="clean"/>
+    <arg value="tar"/>
+    <arg value="-Dreactor.repo=file:///var/lib/jenkins/.m2/repository"/>
+    <arg value="-Divy.cache.dir=/var/lib/jenkins/.ivy2"/>
+    <arg value="-propertyfile"/>
+    <arg value="cloudera/build.properties"/>
+  </exec>
+</target>
+</project>

@@ -1,0 +1,436 @@
+2011-08-15 08:20:28,084 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = nothing/172.20.10.2
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-15 08:20:28,720 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2011-08-15 08:20:28,772 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2011-08-15 08:20:28,794 INFO org.apache.hadoop.mapred.TaskLogsTruncater: Initializing logs' truncater with mapRetainSize=-1 and reduceRetainSize=-1
+2011-08-15 08:20:28,799 INFO org.apache.hadoop.mapred.TaskTracker: Starting tasktracker with owner as madhatter
+2011-08-15 08:20:28,966 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2011-08-15 08:20:29,048 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=TaskTracker, sessionId=
+2011-08-15 08:20:29,088 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 63931
+2011-08-15 08:20:29,090 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=63931
+2011-08-15 08:20:29,135 INFO org.apache.hadoop.ipc.metrics.RpcDetailedMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=63931
+2011-08-15 08:20:29,137 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2011-08-15 08:20:29,137 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 63931: starting
+2011-08-15 08:20:29,138 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 63931: starting
+2011-08-15 08:20:29,139 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 63931: starting
+2011-08-15 08:20:29,139 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 63931: starting
+2011-08-15 08:20:29,139 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 63931: starting
+2011-08-15 08:20:29,139 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: localhost/127.0.0.1:63931
+2011-08-15 08:20:29,139 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_nothing:localhost/127.0.0.1:63931
+2011-08-15 08:20:58,673 INFO org.apache.hadoop.mapred.TaskTracker:  Using MemoryCalculatorPlugin : null
+2011-08-15 08:20:58,687 INFO org.apache.hadoop.mapred.TaskTracker: Starting thread: Map-events fetcher for all reduce tasks on tracker_nothing:localhost/127.0.0.1:63931
+2011-08-15 08:20:58,836 WARN org.apache.hadoop.util.ProcessTree: setsid is not available on this machine. So not using it.
+2011-08-15 08:20:58,836 INFO org.apache.hadoop.util.ProcessTree: setsid exited with exit code 0
+2011-08-15 08:20:58,837 INFO org.apache.hadoop.util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+2011-08-15 08:20:58,837 INFO org.apache.hadoop.mapred.TaskTracker: ProcessTree implementation is missing on this system. TaskMemoryManager is disabled.
+2011-08-15 08:20:58,913 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
+2011-08-15 08:20:58,948 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
+2011-08-15 08:20:58,949 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
+2011-08-15 08:20:58,949 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
+2011-08-15 08:20:58,949 INFO org.mortbay.log: jetty-6.1.26
+2011-08-15 08:20:59,545 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
+2011-08-15 08:20:59,546 INFO org.apache.hadoop.mapred.TaskTracker: FILE_CACHE_SIZE for mapOutputServlet set to : 2000
+2011-08-15 08:20:59,552 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201108121808_0003 for user-log deletion with retainTimeStamp:1313475658838
+2011-08-15 08:20:59,553 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201108121808_0005 for user-log deletion with retainTimeStamp:1313475658838
+2011-08-15 08:20:59,553 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201108122319_0002 for user-log deletion with retainTimeStamp:1313475658838
+2011-08-15 08:21:00,734 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150820_0001_m_000003_0 task's state:UNASSIGNED
+2011-08-15 08:21:00,736 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150820_0001_m_000003_0 which needs 1 slots
+2011-08-15 08:21:00,736 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201108150820_0001_m_000003_0 which needs 1 slots
+2011-08-15 08:21:01,124 INFO org.apache.hadoop.mapred.JobLocalizer: Initializing user madhatter on this TT.
+2011-08-15 08:21:01,797 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150820_0001_m_570157784
+2011-08-15 08:21:01,798 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150820_0001_m_570157784 spawned.
+2011-08-15 08:21:01,801 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150820_0001/attempt_201108150820_0001_m_000003_0/taskjvm.sh
+2011-08-15 08:21:02,614 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150820_0001_m_570157784 given task: attempt_201108150820_0001_m_000003_0
+2011-08-15 08:21:03,321 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150820_0001_m_000003_0 0.0% setup
+2011-08-15 08:21:03,323 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201108150820_0001_m_000003_0 is done.
+2011-08-15 08:21:03,323 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201108150820_0001_m_000003_0  was -1
+2011-08-15 08:21:03,324 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2011-08-15 08:21:03,623 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150820_0001_m_000000_0 task's state:UNASSIGNED
+2011-08-15 08:21:03,623 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150820_0001_m_000001_0 task's state:UNASSIGNED
+2011-08-15 08:21:03,623 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150820_0001_m_000000_0 which needs 1 slots
+2011-08-15 08:21:03,623 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201108150820_0001_m_000000_0 which needs 1 slots
+2011-08-15 08:21:03,623 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201108150820_0001_m_000003_0
+2011-08-15 08:21:03,623 INFO org.apache.hadoop.mapred.TaskTracker: About to purge task: attempt_201108150820_0001_m_000003_0
+2011-08-15 08:21:03,624 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150820_0001_m_000001_0 which needs 1 slots
+2011-08-15 08:21:03,624 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201108150820_0001_m_000001_0 which needs 1 slots
+2011-08-15 08:21:03,624 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201108150820_0001_m_000003_0 not found in cache
+2011-08-15 08:21:03,667 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150820_0001_m_-1032354406
+2011-08-15 08:21:03,668 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150820_0001_m_-1032354406 spawned.
+2011-08-15 08:21:03,686 INFO org.apache.hadoop.mapred.JvmManager: Killing JVM: jvm_201108150820_0001_m_570157784
+2011-08-15 08:21:03,688 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150820_0001/attempt_201108150820_0001_m_000000_0/taskjvm.sh
+2011-08-15 08:21:03,750 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150820_0001_m_139987329
+2011-08-15 08:21:03,750 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150820_0001_m_139987329 spawned.
+2011-08-15 08:21:03,752 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150820_0001_m_570157784 exited with exit code 0. Number of tasks it ran: 1
+2011-08-15 08:21:03,754 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150820_0001/attempt_201108150820_0001_m_000001_0/taskjvm.sh
+2011-08-15 08:21:04,777 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150820_0001_m_-1032354406 given task: attempt_201108150820_0001_m_000000_0
+2011-08-15 08:21:04,929 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150820_0001_m_139987329 given task: attempt_201108150820_0001_m_000001_0
+2011-08-15 08:21:06,667 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150820_0001_m_000001_0 1.0% hdfs://localhost/user/madhatter/input/sample.txt:0+264
+2011-08-15 08:21:06,689 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201108150820_0001_m_000001_0 is done.
+2011-08-15 08:21:06,689 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201108150820_0001_m_000001_0  was 17
+2011-08-15 08:21:06,690 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2011-08-15 08:21:06,729 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150820_0001_r_000000_0 task's state:UNASSIGNED
+2011-08-15 08:21:06,730 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150820_0001_r_000000_0 which needs 1 slots
+2011-08-15 08:21:06,730 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201108150820_0001_r_000000_0 which needs 1 slots
+2011-08-15 08:21:06,811 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150820_0001_r_570157784
+2011-08-15 08:21:06,813 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150820_0001_r_570157784 spawned.
+2011-08-15 08:21:06,826 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150820_0001/attempt_201108150820_0001_r_000000_0/taskjvm.sh
+2011-08-15 08:21:06,903 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150820_0001_m_000000_0 1.0% hdfs://localhost/user/madhatter/input/sample.txt:264+265
+2011-08-15 08:21:06,913 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201108150820_0001_m_000000_0 is done.
+2011-08-15 08:21:06,913 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201108150820_0001_m_000000_0  was 17
+2011-08-15 08:21:06,914 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2011-08-15 08:21:07,328 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150820_0001_m_139987329 exited with exit code 0. Number of tasks it ran: 1
+2011-08-15 08:21:07,346 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150820_0001_m_-1032354406 exited with exit code 0. Number of tasks it ran: 1
+2011-08-15 08:21:07,959 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150820_0001_r_570157784 given task: attempt_201108150820_0001_r_000000_0
+2011-08-15 08:21:14,340 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 172.20.10.2:50060, dest: 172.20.10.2:63977, bytes: 17, op: MAPRED_SHUFFLE, cliID: attempt_201108150820_0001_m_000001_0, duration: 68348000
+2011-08-15 08:21:14,353 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 172.20.10.2:50060, dest: 172.20.10.2:63977, bytes: 17, op: MAPRED_SHUFFLE, cliID: attempt_201108150820_0001_m_000000_0, duration: 1383000
+2011-08-15 08:21:14,644 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150820_0001_r_000000_0 0.33333334% reduce > copy (2 of 2 at 0,00 MB/s)
+2011-08-15 08:21:14,752 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150820_0001_r_000000_0 0.33333334% reduce > copy (2 of 2 at 0,00 MB/s)
+2011-08-15 08:21:14,776 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150820_0001_r_000000_0 0.33333334% reduce > copy (2 of 2 at 0,00 MB/s)
+2011-08-15 08:21:14,852 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201108150820_0001_r_000000_0 is in commit-pending, task state:COMMIT_PENDING
+2011-08-15 08:21:14,852 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150820_0001_r_000000_0 0.33333334% reduce > copy (2 of 2 at 0,00 MB/s)
+2011-08-15 08:21:15,067 INFO org.apache.hadoop.mapred.TaskTracker: Received commit task action for attempt_201108150820_0001_r_000000_0
+2011-08-15 08:21:15,874 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150820_0001_r_000000_0 1.0% reduce > reduce
+2011-08-15 08:21:15,874 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201108150820_0001_r_000000_0 is done.
+2011-08-15 08:21:15,874 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201108150820_0001_r_000000_0  was -1
+2011-08-15 08:21:15,875 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2011-08-15 08:21:15,982 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150820_0001_m_000002_0 task's state:UNASSIGNED
+2011-08-15 08:21:15,982 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150820_0001_m_000002_0 which needs 1 slots
+2011-08-15 08:21:15,982 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201108150820_0001_r_000000_0
+2011-08-15 08:21:15,982 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201108150820_0001_m_000002_0 which needs 1 slots
+2011-08-15 08:21:15,982 INFO org.apache.hadoop.mapred.TaskTracker: About to purge task: attempt_201108150820_0001_r_000000_0
+2011-08-15 08:21:16,008 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150820_0001_m_2045927458
+2011-08-15 08:21:16,009 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150820_0001_m_2045927458 spawned.
+2011-08-15 08:21:16,012 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150820_0001/attempt_201108150820_0001_m_000002_0/taskjvm.sh
+2011-08-15 08:21:16,102 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150820_0001_r_570157784 exited with exit code 0. Number of tasks it ran: 1
+2011-08-15 08:21:16,790 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150820_0001_m_2045927458 given task: attempt_201108150820_0001_m_000002_0
+2011-08-15 08:21:17,450 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150820_0001_m_000002_0 0.0% 
+2011-08-15 08:21:17,487 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150820_0001_m_000002_0 0.0% cleanup
+2011-08-15 08:21:17,488 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201108150820_0001_m_000002_0 is done.
+2011-08-15 08:21:17,488 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201108150820_0001_m_000002_0  was -1
+2011-08-15 08:21:17,490 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2011-08-15 08:21:17,688 INFO org.apache.hadoop.mapred.TaskTracker: Received 'KillJobAction' for job: job_201108150820_0001
+2011-08-15 08:21:17,688 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201108150820_0001_m_000002_0 not found in cache
+2011-08-15 08:21:17,692 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201108150820_0001 for user-log deletion with retainTimeStamp:1313475677689
+2011-08-15 08:21:17,880 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150820_0001_m_2045927458 exited with exit code 0. Number of tasks it ran: 1
+2011-08-15 08:22:44,688 ERROR org.apache.hadoop.mapred.TaskTracker: Caught exception: java.io.IOException: Call to localhost/127.0.0.1:9001 failed on local exception: java.io.EOFException
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:1142)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1110)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:226)
+	at org.apache.hadoop.mapred.$Proxy4.heartbeat(Unknown Source)
+	at org.apache.hadoop.mapred.TaskTracker.transmitHeartBeat(TaskTracker.java:1759)
+	at org.apache.hadoop.mapred.TaskTracker.offerService(TaskTracker.java:1565)
+	at org.apache.hadoop.mapred.TaskTracker.run(TaskTracker.java:2330)
+	at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:3580)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:375)
+	at org.apache.hadoop.ipc.Client$Connection.receiveResponse(Client.java:815)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:724)
+
+2011-08-15 08:22:44,688 INFO org.apache.hadoop.mapred.TaskTracker: Resending 'status' to 'localhost' with reponseId '343
+2011-08-15 08:22:44,978 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at nothing/172.20.10.2
+************************************************************/
+2011-08-15 08:37:05,429 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = nothing/172.20.10.2
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-15 08:37:06,119 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2011-08-15 08:37:06,172 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2011-08-15 08:37:06,194 INFO org.apache.hadoop.mapred.TaskLogsTruncater: Initializing logs' truncater with mapRetainSize=-1 and reduceRetainSize=-1
+2011-08-15 08:37:06,198 INFO org.apache.hadoop.mapred.TaskTracker: Starting tasktracker with owner as madhatter
+2011-08-15 08:37:06,330 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2011-08-15 08:37:06,416 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=TaskTracker, sessionId=
+2011-08-15 08:37:06,445 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 64067
+2011-08-15 08:37:06,448 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=64067
+2011-08-15 08:37:06,494 INFO org.apache.hadoop.ipc.metrics.RpcDetailedMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=64067
+2011-08-15 08:37:06,497 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2011-08-15 08:37:06,497 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 64067: starting
+2011-08-15 08:37:06,498 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 64067: starting
+2011-08-15 08:37:06,498 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 64067: starting
+2011-08-15 08:37:06,498 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 64067: starting
+2011-08-15 08:37:06,498 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 64067: starting
+2011-08-15 08:37:06,498 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: localhost/127.0.0.1:64067
+2011-08-15 08:37:06,498 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_nothing:localhost/127.0.0.1:64067
+2011-08-15 08:37:35,648 INFO org.apache.hadoop.mapred.TaskTracker: Starting thread: Map-events fetcher for all reduce tasks on tracker_nothing:localhost/127.0.0.1:64067
+2011-08-15 08:37:35,649 INFO org.apache.hadoop.mapred.TaskTracker:  Using MemoryCalculatorPlugin : null
+2011-08-15 08:37:35,674 WARN org.apache.hadoop.util.ProcessTree: setsid is not available on this machine. So not using it.
+2011-08-15 08:37:35,675 INFO org.apache.hadoop.util.ProcessTree: setsid exited with exit code 0
+2011-08-15 08:37:35,676 INFO org.apache.hadoop.util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+2011-08-15 08:37:35,676 INFO org.apache.hadoop.mapred.TaskTracker: ProcessTree implementation is missing on this system. TaskMemoryManager is disabled.
+2011-08-15 08:37:35,680 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
+2011-08-15 08:37:35,687 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
+2011-08-15 08:37:35,699 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
+2011-08-15 08:37:35,699 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
+2011-08-15 08:37:35,699 INFO org.mortbay.log: jetty-6.1.26
+2011-08-15 08:37:36,150 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
+2011-08-15 08:37:36,150 INFO org.apache.hadoop.mapred.TaskTracker: FILE_CACHE_SIZE for mapOutputServlet set to : 2000
+2011-08-15 08:37:36,156 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201108121808_0003 for user-log deletion with retainTimeStamp:1313476655676
+2011-08-15 08:37:36,156 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201108121808_0005 for user-log deletion with retainTimeStamp:1313476655676
+2011-08-15 08:37:36,156 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201108122319_0002 for user-log deletion with retainTimeStamp:1313476655676
+2011-08-15 08:37:36,157 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201108150820_0001 for user-log deletion with retainTimeStamp:1313476655676
+2011-08-15 08:39:24,836 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150837_0001_m_000003_0 task's state:UNASSIGNED
+2011-08-15 08:39:24,838 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150837_0001_m_000003_0 which needs 1 slots
+2011-08-15 08:39:24,838 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201108150837_0001_m_000003_0 which needs 1 slots
+2011-08-15 08:39:25,261 INFO org.apache.hadoop.mapred.JobLocalizer: Initializing user madhatter on this TT.
+2011-08-15 08:39:25,948 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150837_0001_m_-805123085
+2011-08-15 08:39:25,949 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150837_0001_m_-805123085 spawned.
+2011-08-15 08:39:25,952 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150837_0001/attempt_201108150837_0001_m_000003_0/taskjvm.sh
+2011-08-15 08:39:26,735 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150837_0001_m_-805123085 given task: attempt_201108150837_0001_m_000003_0
+2011-08-15 08:39:27,506 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150837_0001_m_000003_0 0.0% setup
+2011-08-15 08:39:27,507 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201108150837_0001_m_000003_0 is done.
+2011-08-15 08:39:27,507 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201108150837_0001_m_000003_0  was -1
+2011-08-15 08:39:27,509 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2011-08-15 08:39:27,719 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150837_0001_m_000000_0 task's state:UNASSIGNED
+2011-08-15 08:39:27,719 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150837_0001_m_000001_0 task's state:UNASSIGNED
+2011-08-15 08:39:27,720 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150837_0001_m_000000_0 which needs 1 slots
+2011-08-15 08:39:27,720 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201108150837_0001_m_000000_0 which needs 1 slots
+2011-08-15 08:39:27,721 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201108150837_0001_m_000003_0
+2011-08-15 08:39:27,721 INFO org.apache.hadoop.mapred.TaskTracker: About to purge task: attempt_201108150837_0001_m_000003_0
+2011-08-15 08:39:27,724 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150837_0001_m_000001_0 which needs 1 slots
+2011-08-15 08:39:27,724 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201108150837_0001_m_000001_0 which needs 1 slots
+2011-08-15 08:39:27,721 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201108150837_0001_m_000003_0 not found in cache
+2011-08-15 08:39:27,884 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150837_0001_m_985440691
+2011-08-15 08:39:27,885 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150837_0001_m_985440691 spawned.
+2011-08-15 08:39:27,890 INFO org.apache.hadoop.mapred.JvmManager: Killing JVM: jvm_201108150837_0001_m_-805123085
+2011-08-15 08:39:27,891 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150837_0001_m_1642566313
+2011-08-15 08:39:27,892 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150837_0001_m_1642566313 spawned.
+2011-08-15 08:39:27,894 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150837_0001/attempt_201108150837_0001_m_000001_0/taskjvm.sh
+2011-08-15 08:39:27,895 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150837_0001/attempt_201108150837_0001_m_000000_0/taskjvm.sh
+2011-08-15 08:39:27,914 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150837_0001_m_-805123085 exited with exit code 0. Number of tasks it ran: 1
+2011-08-15 08:39:29,034 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150837_0001_m_985440691 given task: attempt_201108150837_0001_m_000001_0
+2011-08-15 08:39:29,105 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150837_0001_m_1642566313 given task: attempt_201108150837_0001_m_000000_0
+2011-08-15 08:39:31,491 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150837_0001_m_000001_0 0.0% 
+2011-08-15 08:39:31,540 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150837_0001_m_000000_0 0.0% 
+2011-08-15 08:39:31,758 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150837_0001_m_985440691 exited with exit code 0. Number of tasks it ran: 0
+2011-08-15 08:39:31,758 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150837_0001_m_1642566313 exited with exit code 0. Number of tasks it ran: 0
+2011-08-15 08:39:34,759 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2011-08-15 08:39:34,760 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2011-08-15 08:39:34,814 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150837_0001_m_000000_1 task's state:UNASSIGNED
+2011-08-15 08:39:34,814 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150837_0001_m_000001_1 task's state:UNASSIGNED
+2011-08-15 08:39:34,814 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150837_0001_m_000000_1 which needs 1 slots
+2011-08-15 08:39:34,814 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201108150837_0001_m_000000_1 which needs 1 slots
+2011-08-15 08:39:34,815 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150837_0001_m_000001_1 which needs 1 slots
+2011-08-15 08:39:34,815 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201108150837_0001_m_000001_1 which needs 1 slots
+2011-08-15 08:39:34,863 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150837_0001_m_162666665
+2011-08-15 08:39:34,863 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150837_0001_m_162666665 spawned.
+2011-08-15 08:39:34,863 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150837_0001_m_795003782
+2011-08-15 08:39:34,866 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150837_0001_m_795003782 spawned.
+2011-08-15 08:39:34,869 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150837_0001/attempt_201108150837_0001_m_000001_1/taskjvm.sh
+2011-08-15 08:39:34,894 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150837_0001/attempt_201108150837_0001_m_000000_1/taskjvm.sh
+2011-08-15 08:39:36,003 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150837_0001_m_162666665 given task: attempt_201108150837_0001_m_000001_1
+2011-08-15 08:39:36,165 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150837_0001_m_795003782 given task: attempt_201108150837_0001_m_000000_1
+2011-08-15 08:39:38,708 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150837_0001_m_000001_1 0.0% 
+2011-08-15 08:39:38,926 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150837_0001_m_000000_1 0.0% 
+2011-08-15 08:39:39,033 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150837_0001_m_162666665 exited with exit code 0. Number of tasks it ran: 0
+2011-08-15 08:39:39,166 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150837_0001_m_795003782 exited with exit code 0. Number of tasks it ran: 0
+2011-08-15 08:39:42,034 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2011-08-15 08:39:42,041 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150837_0001_m_000001_2 task's state:UNASSIGNED
+2011-08-15 08:39:42,041 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150837_0001_m_000001_2 which needs 1 slots
+2011-08-15 08:39:42,041 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201108150837_0001_m_000001_2 which needs 1 slots
+2011-08-15 08:39:42,067 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150837_0001_m_-130209131
+2011-08-15 08:39:42,069 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150837_0001_m_-130209131 spawned.
+2011-08-15 08:39:42,072 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150837_0001/attempt_201108150837_0001_m_000001_2/taskjvm.sh
+2011-08-15 08:39:42,167 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2011-08-15 08:39:42,392 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150837_0001_m_000000_2 task's state:UNASSIGNED
+2011-08-15 08:39:42,393 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150837_0001_m_000000_2 which needs 1 slots
+2011-08-15 08:39:42,393 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201108150837_0001_m_000000_2 which needs 1 slots
+2011-08-15 08:39:42,432 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150837_0001_m_474083725
+2011-08-15 08:39:42,434 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150837_0001_m_474083725 spawned.
+2011-08-15 08:39:42,437 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150837_0001/attempt_201108150837_0001_m_000000_2/taskjvm.sh
+2011-08-15 08:39:43,166 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150837_0001_m_-130209131 given task: attempt_201108150837_0001_m_000001_2
+2011-08-15 08:39:43,888 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150837_0001_m_474083725 given task: attempt_201108150837_0001_m_000000_2
+2011-08-15 08:39:45,842 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150837_0001_m_000001_2 0.0% 
+2011-08-15 08:39:46,073 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150837_0001_m_-130209131 exited with exit code 0. Number of tasks it ran: 0
+2011-08-15 08:39:46,329 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150837_0001_m_000000_2 0.0% 
+2011-08-15 08:39:46,548 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150837_0001_m_474083725 exited with exit code 0. Number of tasks it ran: 0
+2011-08-15 08:39:49,074 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2011-08-15 08:39:49,198 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150837_0001_m_000001_3 task's state:UNASSIGNED
+2011-08-15 08:39:49,198 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150837_0001_m_000001_3 which needs 1 slots
+2011-08-15 08:39:49,199 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201108150837_0001_m_000001_3 which needs 1 slots
+2011-08-15 08:39:49,223 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150837_0001_m_-2038742528
+2011-08-15 08:39:49,225 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150837_0001_m_-2038742528 spawned.
+2011-08-15 08:39:49,228 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150837_0001/attempt_201108150837_0001_m_000001_3/taskjvm.sh
+2011-08-15 08:39:49,549 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2011-08-15 08:39:49,810 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150837_0001_m_000000_3 task's state:UNASSIGNED
+2011-08-15 08:39:49,810 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150837_0001_m_000000_3 which needs 1 slots
+2011-08-15 08:39:49,810 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201108150837_0001_m_000000_3 which needs 1 slots
+2011-08-15 08:39:49,836 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150837_0001_m_-438597036
+2011-08-15 08:39:49,838 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150837_0001_m_-438597036 spawned.
+2011-08-15 08:39:49,841 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150837_0001/attempt_201108150837_0001_m_000000_3/taskjvm.sh
+2011-08-15 08:39:50,022 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150837_0001_m_-2038742528 given task: attempt_201108150837_0001_m_000001_3
+2011-08-15 08:39:51,367 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150837_0001_m_-438597036 given task: attempt_201108150837_0001_m_000000_3
+2011-08-15 08:39:52,214 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150837_0001_m_000001_3 0.0% 
+2011-08-15 08:39:52,580 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150837_0001_m_-2038742528 exited with exit code 0. Number of tasks it ran: 0
+2011-08-15 08:39:53,256 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150837_0001_m_000000_3 0.0% 
+2011-08-15 08:39:53,497 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150837_0001_m_-438597036 exited with exit code 0. Number of tasks it ran: 0
+2011-08-15 08:39:55,581 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2011-08-15 08:39:55,595 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150837_0001_m_000002_0 task's state:UNASSIGNED
+2011-08-15 08:39:55,595 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150837_0001_m_000002_0 which needs 1 slots
+2011-08-15 08:39:55,595 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201108150837_0001_m_000002_0 which needs 1 slots
+2011-08-15 08:39:55,595 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201108150837_0001_m_000000_3
+2011-08-15 08:39:55,595 INFO org.apache.hadoop.mapred.TaskTracker: About to purge task: attempt_201108150837_0001_m_000000_3
+2011-08-15 08:39:55,595 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2011-08-15 08:39:55,596 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201108150837_0001_m_000000_3 not found in cache
+2011-08-15 08:39:55,596 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201108150837_0001_m_000001_3
+2011-08-15 08:39:55,621 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150837_0001_m_1424792684
+2011-08-15 08:39:55,623 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150837_0001_m_1424792684 spawned.
+2011-08-15 08:39:55,625 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150837_0001/attempt_201108150837_0001_m_000002_0/taskjvm.sh
+2011-08-15 08:39:56,387 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150837_0001_m_1424792684 given task: attempt_201108150837_0001_m_000002_0
+2011-08-15 08:39:57,064 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150837_0001_m_000002_0 0.0% 
+2011-08-15 08:39:57,132 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150837_0001_m_000002_0 0.0% cleanup
+2011-08-15 08:39:57,133 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201108150837_0001_m_000002_0 is done.
+2011-08-15 08:39:57,133 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201108150837_0001_m_000002_0  was -1
+2011-08-15 08:39:57,135 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2011-08-15 08:39:57,295 INFO org.apache.hadoop.mapred.TaskTracker: Received 'KillJobAction' for job: job_201108150837_0001
+2011-08-15 08:39:57,295 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201108150837_0001_m_000002_0 not found in cache
+2011-08-15 08:39:57,297 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201108150837_0001 for user-log deletion with retainTimeStamp:1313476797296
+2011-08-15 08:39:57,496 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150837_0001_m_1424792684 exited with exit code 0. Number of tasks it ran: 1
+2011-08-15 08:44:14,967 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150837_0003_m_000003_0 task's state:UNASSIGNED
+2011-08-15 08:44:14,967 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150837_0003_m_000003_0 which needs 1 slots
+2011-08-15 08:44:14,967 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201108150837_0003_m_000003_0 which needs 1 slots
+2011-08-15 08:44:15,169 INFO org.apache.hadoop.mapred.JobLocalizer: Initializing user madhatter on this TT.
+2011-08-15 08:44:15,531 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150837_0003_m_1491511985
+2011-08-15 08:44:15,533 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150837_0003_m_1491511985 spawned.
+2011-08-15 08:44:15,536 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150837_0003/attempt_201108150837_0003_m_000003_0/taskjvm.sh
+2011-08-15 08:44:16,296 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150837_0003_m_1491511985 given task: attempt_201108150837_0003_m_000003_0
+2011-08-15 08:44:17,061 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150837_0003_m_000003_0 0.0% setup
+2011-08-15 08:44:17,063 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201108150837_0003_m_000003_0 is done.
+2011-08-15 08:44:17,063 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201108150837_0003_m_000003_0  was -1
+2011-08-15 08:44:17,063 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2011-08-15 08:44:17,151 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150837_0003_m_000000_0 task's state:UNASSIGNED
+2011-08-15 08:44:17,151 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150837_0003_m_000001_0 task's state:UNASSIGNED
+2011-08-15 08:44:17,151 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201108150837_0003_m_000003_0
+2011-08-15 08:44:17,151 INFO org.apache.hadoop.mapred.TaskTracker: About to purge task: attempt_201108150837_0003_m_000003_0
+2011-08-15 08:44:17,151 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201108150837_0003_m_000003_0 not found in cache
+2011-08-15 08:44:17,152 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150837_0003_m_000000_0 which needs 1 slots
+2011-08-15 08:44:17,152 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201108150837_0003_m_000000_0 which needs 1 slots
+2011-08-15 08:44:17,153 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150837_0003_m_000001_0 which needs 1 slots
+2011-08-15 08:44:17,153 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201108150837_0003_m_000001_0 which needs 1 slots
+2011-08-15 08:44:17,217 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150837_0003_m_-1287961082
+2011-08-15 08:44:17,219 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150837_0003_m_-1287961082 spawned.
+2011-08-15 08:44:17,222 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150837_0003/attempt_201108150837_0003_m_000001_0/taskjvm.sh
+2011-08-15 08:44:17,231 INFO org.apache.hadoop.mapred.JvmManager: Killing JVM: jvm_201108150837_0003_m_1491511985
+2011-08-15 08:44:17,346 INFO org.apache.hadoop.util.ProcessTree: Killing process 10588 with signal TERM. Exit code 0
+2011-08-15 08:44:17,348 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150837_0003_m_-1481954767
+2011-08-15 08:44:17,356 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150837_0003_m_-1481954767 spawned.
+2011-08-15 08:44:17,360 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150837_0003/attempt_201108150837_0003_m_000000_0/taskjvm.sh
+2011-08-15 08:44:17,426 WARN org.apache.hadoop.mapred.DefaultTaskController: Exit code from task is : 143
+2011-08-15 08:44:17,427 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150837_0003_m_1491511985 exited with exit code 143. Number of tasks it ran: 1
+2011-08-15 08:44:18,428 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150837_0003_m_-1287961082 given task: attempt_201108150837_0003_m_000001_0
+2011-08-15 08:44:18,490 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150837_0003_m_-1481954767 given task: attempt_201108150837_0003_m_000000_0
+2011-08-15 08:44:21,228 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150837_0003_m_000001_0 0.0% 
+2011-08-15 08:44:21,341 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150837_0003_m_000000_0 0.0% 
+2011-08-15 08:44:21,439 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150837_0003_m_-1287961082 exited with exit code 0. Number of tasks it ran: 0
+2011-08-15 08:44:21,593 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150837_0003_m_-1481954767 exited with exit code 0. Number of tasks it ran: 0
+2011-08-15 08:44:24,594 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2011-08-15 08:44:24,704 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150837_0003_m_000000_1 task's state:UNASSIGNED
+2011-08-15 08:44:24,704 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150837_0003_m_000000_1 which needs 1 slots
+2011-08-15 08:44:24,704 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201108150837_0003_m_000000_1 which needs 1 slots
+2011-08-15 08:44:24,742 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150837_0003_m_286856928
+2011-08-15 08:44:24,744 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150837_0003_m_286856928 spawned.
+2011-08-15 08:44:24,747 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150837_0003/attempt_201108150837_0003_m_000000_1/taskjvm.sh
+2011-08-15 08:44:25,439 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2011-08-15 08:44:25,616 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150837_0003_m_000001_1 task's state:UNASSIGNED
+2011-08-15 08:44:25,616 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150837_0003_m_000001_1 which needs 1 slots
+2011-08-15 08:44:25,616 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201108150837_0003_m_000001_1 which needs 1 slots
+2011-08-15 08:44:25,641 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150837_0003_m_1522884863
+2011-08-15 08:44:25,643 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150837_0003_m_1522884863 spawned.
+2011-08-15 08:44:25,647 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150837_0003/attempt_201108150837_0003_m_000001_1/taskjvm.sh
+2011-08-15 08:44:25,658 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150837_0003_m_286856928 given task: attempt_201108150837_0003_m_000000_1
+2011-08-15 08:44:27,226 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150837_0003_m_1522884863 given task: attempt_201108150837_0003_m_000001_1
+2011-08-15 08:44:27,802 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150837_0003_m_000000_1 0.0% 
+2011-08-15 08:44:28,167 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150837_0003_m_286856928 exited with exit code 0. Number of tasks it ran: 0
+2011-08-15 08:44:28,958 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150837_0003_m_000001_1 0.0% 
+2011-08-15 08:44:29,121 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150837_0003_m_1522884863 exited with exit code 0. Number of tasks it ran: 0
+2011-08-15 08:44:31,167 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2011-08-15 08:44:31,423 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150837_0003_m_000000_2 task's state:UNASSIGNED
+2011-08-15 08:44:31,423 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150837_0003_m_000000_2 which needs 1 slots
+2011-08-15 08:44:31,423 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201108150837_0003_m_000000_2 which needs 1 slots
+2011-08-15 08:44:31,511 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150837_0003_m_1820141656
+2011-08-15 08:44:31,512 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150837_0003_m_1820141656 spawned.
+2011-08-15 08:44:31,517 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150837_0003/attempt_201108150837_0003_m_000000_2/taskjvm.sh
+2011-08-15 08:44:32,122 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2011-08-15 08:44:32,278 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150837_0003_m_1820141656 given task: attempt_201108150837_0003_m_000000_2
+2011-08-15 08:44:32,353 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150837_0003_m_000001_2 task's state:UNASSIGNED
+2011-08-15 08:44:32,353 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150837_0003_m_000001_2 which needs 1 slots
+2011-08-15 08:44:32,353 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201108150837_0003_m_000001_2 which needs 1 slots
+2011-08-15 08:44:32,444 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150837_0003_m_-902424539
+2011-08-15 08:44:32,452 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150837_0003_m_-902424539 spawned.
+2011-08-15 08:44:32,458 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150837_0003/attempt_201108150837_0003_m_000001_2/taskjvm.sh
+2011-08-15 08:44:33,877 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150837_0003_m_-902424539 given task: attempt_201108150837_0003_m_000001_2
+2011-08-15 08:44:34,464 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150837_0003_m_000000_2 0.0% 
+2011-08-15 08:44:34,690 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150837_0003_m_1820141656 exited with exit code 0. Number of tasks it ran: 0
+2011-08-15 08:44:35,626 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150837_0003_m_000001_2 0.0% 
+2011-08-15 08:44:35,850 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150837_0003_m_-902424539 exited with exit code 0. Number of tasks it ran: 0
+2011-08-15 08:44:37,692 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2011-08-15 08:44:37,912 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150837_0003_m_000000_3 task's state:UNASSIGNED
+2011-08-15 08:44:37,912 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150837_0003_m_000000_3 which needs 1 slots
+2011-08-15 08:44:37,912 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201108150837_0003_m_000000_3 which needs 1 slots
+2011-08-15 08:44:37,959 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150837_0003_m_-711282601
+2011-08-15 08:44:37,961 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150837_0003_m_-711282601 spawned.
+2011-08-15 08:44:37,966 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150837_0003/attempt_201108150837_0003_m_000000_3/taskjvm.sh
+2011-08-15 08:44:38,725 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150837_0003_m_-711282601 given task: attempt_201108150837_0003_m_000000_3
+2011-08-15 08:44:38,880 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2011-08-15 08:44:38,896 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150837_0003_m_000001_3 task's state:UNASSIGNED
+2011-08-15 08:44:38,896 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150837_0003_m_000001_3 which needs 1 slots
+2011-08-15 08:44:38,896 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201108150837_0003_m_000001_3 which needs 1 slots
+2011-08-15 08:44:38,964 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150837_0003_m_-318072242
+2011-08-15 08:44:38,966 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150837_0003_m_-318072242 spawned.
+2011-08-15 08:44:38,974 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150837_0003/attempt_201108150837_0003_m_000001_3/taskjvm.sh
+2011-08-15 08:44:40,453 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150837_0003_m_-318072242 given task: attempt_201108150837_0003_m_000001_3
+2011-08-15 08:44:40,794 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150837_0003_m_000000_3 0.0% 
+2011-08-15 08:44:41,075 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150837_0003_m_-711282601 exited with exit code 0. Number of tasks it ran: 0
+2011-08-15 08:44:42,077 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150837_0003_m_000001_3 0.0% 
+2011-08-15 08:44:42,300 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150837_0003_m_-318072242 exited with exit code 0. Number of tasks it ran: 0
+2011-08-15 08:44:44,076 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2011-08-15 08:44:44,129 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201108150837_0003_m_000002_0 task's state:UNASSIGNED
+2011-08-15 08:44:44,130 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201108150837_0003_m_000002_0 which needs 1 slots
+2011-08-15 08:44:44,130 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201108150837_0003_m_000002_0 which needs 1 slots
+2011-08-15 08:44:44,130 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201108150837_0003_m_000000_3
+2011-08-15 08:44:44,130 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201108150837_0003_m_000001_3
+2011-08-15 08:44:44,130 INFO org.apache.hadoop.mapred.TaskTracker: About to purge task: attempt_201108150837_0003_m_000001_3
+2011-08-15 08:44:44,130 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2011-08-15 08:44:44,130 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201108150837_0003_m_000001_3 not found in cache
+2011-08-15 08:44:44,155 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201108150837_0003_m_1404934532
+2011-08-15 08:44:44,157 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201108150837_0003_m_1404934532 spawned.
+2011-08-15 08:44:44,161 INFO org.apache.hadoop.mapred.TaskController: Writing commands to /Users/madhatter/CDH3/hadoop-cache/mapred/local/ttprivate/taskTracker/madhatter/jobcache/job_201108150837_0003/attempt_201108150837_0003_m_000002_0/taskjvm.sh
+2011-08-15 08:44:44,922 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201108150837_0003_m_1404934532 given task: attempt_201108150837_0003_m_000002_0
+2011-08-15 08:44:45,638 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150837_0003_m_000002_0 0.0% 
+2011-08-15 08:44:45,701 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201108150837_0003_m_000002_0 0.0% cleanup
+2011-08-15 08:44:45,702 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201108150837_0003_m_000002_0 is done.
+2011-08-15 08:44:45,706 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201108150837_0003_m_000002_0  was -1
+2011-08-15 08:44:45,706 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2011-08-15 08:44:46,006 INFO org.apache.hadoop.mapred.TaskTracker: Received 'KillJobAction' for job: job_201108150837_0003
+2011-08-15 08:44:46,007 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201108150837_0003_m_000002_0 not found in cache
+2011-08-15 08:44:46,010 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201108150837_0003 for user-log deletion with retainTimeStamp:1313477086007
+2011-08-15 08:44:46,132 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201108150837_0003_m_1404934532 exited with exit code 0. Number of tasks it ran: 1
+2011-08-15 08:51:54,307 ERROR org.apache.hadoop.mapred.TaskTracker: Caught exception: java.io.IOException: Call to localhost/127.0.0.1:9001 failed on local exception: java.io.EOFException
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:1142)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1110)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:226)
+	at org.apache.hadoop.mapred.$Proxy4.heartbeat(Unknown Source)
+	at org.apache.hadoop.mapred.TaskTracker.transmitHeartBeat(TaskTracker.java:1759)
+	at org.apache.hadoop.mapred.TaskTracker.offerService(TaskTracker.java:1565)
+	at org.apache.hadoop.mapred.TaskTracker.run(TaskTracker.java:2330)
+	at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:3580)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:375)
+	at org.apache.hadoop.ipc.Client$Connection.receiveResponse(Client.java:815)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:724)
+
+2011-08-15 08:51:54,307 INFO org.apache.hadoop.mapred.TaskTracker: Resending 'status' to 'localhost' with reponseId '2834
+2011-08-15 08:51:54,560 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at nothing/172.20.10.2
+************************************************************/

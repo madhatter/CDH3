@@ -1,0 +1,11 @@
+Hadoop and others.
+
+This repository is for storing and tracking the local Hadoop installation on my 
+Macbook Pro. So, everything is running on Mac OS X.
+
+While figuring out the HBase installation I thought it might be a good idea to keep track
+of changes I keep doing on the configuration file. So I should be able to deploy a stable
+installation later as often as I want.
+
+Right now... I am not there yet.
+

@@ -1,0 +1,32 @@
+From d2d2baa261150c5f9901b9ebc0058fae5d179257 Mon Sep 17 00:00:00 2001
+From: Patrick Hunt <phunt1@gmail.com>
+Date: Wed, 2 Mar 2011 14:25:10 -0800
+Subject: [PATCH 07/24] CLOUDERA-BUILD. add nohup/sleep when starting ZooKeeper server in background to enable remote start command via SSH
+
+Description: Seems this is missing in ZOOKEEPER-983
+Reason: Bug
+Author: Patrick Hunt
+Ref:  ZOOKEEPER-983
+---
+ bin/zkServer.sh |    3 ++-
+ 1 files changed, 2 insertions(+), 1 deletions(-)
+
+diff --git a/bin/zkServer.sh b/bin/zkServer.sh
+index 1eecab3..a415297 100755
+--- a/bin/zkServer.sh
++++ b/bin/zkServer.sh
+@@ -85,9 +85,10 @@ _ZOO_DAEMON_OUT="$ZOO_LOG_DIR/zookeeper.out"
+ case $1 in
+ start)
+     echo  "Starting zookeeper ... "
+-    $JAVA "-Dzookeeper.log.dir=${ZOO_LOG_DIR}" "-Dzookeeper.root.logger=${ZOO_LOG4J_PROP}" \
++    nohup $JAVA "-Dzookeeper.log.dir=${ZOO_LOG_DIR}" "-Dzookeeper.root.logger=${ZOO_LOG4J_PROP}" \
+     -cp "$CLASSPATH" $JVMFLAGS $ZOOMAIN "$ZOOCFG" > "$_ZOO_DAEMON_OUT" 2>&1 < /dev/null &
+     /bin/echo -n $! > "$ZOOPIDFILE"
++    sleep 1
+     echo STARTED
+     ;;
+ stop)
+-- 
+1.7.0.4
+

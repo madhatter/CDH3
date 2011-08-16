@@ -1,0 +1,9 @@
+2011-08-15 08:44:45,164 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2011-08-15 08:44:45,318 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager: Creating symlink: /Users/madhatter/CDH3/hadoop-cache/mapred/local/taskTracker/madhatter/jobcache/job_201108150837_0003/jars/.job.jar.crc <- /Users/madhatter/CDH3/hadoop-cache/mapred/local/taskTracker/madhatter/jobcache/job_201108150837_0003/attempt_201108150837_0003_m_000002_0/work/.job.jar.crc
+2011-08-15 08:44:45,342 INFO org.apache.hadoop.filecache.TrackerDistributedCacheManager: Creating symlink: /Users/madhatter/CDH3/hadoop-cache/mapred/local/taskTracker/madhatter/jobcache/job_201108150837_0003/jars/job.jar <- /Users/madhatter/CDH3/hadoop-cache/mapred/local/taskTracker/madhatter/jobcache/job_201108150837_0003/attempt_201108150837_0003_m_000002_0/work/job.jar
+2011-08-15 08:44:45,497 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=MAP, sessionId=
+2011-08-15 08:44:45,645 INFO org.apache.hadoop.mapred.Task: Cleaning up job
+2011-08-15 08:44:45,645 INFO org.apache.hadoop.mapred.Task: Aborting job with runstate : FAILED
+2011-08-15 08:44:45,696 INFO org.apache.hadoop.mapred.Task: Task:attempt_201108150837_0003_m_000002_0 is done. And is in the process of commiting
+2011-08-15 08:44:45,707 INFO org.apache.hadoop.mapred.Task: Task 'attempt_201108150837_0003_m_000002_0' done.
+2011-08-15 08:44:45,763 INFO org.apache.hadoop.mapred.TaskLogsTruncater: Initializing logs' truncater with mapRetainSize=-1 and reduceRetainSize=-1
