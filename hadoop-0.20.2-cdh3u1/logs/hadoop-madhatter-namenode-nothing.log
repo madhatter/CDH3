@@ -1,4 +1,4 @@
-2011-08-16 19:06:55,609 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+2011-08-17 07:32:35,469 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
 /************************************************************
 STARTUP_MSG: Starting NameNode
 STARTUP_MSG:   host = nothing/172.20.10.2
@@ -6,61 +6,60 @@ STARTUP_MSG:   args = []
 STARTUP_MSG:   version = 0.20.2-cdh3u1
 STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
 ************************************************************/
-2011-08-16 19:06:55,914 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=NameNode, sessionId=null
-2011-08-16 19:06:55,917 INFO org.apache.hadoop.hdfs.server.namenode.metrics.NameNodeMetrics: Initializing NameNodeMeterics using context object:org.apache.hadoop.metrics.spi.NullContext
-2011-08-16 19:06:56,027 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
-2011-08-16 19:06:56,027 INFO org.apache.hadoop.hdfs.util.GSet: 2% max memory = 19.9175 MB
-2011-08-16 19:06:56,027 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
-2011-08-16 19:06:56,027 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
-2011-08-16 19:06:56,165 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=madhatter
-2011-08-16 19:06:56,166 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
-2011-08-16 19:06:56,166 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
-2011-08-16 19:06:56,187 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=1000
-2011-08-16 19:06:56,187 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
-2011-08-16 19:06:56,562 INFO org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMetrics: Initializing FSNamesystemMetrics using context object:org.apache.hadoop.metrics.spi.NullContext
-2011-08-16 19:06:56,703 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 82
-2011-08-16 19:06:56,725 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
-2011-08-16 19:06:56,725 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 10832 loaded in 0 seconds.
-2011-08-16 19:06:56,763 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Invalid opcode, reached end of edit log Number of transactions found 40
-2011-08-16 19:06:56,763 INFO org.apache.hadoop.hdfs.server.common.Storage: Edits file /Users/madhatter/CDH3/hadoop-cache/dfs/name/current/edits of size 1048580 edits # 40 loaded in 0 seconds.
-2011-08-16 19:06:56,766 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 9319 saved in 0 seconds.
-2011-08-16 19:06:56,960 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 9319 saved in 0 seconds.
-2011-08-16 19:06:57,010 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Finished loading FSImage in 854 msecs
-2011-08-16 19:06:57,019 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON. 
-The reported blocks 0 needs additional 38 blocks to reach the threshold 0,9990 of total blocks 39. Safe mode will be turned off automatically.
-2011-08-16 19:06:57,035 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
-2011-08-16 19:06:57,098 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8020
-2011-08-16 19:06:57,101 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=NameNode, port=8020
-2011-08-16 19:06:57,102 INFO org.apache.hadoop.ipc.metrics.RpcDetailedMetrics: Initializing RPC Metrics with hostName=NameNode, port=8020
-2011-08-16 19:06:57,105 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Namenode up at: localhost/127.0.0.1:8020
-2011-08-16 19:06:58,301 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
-2011-08-16 19:06:58,467 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
-2011-08-16 19:06:58,486 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50070
-2011-08-16 19:06:58,490 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50070 webServer.getConnectors()[0].getLocalPort() returned 50070
-2011-08-16 19:06:58,493 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50070
-2011-08-16 19:06:58,493 INFO org.mortbay.log: jetty-6.1.26
-2011-08-16 19:06:59,265 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50070
-2011-08-16 19:06:59,265 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Web-server up at: 0.0.0.0:50070
-2011-08-16 19:06:59,265 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
-2011-08-16 19:06:59,265 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8020: starting
-2011-08-16 19:06:59,271 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 8020: starting
-2011-08-16 19:06:59,272 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 8020: starting
-2011-08-16 19:06:59,272 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 8020: starting
-2011-08-16 19:06:59,273 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 8020: starting
-2011-08-16 19:06:59,273 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 8020: starting
-2011-08-16 19:06:59,273 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 8020: starting
-2011-08-16 19:06:59,273 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 8020: starting
-2011-08-16 19:06:59,274 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 8020: starting
-2011-08-16 19:06:59,274 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 8020: starting
-2011-08-16 19:06:59,274 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 8020: starting
-2011-08-16 19:07:00,990 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.registerDatanode: node registration from 127.0.0.1:50010 storage DS-1179262424-172.20.10.2-50010-1312957867331
-2011-08-16 19:07:00,993 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/127.0.0.1:50010
-2011-08-16 19:07:01,062 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode extension entered. 
-The reported blocks 38 has reached the threshold 0,9990 of total blocks 39. Safe mode will be turned off automatically in 29 seconds.
-2011-08-16 19:07:04,083 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 8020, call setPermission(/Users/madhatter/CDH3/hadoop-cache/mapred/system, rwx------) from 127.0.0.1:50026: error: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
-The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe mode will be turned off automatically in 26 seconds.
+2011-08-17 07:32:35,680 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=NameNode, sessionId=null
+2011-08-17 07:32:35,683 INFO org.apache.hadoop.hdfs.server.namenode.metrics.NameNodeMetrics: Initializing NameNodeMeterics using context object:org.apache.hadoop.metrics.spi.NullContext
+2011-08-17 07:32:35,710 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2011-08-17 07:32:35,710 INFO org.apache.hadoop.hdfs.util.GSet: 2% max memory = 19.9175 MB
+2011-08-17 07:32:35,710 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2011-08-17 07:32:35,710 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2011-08-17 07:32:35,782 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=madhatter
+2011-08-17 07:32:35,783 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2011-08-17 07:32:35,783 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2011-08-17 07:32:35,788 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=1000
+2011-08-17 07:32:35,789 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2011-08-17 07:32:36,055 INFO org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMetrics: Initializing FSNamesystemMetrics using context object:org.apache.hadoop.metrics.spi.NullContext
+2011-08-17 07:32:36,103 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 98
+2011-08-17 07:32:36,143 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2011-08-17 07:32:36,143 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 12331 loaded in 0 seconds.
+2011-08-17 07:32:36,144 INFO org.apache.hadoop.hdfs.server.common.Storage: Edits file /Users/madhatter/CDH3/hadoop-cache/dfs/name/current/edits of size 4 edits # 0 loaded in 0 seconds.
+2011-08-17 07:32:36,149 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 12331 saved in 0 seconds.
+2011-08-17 07:32:36,257 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 12331 saved in 0 seconds.
+2011-08-17 07:32:36,282 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Finished loading FSImage in 511 msecs
+2011-08-17 07:32:36,289 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON. 
+The reported blocks 0 needs additional 49 blocks to reach the threshold 0,9990 of total blocks 50. Safe mode will be turned off automatically.
+2011-08-17 07:32:36,297 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2011-08-17 07:32:36,331 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8020
+2011-08-17 07:32:36,334 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=NameNode, port=8020
+2011-08-17 07:32:36,335 INFO org.apache.hadoop.ipc.metrics.RpcDetailedMetrics: Initializing RPC Metrics with hostName=NameNode, port=8020
+2011-08-17 07:32:36,339 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Namenode up at: localhost/127.0.0.1:8020
+2011-08-17 07:32:36,577 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2011-08-17 07:32:36,716 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2011-08-17 07:32:36,745 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50070
+2011-08-17 07:32:36,781 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50070 webServer.getConnectors()[0].getLocalPort() returned 50070
+2011-08-17 07:32:36,781 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50070
+2011-08-17 07:32:36,781 INFO org.mortbay.log: jetty-6.1.26
+2011-08-17 07:32:37,474 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50070
+2011-08-17 07:32:37,475 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Web-server up at: 0.0.0.0:50070
+2011-08-17 07:32:37,475 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2011-08-17 07:32:37,475 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8020: starting
+2011-08-17 07:32:37,476 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 8020: starting
+2011-08-17 07:32:37,477 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 8020: starting
+2011-08-17 07:32:37,478 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 8020: starting
+2011-08-17 07:32:37,478 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 8020: starting
+2011-08-17 07:32:37,478 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 8020: starting
+2011-08-17 07:32:37,478 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 8020: starting
+2011-08-17 07:32:37,481 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 8020: starting
+2011-08-17 07:32:37,481 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 8020: starting
+2011-08-17 07:32:37,482 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 8020: starting
+2011-08-17 07:32:37,482 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 8020: starting
+2011-08-17 07:32:39,927 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.registerDatanode: node registration from 127.0.0.1:50010 storage DS-1179262424-172.20.10.2-50010-1312957867331
+2011-08-17 07:32:39,930 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/127.0.0.1:50010
+2011-08-17 07:32:40,127 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode extension entered. 
+The reported blocks 49 has reached the threshold 0,9990 of total blocks 50. Safe mode will be turned off automatically in 29 seconds.
+2011-08-17 07:32:42,955 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 8020, call setPermission(/Users/madhatter/CDH3/hadoop-cache/mapred/system, rwx------) from 127.0.0.1:58671: error: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
+The reported blocks 50 has reached the threshold 0,9990 of total blocks 50. Safe mode will be turned off automatically in 27 seconds.
 org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
-The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe mode will be turned off automatically in 26 seconds.
+The reported blocks 50 has reached the threshold 0,9990 of total blocks 50. Safe mode will be turned off automatically in 27 seconds.
 	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setPermission(FSNamesystem.java:798)
 	at org.apache.hadoop.hdfs.server.namenode.NameNode.setPermission(NameNode.java:621)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -74,10 +73,10 @@ The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe
 	at javax.security.auth.Subject.doAs(Subject.java:396)
 	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1127)
 	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1428)
-2011-08-16 19:07:14,099 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 8020, call setPermission(/Users/madhatter/CDH3/hadoop-cache/mapred/system, rwx------) from 127.0.0.1:50053: error: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
-The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe mode will be turned off automatically in 16 seconds.
+2011-08-17 07:32:53,018 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 8020, call setPermission(/Users/madhatter/CDH3/hadoop-cache/mapred/system, rwx------) from 127.0.0.1:58677: error: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
+The reported blocks 50 has reached the threshold 0,9990 of total blocks 50. Safe mode will be turned off automatically in 17 seconds.
 org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
-The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe mode will be turned off automatically in 16 seconds.
+The reported blocks 50 has reached the threshold 0,9990 of total blocks 50. Safe mode will be turned off automatically in 17 seconds.
 	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setPermission(FSNamesystem.java:798)
 	at org.apache.hadoop.hdfs.server.namenode.NameNode.setPermission(NameNode.java:621)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -91,12 +90,12 @@ The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe
 	at javax.security.auth.Subject.doAs(Subject.java:396)
 	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1127)
 	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1428)
-2011-08-16 19:07:21,124 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON. 
-The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe mode will be turned off automatically in 9 seconds.
-2011-08-16 19:07:24,106 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 8020, call setPermission(/Users/madhatter/CDH3/hadoop-cache/mapred/system, rwx------) from 127.0.0.1:50093: error: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
-The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe mode will be turned off automatically in 6 seconds.
+2011-08-17 07:33:00,129 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON. 
+The reported blocks 50 has reached the threshold 0,9990 of total blocks 50. Safe mode will be turned off automatically in 9 seconds.
+2011-08-17 07:33:03,026 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 8020, call setPermission(/Users/madhatter/CDH3/hadoop-cache/mapred/system, rwx------) from 127.0.0.1:58691: error: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
+The reported blocks 50 has reached the threshold 0,9990 of total blocks 50. Safe mode will be turned off automatically in 7 seconds.
 org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
-The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe mode will be turned off automatically in 6 seconds.
+The reported blocks 50 has reached the threshold 0,9990 of total blocks 50. Safe mode will be turned off automatically in 7 seconds.
 	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setPermission(FSNamesystem.java:798)
 	at org.apache.hadoop.hdfs.server.namenode.NameNode.setPermission(NameNode.java:621)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -110,29 +109,86 @@ The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe
 	at javax.security.auth.Subject.doAs(Subject.java:396)
 	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1127)
 	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1428)
-2011-08-16 19:07:31,194 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Total number of blocks = 39
-2011-08-16 19:07:31,195 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of invalid blocks = 0
-2011-08-16 19:07:31,195 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of under-replicated blocks = 9
-2011-08-16 19:07:31,195 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of  over-replicated blocks = 0
-2011-08-16 19:07:31,195 INFO org.apache.hadoop.hdfs.StateChange: STATE* Leaving safe mode after 35 secs.
-2011-08-16 19:07:31,195 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode is OFF.
-2011-08-16 19:07:31,195 INFO org.apache.hadoop.hdfs.StateChange: STATE* Network topology has 1 racks and 1 datanodes
-2011-08-16 19:07:31,195 INFO org.apache.hadoop.hdfs.StateChange: STATE* UnderReplicatedBlocks has 9 blocks
-2011-08-16 19:07:34,128 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addToInvalidates: blk_7236584108091060843 is added to invalidSet of 127.0.0.1:50010
-2011-08-16 19:07:34,257 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /Users/madhatter/CDH3/hadoop-cache/mapred/system/jobtracker.info. blk_3539400835106715503_1076
-2011-08-16 19:07:34,324 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_3539400835106715503_1076 size 4
-2011-08-16 19:07:34,327 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /Users/madhatter/CDH3/hadoop-cache/mapred/system/jobtracker.info from client DFSClient_-1171081145
-2011-08-16 19:07:34,328 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /Users/madhatter/CDH3/hadoop-cache/mapred/system/jobtracker.info is closed by DFSClient_-1171081145
-2011-08-16 19:07:36,057 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* ask 127.0.0.1:50010 to delete  blk_7236584108091060843_1060
-2011-08-16 19:12:01,911 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 127.0.0.1
-2011-08-16 19:12:01,911 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 6 Total time for transactions(ms): 1Number of transactions batched in Syncs: 0 Number of syncs: 5 SyncTimes(ms): 10 
-2011-08-16 19:12:02,641 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll FSImage from 127.0.0.1
-2011-08-16 19:12:02,642 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 1 SyncTimes(ms): 45 
-2011-08-16 19:12:41,922 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+2011-08-17 07:33:10,144 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Total number of blocks = 50
+2011-08-17 07:33:10,144 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of invalid blocks = 0
+2011-08-17 07:33:10,144 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of under-replicated blocks = 9
+2011-08-17 07:33:10,144 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of  over-replicated blocks = 0
+2011-08-17 07:33:10,144 INFO org.apache.hadoop.hdfs.StateChange: STATE* Leaving safe mode after 34 secs.
+2011-08-17 07:33:10,144 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode is OFF.
+2011-08-17 07:33:10,144 INFO org.apache.hadoop.hdfs.StateChange: STATE* Network topology has 1 racks and 1 datanodes
+2011-08-17 07:33:10,144 INFO org.apache.hadoop.hdfs.StateChange: STATE* UnderReplicatedBlocks has 9 blocks
+2011-08-17 07:33:13,087 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addToInvalidates: blk_-3411220059991460504 is added to invalidSet of 127.0.0.1:50010
+2011-08-17 07:33:13,169 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /Users/madhatter/CDH3/hadoop-cache/mapred/system/jobtracker.info. blk_4223991517068089694_1098
+2011-08-17 07:33:13,237 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_4223991517068089694_1098 size 4
+2011-08-17 07:33:13,241 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /Users/madhatter/CDH3/hadoop-cache/mapred/system/jobtracker.info from client DFSClient_-1422167187
+2011-08-17 07:33:13,241 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /Users/madhatter/CDH3/hadoop-cache/mapred/system/jobtracker.info is closed by DFSClient_-1422167187
+2011-08-17 07:33:15,299 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* ask 127.0.0.1:50010 to delete  blk_-3411220059991460504_1089
+2011-08-17 07:33:19,164 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /hbase/.logs/nothing,58684,1313559174297/nothing%3A58684.1313559198138. blk_2957690506056682393_1099
+2011-08-17 07:33:19,189 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.fsync: file /hbase/.logs/nothing,58684,1313559174297/nothing%3A58684.1313559198138 for DFSClient_hb_m_nothing:58681_1313559173894
+2011-08-17 07:34:14,628 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addToInvalidates: blk_-5802474796192778111 is added to invalidSet of 127.0.0.1:50010
+2011-08-17 07:34:14,628 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 15 Total time for transactions(ms): 1Number of transactions batched in Syncs: 0 Number of syncs: 9 SyncTimes(ms): 51 
+2011-08-17 07:34:15,353 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* ask 127.0.0.1:50010 to delete  blk_-5802474796192778111_1096
+2011-08-17 07:35:25,272 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 17 Total time for transactions(ms): 1Number of transactions batched in Syncs: 0 Number of syncs: 10 SyncTimes(ms): 52 
+2011-08-17 07:35:25,291 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /hbase/mylittletable/0bbadc03575c650f538941156a0ef808/.tmp/.regioninfo. blk_4638639974297436372_1101
+2011-08-17 07:35:25,295 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_4638639974297436372_1101 size 772
+2011-08-17 07:35:25,300 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /hbase/mylittletable/0bbadc03575c650f538941156a0ef808/.tmp/.regioninfo from client DFSClient_hb_m_nothing:58681_1313559173894
+2011-08-17 07:35:25,300 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /hbase/mylittletable/0bbadc03575c650f538941156a0ef808/.tmp/.regioninfo is closed by DFSClient_hb_m_nothing:58681_1313559173894
+2011-08-17 07:35:25,324 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /hbase/mylittletable/0bbadc03575c650f538941156a0ef808/.logs/hlog.1313559325280. blk_-8251191403072995555_1101
+2011-08-17 07:35:25,330 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-8251191403072995555_1101 size 124
+2011-08-17 07:35:25,330 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /hbase/mylittletable/0bbadc03575c650f538941156a0ef808/.logs/hlog.1313559325280 from client DFSClient_hb_m_nothing:58681_1313559173894
+2011-08-17 07:35:25,330 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /hbase/mylittletable/0bbadc03575c650f538941156a0ef808/.logs/hlog.1313559325280 is closed by DFSClient_hb_m_nothing:58681_1313559173894
+2011-08-17 07:37:41,110 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 127.0.0.1
+2011-08-17 07:37:41,110 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 31 Total time for transactions(ms): 2Number of transactions batched in Syncs: 0 Number of syncs: 22 SyncTimes(ms): 62 
+2011-08-17 07:37:42,012 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll FSImage from 127.0.0.1
+2011-08-17 07:37:42,012 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 1 SyncTimes(ms): 7 
+2011-08-17 07:52:33,187 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user webuser
+org.apache.hadoop.util.Shell$ExitCodeException: id: webuser: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:66)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:43)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1034)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:50)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkPermission(FSNamesystem.java:5069)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkTraverse(FSNamesystem.java:5052)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:1945)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getFileInfo(NameNode.java:805)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:557)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1434)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1430)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1127)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1428)
+2011-08-17 08:17:12,233 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 1 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2011-08-17 08:17:12,252 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /hbase/mylittletable/0bbadc03575c650f538941156a0ef808/.tmp/1378880501442984698. blk_1445659452344906931_1102
+2011-08-17 08:17:12,259 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1445659452344906931_1102 size 571
+2011-08-17 08:17:12,260 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /hbase/mylittletable/0bbadc03575c650f538941156a0ef808/.tmp/1378880501442984698 from client DFSClient_hb_m_nothing:58681_1313559173894
+2011-08-17 08:17:12,260 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /hbase/mylittletable/0bbadc03575c650f538941156a0ef808/.tmp/1378880501442984698 is closed by DFSClient_hb_m_nothing:58681_1313559173894
+2011-08-17 08:17:12,276 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_2957690506056682393_1099 size 1650
+2011-08-17 08:17:12,277 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /hbase/.logs/nothing,58684,1313559174297/nothing%3A58684.1313559198138 from client DFSClient_hb_m_nothing:58681_1313559173894
+2011-08-17 08:17:12,277 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /hbase/.logs/nothing,58684,1313559174297/nothing%3A58684.1313559198138 is closed by DFSClient_hb_m_nothing:58681_1313559173894
+2011-08-17 08:17:12,287 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /hbase/.META./1028785192/.tmp/6353628734535324998. blk_3388280737635090894_1103
+2011-08-17 08:17:12,291 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_3388280737635090894_1103 size 1162
+2011-08-17 08:17:12,291 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /hbase/.META./1028785192/.tmp/6353628734535324998 from client DFSClient_hb_m_nothing:58681_1313559173894
+2011-08-17 08:17:12,292 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /hbase/.META./1028785192/.tmp/6353628734535324998 is closed by DFSClient_hb_m_nothing:58681_1313559173894
+2011-08-17 08:17:12,315 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /hbase/-ROOT-/70236052/.tmp/3351714952337308193. blk_-8184587608502665897_1104
+2011-08-17 08:17:12,320 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-8184587608502665897_1104 size 500
+2011-08-17 08:17:12,322 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /hbase/-ROOT-/70236052/.tmp/3351714952337308193 from client DFSClient_hb_m_nothing:58681_1313559173894
+2011-08-17 08:17:12,322 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /hbase/-ROOT-/70236052/.tmp/3351714952337308193 is closed by DFSClient_hb_m_nothing:58681_1313559173894
+2011-08-17 08:17:38,456 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
 /************************************************************
 SHUTDOWN_MSG: Shutting down NameNode at nothing/172.20.10.2
 ************************************************************/
-2011-08-16 19:12:46,045 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+2011-08-17 08:20:00,140 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
 /************************************************************
 STARTUP_MSG: Starting NameNode
 STARTUP_MSG:   host = nothing/172.20.10.2
@@ -140,60 +196,61 @@ STARTUP_MSG:   args = []
 STARTUP_MSG:   version = 0.20.2-cdh3u1
 STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
 ************************************************************/
-2011-08-16 19:12:46,272 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=NameNode, sessionId=null
-2011-08-16 19:12:46,275 INFO org.apache.hadoop.hdfs.server.namenode.metrics.NameNodeMetrics: Initializing NameNodeMeterics using context object:org.apache.hadoop.metrics.spi.NullContext
-2011-08-16 19:12:46,302 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
-2011-08-16 19:12:46,302 INFO org.apache.hadoop.hdfs.util.GSet: 2% max memory = 19.9175 MB
-2011-08-16 19:12:46,302 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
-2011-08-16 19:12:46,302 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
-2011-08-16 19:12:46,374 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=madhatter
-2011-08-16 19:12:46,374 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
-2011-08-16 19:12:46,375 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
-2011-08-16 19:12:46,380 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=1000
-2011-08-16 19:12:46,381 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
-2011-08-16 19:12:46,680 INFO org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMetrics: Initializing FSNamesystemMetrics using context object:org.apache.hadoop.metrics.spi.NullContext
-2011-08-16 19:12:46,734 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 70
-2011-08-16 19:12:46,778 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
-2011-08-16 19:12:46,779 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 9319 loaded in 0 seconds.
-2011-08-16 19:12:46,780 INFO org.apache.hadoop.hdfs.server.common.Storage: Edits file /Users/madhatter/CDH3/hadoop-cache/dfs/name/current/edits of size 4 edits # 0 loaded in 0 seconds.
-2011-08-16 19:12:46,794 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 9319 saved in 0 seconds.
-2011-08-16 19:12:46,970 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 9319 saved in 0 seconds.
-2011-08-16 19:12:46,994 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Finished loading FSImage in 628 msecs
-2011-08-16 19:12:47,005 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON. 
-The reported blocks 0 needs additional 38 blocks to reach the threshold 0,9990 of total blocks 39. Safe mode will be turned off automatically.
-2011-08-16 19:12:47,017 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
-2011-08-16 19:12:47,045 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8020
-2011-08-16 19:12:47,048 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=NameNode, port=8020
-2011-08-16 19:12:47,050 INFO org.apache.hadoop.ipc.metrics.RpcDetailedMetrics: Initializing RPC Metrics with hostName=NameNode, port=8020
-2011-08-16 19:12:47,053 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Namenode up at: localhost/127.0.0.1:8020
-2011-08-16 19:12:47,107 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
-2011-08-16 19:12:47,227 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
-2011-08-16 19:12:47,249 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50070
-2011-08-16 19:12:47,251 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50070 webServer.getConnectors()[0].getLocalPort() returned 50070
-2011-08-16 19:12:47,251 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50070
-2011-08-16 19:12:47,251 INFO org.mortbay.log: jetty-6.1.26
-2011-08-16 19:12:47,856 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50070
-2011-08-16 19:12:47,857 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Web-server up at: 0.0.0.0:50070
-2011-08-16 19:12:47,857 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
-2011-08-16 19:12:47,858 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8020: starting
-2011-08-16 19:12:47,859 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 8020: starting
-2011-08-16 19:12:47,859 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 8020: starting
-2011-08-16 19:12:47,860 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 8020: starting
-2011-08-16 19:12:47,860 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 8020: starting
-2011-08-16 19:12:47,860 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 8020: starting
-2011-08-16 19:12:47,860 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 8020: starting
-2011-08-16 19:12:47,860 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 8020: starting
-2011-08-16 19:12:47,861 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 8020: starting
-2011-08-16 19:12:47,861 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 8020: starting
-2011-08-16 19:12:47,861 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 8020: starting
-2011-08-16 19:12:49,860 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.registerDatanode: node registration from 127.0.0.1:50010 storage DS-1179262424-172.20.10.2-50010-1312957867331
-2011-08-16 19:12:49,863 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/127.0.0.1:50010
-2011-08-16 19:12:49,896 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode extension entered. 
-The reported blocks 38 has reached the threshold 0,9990 of total blocks 39. Safe mode will be turned off automatically in 29 seconds.
-2011-08-16 19:12:53,285 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 8020, call setPermission(/Users/madhatter/CDH3/hadoop-cache/mapred/system, rwx------) from 127.0.0.1:50842: error: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
-The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe mode will be turned off automatically in 26 seconds.
+2011-08-17 08:20:00,397 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=NameNode, sessionId=null
+2011-08-17 08:20:00,399 INFO org.apache.hadoop.hdfs.server.namenode.metrics.NameNodeMetrics: Initializing NameNodeMeterics using context object:org.apache.hadoop.metrics.spi.NullContext
+2011-08-17 08:20:00,426 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2011-08-17 08:20:00,426 INFO org.apache.hadoop.hdfs.util.GSet: 2% max memory = 19.9175 MB
+2011-08-17 08:20:00,426 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2011-08-17 08:20:00,426 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2011-08-17 08:20:00,495 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=madhatter
+2011-08-17 08:20:00,496 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2011-08-17 08:20:00,496 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2011-08-17 08:20:00,504 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=1000
+2011-08-17 08:20:00,505 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2011-08-17 08:20:00,768 INFO org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMetrics: Initializing FSNamesystemMetrics using context object:org.apache.hadoop.metrics.spi.NullContext
+2011-08-17 08:20:00,851 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 104
+2011-08-17 08:20:00,893 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 1
+2011-08-17 08:20:00,895 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 13360 loaded in 0 seconds.
+2011-08-17 08:20:00,907 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Invalid opcode, reached end of edit log Number of transactions found 18
+2011-08-17 08:20:00,907 INFO org.apache.hadoop.hdfs.server.common.Storage: Edits file /Users/madhatter/CDH3/hadoop-cache/dfs/name/current/edits of size 1048580 edits # 18 loaded in 0 seconds.
+2011-08-17 08:20:00,912 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 13778 saved in 0 seconds.
+2011-08-17 08:20:01,014 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 13778 saved in 0 seconds.
+2011-08-17 08:20:01,039 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Finished loading FSImage in 553 msecs
+2011-08-17 08:20:01,048 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON. 
+The reported blocks 0 needs additional 54 blocks to reach the threshold 0,9990 of total blocks 55. Safe mode will be turned off automatically.
+2011-08-17 08:20:01,067 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2011-08-17 08:20:01,093 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 9000
+2011-08-17 08:20:01,095 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=NameNode, port=9000
+2011-08-17 08:20:01,097 INFO org.apache.hadoop.ipc.metrics.RpcDetailedMetrics: Initializing RPC Metrics with hostName=NameNode, port=9000
+2011-08-17 08:20:01,100 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Namenode up at: localhost/127.0.0.1:9000
+2011-08-17 08:20:01,183 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2011-08-17 08:20:01,277 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2011-08-17 08:20:01,305 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50070
+2011-08-17 08:20:01,307 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50070 webServer.getConnectors()[0].getLocalPort() returned 50070
+2011-08-17 08:20:01,307 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50070
+2011-08-17 08:20:01,307 INFO org.mortbay.log: jetty-6.1.26
+2011-08-17 08:20:01,889 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50070
+2011-08-17 08:20:01,889 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Web-server up at: 0.0.0.0:50070
+2011-08-17 08:20:01,889 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2011-08-17 08:20:01,890 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 9000: starting
+2011-08-17 08:20:01,891 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 9000: starting
+2011-08-17 08:20:01,891 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 9000: starting
+2011-08-17 08:20:01,892 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 9000: starting
+2011-08-17 08:20:01,892 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 9000: starting
+2011-08-17 08:20:01,893 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 9000: starting
+2011-08-17 08:20:01,893 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 9000: starting
+2011-08-17 08:20:01,893 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 9000: starting
+2011-08-17 08:20:01,893 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 9000: starting
+2011-08-17 08:20:01,893 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 9000: starting
+2011-08-17 08:20:01,894 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 9000: starting
+2011-08-17 08:20:03,870 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.registerDatanode: node registration from 127.0.0.1:50010 storage DS-1179262424-172.20.10.2-50010-1312957867331
+2011-08-17 08:20:03,872 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/127.0.0.1:50010
+2011-08-17 08:20:03,918 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode extension entered. 
+The reported blocks 54 has reached the threshold 0,9990 of total blocks 55. Safe mode will be turned off automatically in 29 seconds.
+2011-08-17 08:20:07,198 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 9000, call setPermission(/Users/madhatter/CDH3/hadoop-cache/mapred/system, rwx------) from 127.0.0.1:59122: error: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
+The reported blocks 55 has reached the threshold 0,9990 of total blocks 55. Safe mode will be turned off automatically in 26 seconds.
 org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
-The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe mode will be turned off automatically in 26 seconds.
+The reported blocks 55 has reached the threshold 0,9990 of total blocks 55. Safe mode will be turned off automatically in 26 seconds.
 	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setPermission(FSNamesystem.java:798)
 	at org.apache.hadoop.hdfs.server.namenode.NameNode.setPermission(NameNode.java:621)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -207,10 +264,10 @@ The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe
 	at javax.security.auth.Subject.doAs(Subject.java:396)
 	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1127)
 	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1428)
-2011-08-16 19:13:03,296 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 8020, call setPermission(/Users/madhatter/CDH3/hadoop-cache/mapred/system, rwx------) from 127.0.0.1:50852: error: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
-The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe mode will be turned off automatically in 16 seconds.
+2011-08-17 08:20:17,211 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 9000, call setPermission(/Users/madhatter/CDH3/hadoop-cache/mapred/system, rwx------) from 127.0.0.1:59127: error: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
+The reported blocks 55 has reached the threshold 0,9990 of total blocks 55. Safe mode will be turned off automatically in 16 seconds.
 org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
-The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe mode will be turned off automatically in 16 seconds.
+The reported blocks 55 has reached the threshold 0,9990 of total blocks 55. Safe mode will be turned off automatically in 16 seconds.
 	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setPermission(FSNamesystem.java:798)
 	at org.apache.hadoop.hdfs.server.namenode.NameNode.setPermission(NameNode.java:621)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -224,12 +281,12 @@ The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe
 	at javax.security.auth.Subject.doAs(Subject.java:396)
 	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1127)
 	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1428)
-2011-08-16 19:13:09,937 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON. 
-The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe mode will be turned off automatically in 9 seconds.
-2011-08-16 19:13:13,306 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 8020, call setPermission(/Users/madhatter/CDH3/hadoop-cache/mapred/system, rwx------) from 127.0.0.1:50869: error: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
-The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe mode will be turned off automatically in 6 seconds.
+2011-08-17 08:20:23,928 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON. 
+The reported blocks 55 has reached the threshold 0,9990 of total blocks 55. Safe mode will be turned off automatically in 9 seconds.
+2011-08-17 08:20:27,250 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 9000, call setPermission(/Users/madhatter/CDH3/hadoop-cache/mapred/system, rwx------) from 127.0.0.1:59133: error: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
+The reported blocks 55 has reached the threshold 0,9990 of total blocks 55. Safe mode will be turned off automatically in 6 seconds.
 org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot set permission for /Users/madhatter/CDH3/hadoop-cache/mapred/system. Name node is in safe mode.
-The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe mode will be turned off automatically in 6 seconds.
+The reported blocks 55 has reached the threshold 0,9990 of total blocks 55. Safe mode will be turned off automatically in 6 seconds.
 	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setPermission(FSNamesystem.java:798)
 	at org.apache.hadoop.hdfs.server.namenode.NameNode.setPermission(NameNode.java:621)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -243,25 +300,35 @@ The reported blocks 39 has reached the threshold 0,9990 of total blocks 39. Safe
 	at javax.security.auth.Subject.doAs(Subject.java:396)
 	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1127)
 	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1428)
-2011-08-16 19:13:19,954 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Total number of blocks = 39
-2011-08-16 19:13:19,954 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of invalid blocks = 0
-2011-08-16 19:13:19,954 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of under-replicated blocks = 9
-2011-08-16 19:13:19,954 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of  over-replicated blocks = 0
-2011-08-16 19:13:19,955 INFO org.apache.hadoop.hdfs.StateChange: STATE* Leaving safe mode after 33 secs.
-2011-08-16 19:13:19,955 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode is OFF.
-2011-08-16 19:13:19,955 INFO org.apache.hadoop.hdfs.StateChange: STATE* Network topology has 1 racks and 1 datanodes
-2011-08-16 19:13:19,955 INFO org.apache.hadoop.hdfs.StateChange: STATE* UnderReplicatedBlocks has 9 blocks
-2011-08-16 19:13:23,374 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addToInvalidates: blk_3539400835106715503 is added to invalidSet of 127.0.0.1:50010
-2011-08-16 19:13:23,560 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /Users/madhatter/CDH3/hadoop-cache/mapred/system/jobtracker.info. blk_-7243555305594010372_1077
-2011-08-16 19:13:23,622 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-7243555305594010372_1077 size 4
-2011-08-16 19:13:23,623 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /Users/madhatter/CDH3/hadoop-cache/mapred/system/jobtracker.info from client DFSClient_482331968
-2011-08-16 19:13:23,623 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /Users/madhatter/CDH3/hadoop-cache/mapred/system/jobtracker.info is closed by DFSClient_482331968
-2011-08-16 19:13:26,019 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* ask 127.0.0.1:50010 to delete  blk_3539400835106715503_1076
-2011-08-16 19:17:51,572 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 127.0.0.1
-2011-08-16 19:17:51,573 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 6 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 5 SyncTimes(ms): 69 
-2011-08-16 19:17:52,253 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll FSImage from 127.0.0.1
-2011-08-16 19:17:52,253 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 1 SyncTimes(ms): 7 
-2011-08-16 19:35:59,878 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+2011-08-17 08:20:33,951 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Total number of blocks = 55
+2011-08-17 08:20:33,952 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of invalid blocks = 0
+2011-08-17 08:20:33,952 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of under-replicated blocks = 9
+2011-08-17 08:20:33,952 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of  over-replicated blocks = 0
+2011-08-17 08:20:33,952 INFO org.apache.hadoop.hdfs.StateChange: STATE* Leaving safe mode after 33 secs.
+2011-08-17 08:20:33,952 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode is OFF.
+2011-08-17 08:20:33,952 INFO org.apache.hadoop.hdfs.StateChange: STATE* Network topology has 1 racks and 1 datanodes
+2011-08-17 08:20:33,952 INFO org.apache.hadoop.hdfs.StateChange: STATE* UnderReplicatedBlocks has 9 blocks
+2011-08-17 08:20:37,315 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addToInvalidates: blk_4223991517068089694 is added to invalidSet of 127.0.0.1:50010
+2011-08-17 08:20:37,393 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /Users/madhatter/CDH3/hadoop-cache/mapred/system/jobtracker.info. blk_-130676084243421628_1105
+2011-08-17 08:20:37,472 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-130676084243421628_1105 size 4
+2011-08-17 08:20:37,475 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /Users/madhatter/CDH3/hadoop-cache/mapred/system/jobtracker.info from client DFSClient_-892344347
+2011-08-17 08:20:37,475 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /Users/madhatter/CDH3/hadoop-cache/mapred/system/jobtracker.info is closed by DFSClient_-892344347
+2011-08-17 08:20:40,069 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* ask 127.0.0.1:50010 to delete  blk_4223991517068089694_1098
+2011-08-17 08:20:42,675 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /hbase/.logs/nothing,59136,1313562027703/nothing%3A59136.1313562041646. blk_-8512389679643867961_1106
+2011-08-17 08:20:42,708 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.fsync: file /hbase/.logs/nothing,59136,1313562027703/nothing%3A59136.1313562041646 for DFSClient_hb_m_nothing:59132_1313562027486
+2011-08-17 08:21:39,121 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of transactions: 14 Total time for transactions(ms): 1Number of transactions batched in Syncs: 0 Number of syncs: 11 SyncTimes(ms): 48 
+2011-08-17 08:21:39,131 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /hbase/.META./1028785192/.tmp/5589006219851826903. blk_1157324172988694024_1107
+2011-08-17 08:21:39,135 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1157324172988694024_1107 size 712
+2011-08-17 08:21:39,140 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /hbase/.META./1028785192/.tmp/5589006219851826903 from client DFSClient_hb_m_nothing:59132_1313562027486
+2011-08-17 08:21:39,140 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /hbase/.META./1028785192/.tmp/5589006219851826903 is closed by DFSClient_hb_m_nothing:59132_1313562027486
+2011-08-17 08:21:39,170 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /hbase/-ROOT-/70236052/.tmp/5270691796573359809. blk_-6769882194341569304_1108
+2011-08-17 08:21:39,175 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-6769882194341569304_1108 size 500
+2011-08-17 08:21:39,175 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /hbase/-ROOT-/70236052/.tmp/5270691796573359809 from client DFSClient_hb_m_nothing:59132_1313562027486
+2011-08-17 08:21:39,176 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /hbase/-ROOT-/70236052/.tmp/5270691796573359809 is closed by DFSClient_hb_m_nothing:59132_1313562027486
+2011-08-17 08:21:39,210 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-8512389679643867961_1106 size 794
+2011-08-17 08:21:39,210 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  file /hbase/.logs/nothing,59136,1313562027703/nothing%3A59136.1313562041646 from client DFSClient_hb_m_nothing:59132_1313562027486
+2011-08-17 08:21:39,210 INFO org.apache.hadoop.hdfs.StateChange: DIR* NameSystem.completeFile: file /hbase/.logs/nothing,59136,1313562027703/nothing%3A59136.1313562041646 is closed by DFSClient_hb_m_nothing:59132_1313562027486
+2011-08-17 08:21:52,691 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
 /************************************************************
 SHUTDOWN_MSG: Shutting down NameNode at nothing/172.20.10.2
 ************************************************************/

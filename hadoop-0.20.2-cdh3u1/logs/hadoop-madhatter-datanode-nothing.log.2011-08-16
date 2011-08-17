@@ -1,0 +1,88 @@
+2011-08-16 19:06:57,780 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = nothing/172.20.10.2
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-16 19:06:58,374 INFO org.apache.hadoop.security.UserGroupInformation: JAAS Configuration already set up for Hadoop, not re-installing.
+2011-08-16 19:06:59,515 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Registered FSDatasetStatusMBean
+2011-08-16 19:06:59,527 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened info server at 50010
+2011-08-16 19:06:59,536 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Balancing bandwith is 1048576 bytes/s
+2011-08-16 19:06:59,613 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2011-08-16 19:06:59,677 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2011-08-16 19:06:59,683 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50075
+2011-08-16 19:06:59,683 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50075 webServer.getConnectors()[0].getLocalPort() returned 50075
+2011-08-16 19:06:59,683 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50075
+2011-08-16 19:06:59,684 INFO org.mortbay.log: jetty-6.1.26
+2011-08-16 19:07:00,453 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50075
+2011-08-16 19:07:00,459 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=DataNode, sessionId=null
+2011-08-16 19:07:00,979 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 50020
+2011-08-16 19:07:00,981 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=DataNode, port=50020
+2011-08-16 19:07:00,982 INFO org.apache.hadoop.ipc.metrics.RpcDetailedMetrics: Initializing RPC Metrics with hostName=DataNode, port=50020
+2011-08-16 19:07:00,984 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dnRegistration = DatanodeRegistration(nothing:50010, storageID=DS-1179262424-172.20.10.2-50010-1312957867331, infoPort=50075, ipcPort=50020)
+2011-08-16 19:07:00,998 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(127.0.0.1:50010, storageID=DS-1179262424-172.20.10.2-50010-1312957867331, infoPort=50075, ipcPort=50020)In DataNode.run, data = FSDataset{dirpath='/Users/madhatter/CDH3/hadoop-cache/dfs/data/current'}
+2011-08-16 19:07:01,003 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2011-08-16 19:07:01,004 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 50020: starting
+2011-08-16 19:07:01,005 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 50020: starting
+2011-08-16 19:07:01,005 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 50020: starting
+2011-08-16 19:07:01,005 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: using BLOCKREPORT_INTERVAL of 3600000msec Initial delay: 0msec
+2011-08-16 19:07:01,005 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 50020: starting
+2011-08-16 19:07:01,064 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 39 blocks got processed in 38 msecs
+2011-08-16 19:07:01,065 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting Periodic block scanner.
+2011-08-16 19:07:01,292 INFO org.apache.hadoop.hdfs.server.datanode.DataBlockScanner: Verification succeeded for blk_193490706613072650_1074
+2011-08-16 19:07:34,311 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_3539400835106715503_1076 src: /127.0.0.1:50118 dest: /127.0.0.1:50010
+2011-08-16 19:07:34,323 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /127.0.0.1:50118, dest: /127.0.0.1:50010, bytes: 4, op: HDFS_WRITE, cliID: DFSClient_-1171081145, offset: 0, srvID: DS-1179262424-172.20.10.2-50010-1312957867331, blockid: blk_3539400835106715503_1076, duration: 1167000
+2011-08-16 19:07:34,324 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_3539400835106715503_1076 terminating
+2011-08-16 19:07:37,028 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Scheduling block blk_7236584108091060843_1060 file /Users/madhatter/CDH3/hadoop-cache/dfs/data/current/blk_7236584108091060843 for deletion
+2011-08-16 19:07:37,029 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Deleted block blk_7236584108091060843_1060 at file /Users/madhatter/CDH3/hadoop-cache/dfs/data/current/blk_7236584108091060843
+2011-08-16 19:12:42,068 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at nothing/172.20.10.2
+************************************************************/
+2011-08-16 19:12:48,090 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = nothing/172.20.10.2
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2-cdh3u1
+STARTUP_MSG:   build = file:///var/lib/jenkins/workspace/CDH3u1-CentOS-Hadoop-Tarball/hadoop20/hadoop-0.20.2-cdh3u1 -r bdafb1dbffd0d5f2fbc6ee022e1c8df6500fd638; compiled by 'jenkins' on Mon Jul 18 12:08:54 PDT 2011
+************************************************************/
+2011-08-16 19:12:48,587 INFO org.apache.hadoop.security.UserGroupInformation: JAAS Configuration already set up for Hadoop, not re-installing.
+2011-08-16 19:12:48,784 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Registered FSDatasetStatusMBean
+2011-08-16 19:12:48,794 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened info server at 50010
+2011-08-16 19:12:48,796 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Balancing bandwith is 1048576 bytes/s
+2011-08-16 19:12:48,936 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2011-08-16 19:12:49,010 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2011-08-16 19:12:49,028 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50075
+2011-08-16 19:12:49,028 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50075 webServer.getConnectors()[0].getLocalPort() returned 50075
+2011-08-16 19:12:49,029 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50075
+2011-08-16 19:12:49,029 INFO org.mortbay.log: jetty-6.1.26
+2011-08-16 19:12:49,576 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50075
+2011-08-16 19:12:49,579 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=DataNode, sessionId=null
+2011-08-16 19:12:49,848 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 50020
+2011-08-16 19:12:49,849 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=DataNode, port=50020
+2011-08-16 19:12:49,851 INFO org.apache.hadoop.ipc.metrics.RpcDetailedMetrics: Initializing RPC Metrics with hostName=DataNode, port=50020
+2011-08-16 19:12:49,853 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dnRegistration = DatanodeRegistration(nothing:50010, storageID=DS-1179262424-172.20.10.2-50010-1312957867331, infoPort=50075, ipcPort=50020)
+2011-08-16 19:12:49,865 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(127.0.0.1:50010, storageID=DS-1179262424-172.20.10.2-50010-1312957867331, infoPort=50075, ipcPort=50020)In DataNode.run, data = FSDataset{dirpath='/Users/madhatter/CDH3/hadoop-cache/dfs/data/current'}
+2011-08-16 19:12:49,866 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2011-08-16 19:12:49,868 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 50020: starting
+2011-08-16 19:12:49,868 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 50020: starting
+2011-08-16 19:12:49,868 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 50020: starting
+2011-08-16 19:12:49,868 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: using BLOCKREPORT_INTERVAL of 3600000msec Initial delay: 0msec
+2011-08-16 19:12:49,868 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 50020: starting
+2011-08-16 19:12:49,897 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 39 blocks got processed in 17 msecs
+2011-08-16 19:12:49,898 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting Periodic block scanner.
+2011-08-16 19:12:50,034 INFO org.apache.hadoop.hdfs.server.datanode.DataBlockScanner: Verification succeeded for blk_3539400835106715503_1076
+2011-08-16 19:13:23,605 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-7243555305594010372_1077 src: /127.0.0.1:50906 dest: /127.0.0.1:50010
+2011-08-16 19:13:23,618 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /127.0.0.1:50906, dest: /127.0.0.1:50010, bytes: 4, op: HDFS_WRITE, cliID: DFSClient_482331968, offset: 0, srvID: DS-1179262424-172.20.10.2-50010-1312957867331, blockid: blk_-7243555305594010372_1077, duration: 346000
+2011-08-16 19:13:23,619 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_-7243555305594010372_1077 terminating
+2011-08-16 19:13:28,891 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Scheduling block blk_3539400835106715503_1076 file /Users/madhatter/CDH3/hadoop-cache/dfs/data/current/blk_3539400835106715503 for deletion
+2011-08-16 19:13:28,892 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Deleted block blk_3539400835106715503_1076 at file /Users/madhatter/CDH3/hadoop-cache/dfs/data/current/blk_3539400835106715503
+2011-08-16 19:22:50,278 INFO org.apache.hadoop.hdfs.server.datanode.DataBlockScanner: Verification succeeded for blk_-2556141537652629643_1059
+2011-08-16 19:32:50,369 INFO org.apache.hadoop.hdfs.server.datanode.DataBlockScanner: Verification succeeded for blk_8531260336626312897_1068
+2011-08-16 19:36:00,033 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at nothing/172.20.10.2
+************************************************************/
