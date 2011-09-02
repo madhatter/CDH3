@@ -9,3 +9,8 @@ installation later as often as I want.
 
 Right now... I am not there yet.
 
+But it's already possible to start the hadoop cluster in pseudo mode, start hbase and use 
+sqoop to push your data into the hdfs or hbase.
+
+Feel free to fork this and be my guest playing together with hadoop and deploying jobs on it.
+
