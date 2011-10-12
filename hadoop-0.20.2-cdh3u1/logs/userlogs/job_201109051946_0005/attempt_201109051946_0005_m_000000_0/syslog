@@ -1,0 +1,8 @@
+2011-09-05 20:06:16,065 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2011-09-05 20:06:16,392 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=MAP, sessionId=
+2011-09-05 20:06:17,082 INFO com.cloudera.sqoop.mapreduce.AutoProgressMapper: Auto-progress thread is finished. keepGoing=false
+2011-09-05 20:06:17,117 INFO org.apache.hadoop.mapred.Task: Task:attempt_201109051946_0005_m_000000_0 is done. And is in the process of commiting
+2011-09-05 20:06:18,126 INFO org.apache.hadoop.mapred.Task: Task attempt_201109051946_0005_m_000000_0 is allowed to commit now
+2011-09-05 20:06:18,136 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_201109051946_0005_m_000000_0' to foobar
+2011-09-05 20:06:18,142 INFO org.apache.hadoop.mapred.Task: Task 'attempt_201109051946_0005_m_000000_0' done.
+2011-09-05 20:06:18,245 INFO org.apache.hadoop.mapred.TaskLogsTruncater: Initializing logs' truncater with mapRetainSize=-1 and reduceRetainSize=-1
